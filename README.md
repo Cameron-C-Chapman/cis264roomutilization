@@ -68,46 +68,46 @@ Instructions to start working the project:
     cinst sublimetext2
   </code>
 
-  2. Use git to clone the project into a directory you want to work from. This will create a cis264roomutilization folder that will contain the project.
+2. Use git to clone the project into a directory you want to work from. This will create a cis264roomutilization folder that will contain the project.
 
-    <code>
-      git clone https://github.com/Cameron-C-Chapman/cis264roomutilization.git
-    </code>
+  <code>
+    git clone https://github.com/Cameron-C-Chapman/cis264roomutilization.git
+  </code>
 
-  3. cd into the cis264roomutilization folder and create a new git branch to work on the project outside of the master branch.
+3. cd into the cis264roomutilization folder and create a new git branch to work on the project outside of the master branch.
 
-    <code>
-      cd cis264roomutilization
-    </code>
+  <code>
+    cd cis264roomutilization
+  </code>
 
-    <code>
-      git branch yourdescriptivebranchname
-    </code>
+  <code>
+    git branch yourdescriptivebranchname
+  </code>
 
-    <code>
-      git checkout yourdescriptivebranchname
-    </code>
+  <code>
+    git checkout yourdescriptivebranchname
+  </code>
 
-  4. Install project dependencies.
+4. Install project dependencies.
 
-    <code>
-      npm install
-    </code>
+  <code>
+    npm install
+  </code>
 
-    <code>
-      bower install
-    </code>
+  <code>
+    bower install
+  </code>
 
-  5. Run the grunt task runner to build the project and then grunt serve to launch it in a browser.
+5. Run the grunt task runner to build the project and then grunt serve to launch it in a browser.
 
-    *When grunt launches the app it will be monitoring for changes live so there is no need to refresh the page after every change, you will see them live once you save your page.*
+  *When grunt launches the app it will be monitoring for changes live so there is no need to refresh the page after every change, you will see them live once you save your page.*
 
-    <code>
-      grunt
-    </code>
+  <code>
+    grunt
+  </code>
 
-    <code>
-      grunt serve
-    </code>
+  <code>
+    grunt serve
+  </code>
 
-  6. The files to edit are in the app folder. To edit the html view you would edit app/views/main.html. Javascript is located in the scripts folder and css is located in the styles folder.
+6. The files to edit are in the app folder. To edit the html view you would edit app/views/main.html. Javascript is located in the scripts folder and css is located in the styles folder.
