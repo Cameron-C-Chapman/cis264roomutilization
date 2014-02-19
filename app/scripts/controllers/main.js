@@ -33,4 +33,35 @@ function BuildingVisualisationController ($scope) {
         ]
       }
     ];
+
+    // set default  maphilighter settings
+    angular.element.fn.maphilight.defaults = {
+      fill: true,
+      fillColor: '000000',
+      fillOpacity: 0.2,
+      stroke: true,
+      strokeColor: 'ff0000',
+      strokeOpacity: 1,
+      strokeWidth: 1,
+      fade: true,
+      alwaysOn: true,
+      neverOn: false,
+      groupBy: false,
+      wrapClass: true,
+      shadow: false,
+      shadowX: 0,
+      shadowY: 0,
+      shadowRadius: 6,
+      shadowColor: '000000',
+      shadowOpacity: 0.8,
+      shadowPosition: 'outside',
+      shadowFrom: false
+    }
+
+    // initalise image map highlighting
+    angular.element('.map').maphilight();
+
+    // initialise bootstrap tooltips
+    angular.element('.floorplan-tooltip').tooltip({placement:'left', html:true});
+
   }
