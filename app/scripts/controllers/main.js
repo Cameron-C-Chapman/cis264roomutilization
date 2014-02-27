@@ -2,14 +2,6 @@
 
 angular.module('cis264App')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
-
-function BuildingVisualisationController ($scope) {
 
     $scope.activeBuilding = null;
     $scope.activeFloor = null;
@@ -56,7 +48,7 @@ function BuildingVisualisationController ($scope) {
       shadowOpacity: 0.8,
       shadowPosition: 'outside',
       shadowFrom: false
-    }
+    };
 
     // initalise image map highlighting
     angular.element('.map').maphilight();
@@ -64,4 +56,4 @@ function BuildingVisualisationController ($scope) {
     // initialise bootstrap tooltips
     angular.element('.floorplan-tooltip').tooltip({placement:'left', html:true});
 
-  }
+  });
