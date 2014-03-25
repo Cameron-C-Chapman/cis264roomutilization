@@ -1,0 +1,36 @@
+{
+    "totalRecords": 1,
+    "data": [{
+        "Description": "General Education Building",
+        "BuildingCode": "GEB",
+        "CampusId": "edcff367-ef64-44b3-852f-82dc26995aa4",
+        "SisKey": "1_GEB",
+        "BuildingId": "d21cacb4-e97a-4485-b8d7-2c8eeac2b170",
+        "Name": "GEB",
+        "Floors": [{
+            "Id": 1,
+            "Description": "First Floor",
+            "Image": "images/floorplans/GEB-1.png"
+        }, {
+            "Id": 2,
+            "Description": "Second Floor",
+            "Image": "images/floorplans/GEB-2.png"
+        }, {
+            "Id": 3,
+            "Description": "Third Floor",
+            "Image": "images/floorplans/GEB-3.png"
+        }]
+    }, {
+        "Description": "Arts and Technology Building",
+        "BuildingCode": "ATB",
+        "CampusId": "edcff367-ef64-44b3-852f-82dc26995aa4",
+        "SisKey": "1_ATB",
+        "BuildingId": "ecd52f97-119d-4367-a54c-c3890014a4b6",
+        "Name": "ATB",
+        "Floors": [{
+            "Id": 1,
+            "Description": "First Floor",
+            "Image": "images/floorplans/ATB-1.png"
+        }]
+    }]
+}

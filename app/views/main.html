@@ -1,12 +1,13 @@
 <div class="row">
   <div class="header col-lg-10 col-lg-offset-1">
-  <!--
+  
   <ul class="nav nav-pills pull-right">
-    <li class="active"><a ng-href="#">Home</a></li>
-    <li><a ng-href="#">Docs</a></li>
+    <li class="active"><a ng-href="#"><span class="glyphicon glyphicon-th-list"></span></a></li>
+    <li><a ng-href="#"><span class="glyphicon glyphicon-picture"></span></a></li>
+    <li><a ng-href="#"><span class="glyphicon glyphicon-book"></span></a></li>
   </ul>
-  -->
-  <h3 class="text-muted">JCCC Sustainability - Room Utilization <span class="text-danger"><em>Beta</em></span></h3>
+  
+  <div><img src="images/logo.png" alt="logo.png"</div>
 </div>
 </div>
 
@@ -15,28 +16,40 @@
   <div class="col-lg-4 col-lg-offset-1 well">
 
     <div>
-      <label>Choose Building</label>
+      <label>Choose Campus</label>
       <select class="form-control" 
-        data-ng-model="activeBuilding" 
-        data-ng-options="b.description for b in buildings">
+        data-ng-model="activeCampus" 
+        data-ng-options="c.Description for c in campusObjects.data"
+        ng-change="setBuildings(activeCampus)">
       </select>
     </div>
 
     &nbsp;&nbsp;
 
-    <div data-ng-show="activeBuilding.code">
+    <div data-ng-show="activeCampus.Id">
+      <label>Choose Building</label>
+      <select class="form-control" 
+        data-ng-model="activeBuilding" 
+        data-ng-options="b.Description for b in buildingObjects"
+        ng-change="setFloors(activeBuilding)">
+      </select>
+    </div>
+
+    &nbsp;&nbsp;
+
+    <div data-ng-show="activeBuilding.BuildingCode">
       <label>Choose Floor</label>
       <select class="form-control"
         data-ng-model="activeFloor"
-        data-ng-options="f.description for f in activeBuilding.floors">
+        data-ng-options="f.Description for f in floorObjects.Floors">
       </select>
     </div>
     
   </div>
 
-  <div data-ng-show="activeFloor.image" class="col-lg-7 center-block">
+  <div id="imageBlock" data-ng-show="activeFloor.Id" class="col-lg-7 center-block">
 
-    <img src="{{activeFloor.image}}" class="img-responsive img-thumbnail center-block map" usemap="#{{activeBuilding.code}}-{{activeFloor.id}}">
+    <img src="{{activeFloor.Image}}" class="img-responsive img-thumbnail center-block map" usemap="#{{activeBuilding.Name}}-{{activeFloor.Id}}">
   
   </div>
 
@@ -49,13 +62,13 @@
 </div>
 
 <map id="ATB-1" name="ATB-1">
-  <area id="ATB101" class="floorplan-tooltip" shape="rect" coords="33,21,137,130" alt="101" data-maphilight='{strokeColor":"0000ff","strokeWidth":5,"fillColor":"ff0000","fillOpacity":0.6}' title="ATB 101 Extended Information<br/>Faculty:<br/>Students:<br/>" data-toggle="tooltip" data-placement="top" target="_self" href="#"  />
-  <area id="ATB101A" shape="rect" coords="139,23,168,55" alt="101A" title="101A" target="_self" href="#"     />
-  <area id="ATB101B" shape="rect" coords="166,22,195,54" alt="101B" title="101B" target="_self" href="#"     />
-  <area id="ATB101C" shape="rect" coords="163,64,192,96" alt="101C" title="101C" target="_self" href="#"     />
-  <area id="ATB111A" shape="rect" coords="349,99,378,131" alt="111A" title="111A" target="_self" href="#"     />
-  <area id="ATB109" class="floorplan-tooltip" shape="poly" coords="194,23,284,23,287,130,270,130,269,95,193,92" alt="109" title="ATB 109 Extended Information<br/>Faculty:<br/>Students:<br/>" data-toggle="tooltip" data-placement="top" target="_self" href="#"     />
-  <area id="ATB111" shape="poly" coords="286,22,395,24,396,117,379,122,380,100,348,100,348,129,285,129" alt="111" title="111" target="_self" href="#"     />
-  <area id="ATB101D" shape="poly" coords="140,66,163,68,164,93,212,95,213,122,140,118" alt="101D" title="101D" target="_self" href="#"     />
-  <area id="ATB107" shape="poly" coords="214,94,268,95,268,109,223,109,222,118,215,118" alt="107" title="107" target="_self" href="#"     />
+  <area id="ATB101" class="floorplan-tooltip" shape="rect" coords="33,21,137,130" alt="101" data-maphilight='{strokeColor":"0000ff","strokeWidth":5,"fillColor":"ff0000","fillOpacity":0.6}' title="ATB 101 Extended Information<br/>Faculty:<br/>Students:<br/>" data-toggle="tooltip" data-placement="top" target="_self" href="#" />
+  <area id="ATB101A" shape="rect" coords="139,23,168,55" alt="101A" title="101A" target="_self" href="#" />
+  <area id="ATB101B" shape="rect" coords="166,22,195,54" alt="101B" title="101B" target="_self" href="#" />
+  <area id="ATB101C" shape="rect" coords="163,64,192,96" alt="101C" title="101C" target="_self" href="#" />
+  <area id="ATB111A" shape="rect" coords="349,99,378,131" alt="111A" title="111A" target="_self" href="#" />
+  <area id="ATB109" class="floorplan-tooltip" shape="poly" coords="194,23,284,23,287,130,270,130,269,95,193,92" alt="109" title="ATB 109 Extended Information<br/>Faculty:<br/>Students:<br/>" data-toggle="tooltip" data-placement="top" target="_self" href="#" />
+  <area id="ATB111" shape="poly" coords="286,22,395,24,396,117,379,122,380,100,348,100,348,129,285,129" alt="111" title="111" target="_self" href="#" />
+  <area id="ATB101D" shape="poly" coords="140,66,163,68,164,93,212,95,213,122,140,118" alt="101D" title="101D" target="_self" href="#" />
+  <area id="ATB107" shape="poly" coords="214,94,268,95,268,109,223,109,222,118,215,118" alt="107" title="107" target="_self" href="#" />
 </map>
