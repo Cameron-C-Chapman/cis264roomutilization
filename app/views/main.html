@@ -2,16 +2,16 @@
   <div class="header col-lg-10 col-lg-offset-1">
   
   <ul class="nav nav-pills pull-right">
-    <li class="active"><a ng-href="#"><span class="glyphicon glyphicon-th-list"></span></a></li>
-    <li><a ng-href="#"><span class="glyphicon glyphicon-picture"></span></a></li>
+    <li id="imageViewToggleButton"><a ng-click="toggleView()"><span class="glyphicon glyphicon-picture"></span></a></li>
+    <li id="scheduleViewToggleButton"><a ng-click="toggleView()"><span class="glyphicon glyphicon-th-list"></span></a></li>
     <li><a ng-href="#"><span class="glyphicon glyphicon-book"></span></a></li>
   </ul>
   
-  <div><img src="images/logo.png" alt="logo.png"</div>
-</div>
+  <div><img src="images/logo.png" alt="logo.png" /></div>
+  </div>
 </div>
 
-<div class="row" ng-controller="MainCtrl">
+<div class="row">
 
   <div class="col-lg-4 col-lg-offset-1 well">
 
@@ -31,7 +31,7 @@
       <select class="form-control" 
         data-ng-model="activeBuilding" 
         data-ng-options="b.Description for b in buildingObjects"
-        ng-change="setFloors(activeBuilding)">
+        ng-change="setAvailableFloors(activeBuilding)">
       </select>
     </div>
 
@@ -41,27 +41,36 @@
       <label>Choose Floor</label>
       <select class="form-control"
         data-ng-model="activeFloor"
-        data-ng-options="f.Description for f in floorObjects.Floors">
+        data-ng-options="f.Description for f in floorObjects.Floors"
+        ng-change="setImageAndSchedule(activeFloor)">
+      </select>
       </select>
     </div>
     
   </div>
 
-  <div id="imageBlock" data-ng-show="activeFloor.Id" class="col-lg-7 center-block">
-
-    <img src="{{activeFloor.Image}}" class="img-responsive img-thumbnail center-block map" usemap="#{{activeBuilding.Name}}-{{activeFloor.Id}}">
-  
+  <div id="imageBlock" ng-show="showImageView" class="col-lg-7 center-block">
+    <img src="{{imageBasePath}}{{activeBuilding.BuildingCode}}-{{activeFloor.Id}}.png" class="img-responsive img-thumbnail center-block map" usemap="#{{activeBuilding.Name}}-{{activeFloor.Id}}">
   </div>
+
+  <div id="tableBlock" ng-show="showTableView" class="col-lg-7 center-block">
+    <div class="col-lg-12">
+      <h2>Schedule</h2>
+      <div ng-repeat="s in scheduleObjects">
+        <p>{{s}}</p>
+      </div>
+    </div>
+  </div>
+
+  
 
 </div>
 
 <div class="row">
-  <div class="footer">
-
-  </div>
+  <div class="footer"></div>
 </div>
 
-<map id="ATB-1" name="ATB-1">
+<map id="{{activeBuilding.Name}}-{{activeFloor.Id}}" name="{{activeBuilding.Name}}-{{activeFloor.Id}}">
   <area id="ATB101" class="floorplan-tooltip" shape="rect" coords="33,21,137,130" alt="101" data-maphilight='{strokeColor":"0000ff","strokeWidth":5,"fillColor":"ff0000","fillOpacity":0.6}' title="ATB 101 Extended Information<br/>Faculty:<br/>Students:<br/>" data-toggle="tooltip" data-placement="top" target="_self" href="#" />
   <area id="ATB101A" shape="rect" coords="139,23,168,55" alt="101A" title="101A" target="_self" href="#" />
   <area id="ATB101B" shape="rect" coords="166,22,195,54" alt="101B" title="101B" target="_self" href="#" />
