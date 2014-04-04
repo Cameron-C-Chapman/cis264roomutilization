@@ -41,7 +41,7 @@ app.controller('MainCtrl', function($scope, $http, $cookieStore) {
   // set default maphilighter settings
   angular.element.fn.maphilight.defaults = {
     fill: true,
-    fillColor: '000000',
+    fillColor: '444555',
     fillOpacity: 0.2,
     stroke: true,
     strokeColor: 'ff0000',
@@ -185,33 +185,36 @@ app.controller('MainCtrl', function($scope, $http, $cookieStore) {
       $scope.errorState = true;
     });
 
-    // initalise image map highlighting
-    angular.element('.map').maphilight();
-
-    // initialise bootstrap tooltips
-    angular.element('.floorplan-tooltip').tooltip({placement:'left', html:true});
+    
 
     return;
 
   };
 
 
+  $scope.$watch('activeFloor', function() { 
+    //console.log($scope.activeFloor);
+    angular.element('#340').hide();
+  });
+
   $scope.setImageAndSchedule = function() {
     //$scope.activeImage = $scope.imageBasePath + $scope.activeBuilding.BuildingCode + '-' + $scope.activeFloor.Id + '.png';
+    
+    console.log(angular.element('#340'));
   };
 
 
-  $scope.$watch('activeBuilding', function() { 
-    console.log($scope.activeImage);
+  //$scope.$watch('activeBuilding', function() { 
+    //console.log($scope.activeImage);
     //$scope.activeImage = $scope.imageBasePath + $scope.activeBuilding.BuildingCode + '-' + '.png';
-    $scope.apply();
-  });
+    //$scope.apply();
+  //});
 
-  $scope.$watch('activeFloor', function() { 
-    console.log($scope.activeFloor);
+  //$scope.$watch('activeFloor', function() { 
+    //console.log($scope.activeFloor);
     //$scope.activeImage = $scope.imageBasePath + $scope.activeBuilding.BuildingCode + '-' + $scope.activeFloor.Id + '.png';
 
-  });
+  //});
 
 
 });

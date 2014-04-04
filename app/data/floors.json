@@ -18,7 +18,17 @@
         }, {
             "Id": 3,
             "Description": "Third Floor",
-            "Image": "images/floorplans/GEB-3.png"
+            "Image": "images/floorplans/GEB-3.png",
+            "Map": [
+                { 
+                    "Shape":{ "Room": "342", "X": "21.854931", "Y": "79.580921", "W": "17.121469", "H": "22.2579" },
+                    "Text": { "Text": "342", "X": "26.456621", "Y": "91.02831", "FontSize": "3" }
+                },
+                { 
+                    "Shape":{ "Room": "340", "X": "38.970411", "Y": "79.5929", "W": "17.121469", "H": "22.2579" },
+                    "Text": { "Text": "340", "X": "44.983105", "Y": "91.484932", "FontSize": "3" }
+                }
+            ]
         }]
     }, {
         "Description": "Arts and Technology Building",

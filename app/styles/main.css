@@ -77,3 +77,15 @@ body {
     border-bottom: 0;
   }
 }
+
+.shape {
+  fill: green;
+  opacity: 0.25;
+}
+.shape:hover {
+  fill:red;
+}
+
+.shape .active {
+  fill:blue;
+}

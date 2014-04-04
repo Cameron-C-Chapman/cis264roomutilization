@@ -1,19 +1,4 @@
-<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
- <g>
- <style>
- .shape{
-fill: green;
-opacity: 0.65;
-}
-.shape:hover{
-fill:red;
-}
 
- </style>
-
-  <title>Layer 1</title>
-  <g id="svg_1">
-   <text y="40.776256" font-size="10"  id="svg_3" x="15.981735">GEB: Floor 3</text>
    <rect class="shape selectedLow" id="342" x="21.854931" y="79.580921" width="17.121469" height="22.2579" />
    <text x="26.456621" y="91.02831" font-family="Verdana" font-size="3" text-anchor="start"  id="svg_4">342</text>
    <rect class="shape selectedMedium" id="340" x="38.970411" y="79.5929" width="17.121469" height="22.2579" />
@@ -211,5 +196,3 @@ fill:red;
   <line stroke="#000000" id="svg_45" y2="87.356322" x2="111.621971" y1="53.639847" x1="111.621971" stroke-width="2" fill="none"/>
   <rect id="svg_57" height="0" width="9.195402" y="86.206897" x="110.089404" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="2" stroke="#000000" />
   <rect id="svg_58" height="0.383142" width="0" y="86.206897" x="119.284806" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="2" stroke="#000000" />
- </g>
-</svg>

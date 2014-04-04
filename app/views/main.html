@@ -42,7 +42,7 @@
       <select class="form-control"
         data-ng-model="activeFloor"
         data-ng-options="f.Description for f in floorObjects.Floors"
-        ng-change="setImageAndSchedule(activeFloor)">
+        data-ng-change="setImageAndSchedule(activeFloor)">
       </select>
       </select>
     </div>
@@ -50,19 +50,40 @@
   </div>
 
   <div id="imageBlock" ng-show="showImageView" class="col-lg-7 center-block">
-    <img src="{{imageBasePath}}{{activeBuilding.BuildingCode}}-{{activeFloor.Id}}.png" class="img-responsive img-thumbnail center-block map" usemap="#{{activeBuilding.Name}}-{{activeFloor.Id}}">
+    <svg width="800" height="650" xmlns="http://www.w3.org/2000/svg">
+      <g id="{{activeBuilding.BuildingCode}}-{{activeFloor.Id}}">
+        <g  ng-repeat="m in activeFloor.Map">
+          <rect class="shape" ng-attr-id="{{m.Shape.Room}}" ng-attr-x="{{m.Shape.X}}" ng-attr-y="{{m.Shape.Y}}" ng-attr-width="{{m.Shape.W}}" ng-attr-height="{{m.Shape.H}}" />
+          <text id="{{m.Shape.Room}}-text" x="{{m.Text.X}}" y="{{m.Text.Y}}" font-family="Verdana" font-size="{{m.Text.FontSize}}" text-anchor="start">{{m.Text.Text}}</text>
+        </g>
+      </g>
+    </svg>
   </div>
 
   <div id="tableBlock" ng-show="showTableView" class="col-lg-7 center-block">
     <div class="col-lg-12">
-      <h2>Schedule</h2>
-      <div ng-repeat="s in scheduleObjects">
-        <p>{{s}}</p>
+      <div class="table-responsive">
+        <table class="table">
+          <tr class="">
+            <th>Course</th>
+            <th>Description</th>
+            <th>Room</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+          </tr>
+          <tbody>
+            <tr ng-repeat="s in scheduleObjects">
+              <td>{{s.1}}</td>
+              <td>{{s.2}}</td>
+              <td>{{s.10}}</td>
+              <td>{{s.5}}</td>
+              <td>{{s.6}}</td>
+            </tr>
+          </tbody>
+          
+        </table>
       </div>
-    </div>
   </div>
-
-  
 
 </div>
 
@@ -70,14 +91,3 @@
   <div class="footer"></div>
 </div>
 
-<map id="{{activeBuilding.Name}}-{{activeFloor.Id}}" name="{{activeBuilding.Name}}-{{activeFloor.Id}}">
-  <area id="ATB101" class="floorplan-tooltip" shape="rect" coords="33,21,137,130" alt="101" data-maphilight='{strokeColor":"0000ff","strokeWidth":5,"fillColor":"ff0000","fillOpacity":0.6}' title="ATB 101 Extended Information<br/>Faculty:<br/>Students:<br/>" data-toggle="tooltip" data-placement="top" target="_self" href="#" />
-  <area id="ATB101A" shape="rect" coords="139,23,168,55" alt="101A" title="101A" target="_self" href="#" />
-  <area id="ATB101B" shape="rect" coords="166,22,195,54" alt="101B" title="101B" target="_self" href="#" />
-  <area id="ATB101C" shape="rect" coords="163,64,192,96" alt="101C" title="101C" target="_self" href="#" />
-  <area id="ATB111A" shape="rect" coords="349,99,378,131" alt="111A" title="111A" target="_self" href="#" />
-  <area id="ATB109" class="floorplan-tooltip" shape="poly" coords="194,23,284,23,287,130,270,130,269,95,193,92" alt="109" title="ATB 109 Extended Information<br/>Faculty:<br/>Students:<br/>" data-toggle="tooltip" data-placement="top" target="_self" href="#" />
-  <area id="ATB111" shape="poly" coords="286,22,395,24,396,117,379,122,380,100,348,100,348,129,285,129" alt="111" title="111" target="_self" href="#" />
-  <area id="ATB101D" shape="poly" coords="140,66,163,68,164,93,212,95,213,122,140,118" alt="101D" title="101D" target="_self" href="#" />
-  <area id="ATB107" shape="poly" coords="214,94,268,95,268,109,223,109,222,118,215,118" alt="107" title="107" target="_self" href="#" />
-</map>
