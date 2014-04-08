@@ -79,13 +79,20 @@ body {
 }
 
 .shape {
-  fill: green;
+  fill: red;
   opacity: 0.25;
 }
 .shape:hover {
-  fill:red;
+  fill:green;
+}
+.shape.active {
+  fill:green;
+  opacity: 0.25;
 }
 
-.shape .active {
-  fill:blue;
+.success {
+  background-color: green;
+}
+.danger {
+  background-color: red;
 }

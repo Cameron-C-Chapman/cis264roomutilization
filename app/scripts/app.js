@@ -4,7 +4,10 @@ angular.module('cis264App', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'ngTable',
+  'angular-momentjs',
+  'angularMoment'
 ])
   .config(function ($routeProvider, $httpProvider) {
     $routeProvider
