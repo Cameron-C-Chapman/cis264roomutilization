@@ -61,7 +61,7 @@ app.factory('roomService', function($http, $q) {
     $http.get('data/room.json')
     .success(function (d) {
       data = d;
-      //console.log(d);
+      console.log(d);
       deffered.resolve();
     });
     return deffered.promise;
@@ -219,11 +219,11 @@ app.controller('MainCtrl', function(campusService, buildingService, roomService,
 
         // push schedule for currently selected building and current timeframe
         if (
-            (value['10'] === activeBuilding.BuildingCode) 
-            && 
-            ($moment(value[6], 'h:mm A').hour() < $moment().subtract(8, 'h').hour())
+            (value['10'] === activeBuilding.BuildingCode)
             &&
-            ($moment(value[7], 'h:mm A').hour() > $moment().subtract(8, 'h').hour())
+            ($moment(value[6], 'h:mm A').isBefore($moment()))
+            &&
+            ($moment(value[7], 'h:mm A').isAfter($moment()))
            ) {
           this.push(itemTemp);
         }
@@ -268,6 +268,10 @@ app.controller('MainCtrl', function(campusService, buildingService, roomService,
       }
     }
     return false;
+  };
+
+  $scope.setActiveRoom = function(room) {
+    $scope.activeRoomNumber = room;
   };
 
 });

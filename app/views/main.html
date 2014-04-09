@@ -46,17 +46,19 @@
   </div>
 
   <div id="imageBlock" ng-show="showImageView" class="col-lg-8 center-block">
-    <svg id="{{activeBuilding.BuildingCode}}-{{activeFloor.Id}}" class="center-block" width="650" height="650" xmlns="http://www.w3.org/2000/svg">
+    <svg id="{{activeBuilding.BuildingCode}}-{{activeFloor.Id}}" class="center-block" width="650" height="650" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <g>
         <g  ng-repeat="m in activeFloor.Map">
+          
+          <a xlink:href="#" data-toggle="modal" data-target="#myModal" target="_top">
+            <rect ng-if="m.Shape" ng:class="{true:'shape active', false:'shape'}[isActiveClass(m.Shape.Room)]" ng-attr-id="{{m.Shape.Room}}" ng-attr-x="{{m.Shape.X}}" ng-attr-y="{{m.Shape.Y}}" ng-attr-width="{{m.Shape.W}}" ng-attr-height="{{m.Shape.H}}" />
 
-          <rect ng-if="m.Shape" ng:class="{true:'shape active', false:'shape'}[isActiveClass(m.Shape.Room)]" ng-attr-id="{{m.Shape.Room}}" ng-attr-x="{{m.Shape.X}}" ng-attr-y="{{m.Shape.Y}}" ng-attr-width="{{m.Shape.W}}" ng-attr-height="{{m.Shape.H}}" />
+            <path ng-if="m.Path" class="shape" ng-attr-id="{{m.Path.Id}}" ng-attr-d="{{m.Path.D}}" ng-attr-stroke-width="{{m.Path.StrokeWidth}}" ng-attr-transform="{{m.Path.Transform}}" />
 
-          <path ng-if="m.Path" class="shape" ng-attr-id="{{m.Path.Id}}" ng-attr-d="{{m.Path.D}}" ng-attr-stroke-width="{{m.Path.StrokeWidth}}" ng-attr-transform="{{m.Path.Transform}}" />
+            <line ng-if="m.Line" class="shape" ng-attr-id="{{m.Line.Id}}" ng-attr-x1="{{m.Line.X1}}" ng-attr-y1="{{m.Line.Y1}}" ng-attr-x2="{{m.Line.X2}}" ng-attr-y2="{{m.Line.Y2}}" ng-attr-stroke="{{m.Line.Stroke}}" ng-attr-stroke-width="{{m.Line.StrokeWidth}}" />
 
-          <line ng-if="m.Line" class="shape" ng-attr-id="{{m.Line.Id}}" ng-attr-x1="{{m.Line.X1}}" ng-attr-y1="{{m.Line.Y1}}" ng-attr-x2="{{m.Line.X2}}" ng-attr-y2="{{m.Line.Y2}}" ng-attr-stroke="{{m.Line.Stroke}}" ng-attr-stroke-width="{{m.Line.StrokeWidth}}" />
-
-          <text ng-if="m.Text" x="{{m.Text.X}}" y="{{m.Text.Y}}" font-family="Verdana" font-size="{{m.Text.FontSize}}" text-anchor="start" ng-attr-stroke="{{m.Text.Stroke}}" ng-attr-stroke-width="{{m.Text.StrokeWidth}}" ng-attr-fill="{{m.Text.Fill}}" ng-attr-text-anchor="{{m.Text.TextAnchor}}" ng-attr-transform="{{m.Text.Transform}}">{{m.Text.Text}}</text>
+            <text ng-if="m.Text" x="{{m.Text.X}}" y="{{m.Text.Y}}" font-family="Verdana" font-size="{{m.Text.FontSize}}" text-anchor="start" ng-attr-stroke="{{m.Text.Stroke}}" ng-attr-stroke-width="{{m.Text.StrokeWidth}}" ng-attr-fill="{{m.Text.Fill}}" ng-attr-text-anchor="{{m.Text.TextAnchor}}" ng-attr-transform="{{m.Text.Transform}}">{{m.Text.Text}}</text>
+          </a>
 
         </g>
       </g>
@@ -81,7 +83,10 @@
                 {{s.building_code}}
               </td>
               <td data-title="'Room'" filter="{ 'room_name': 'text' }" sortable="'room_name'">
-                {{s.room_name}}
+                {{s.room_name}}  
+                <button ng-click="setActiveRoom(s.room_name)" class="btn btn-info btn-sm pull-right" data-toggle="modal" data-target="#roomModal">
+                  <span class="glyphicon glyphicon-eye-open"></span>
+                </button>
               </td>
               <td data-title="'Start Time'" filter="{ 'start_minute': 'text' }" sortable="'start_minute'">
                 {{s.start_minute}}
@@ -100,3 +105,24 @@
 <div class="row">
   <div class="footer"></div>
 </div>
+
+<div id="roomModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Room Details</h4>
+      </div>
+      <div class="modal-body">
+        <ul data-ng-repeat="a in roomObjects.data | filter:activeBuilding.Id | filter:activeRoomNumber">
+          <li><strong>Room Number: </strong>{{a.BuildingRoomNumber}}</li>
+          <li><strong>Description: </strong>{{a.Description}}</li>
+          <li><strong>Max Occupancy: </strong>{{a.MaxOccupancy}}</li>
+          <li><strong>Square Footage: </strong>{{a.SquareFootage}}</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
