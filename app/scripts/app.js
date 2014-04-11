@@ -4,9 +4,12 @@ angular.module('cis264App', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'ngTable',
+  'angular-momentjs',
+  'angularMoment'
 ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $httpProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -15,4 +18,6 @@ angular.module('cis264App', [
       .otherwise({
         redirectTo: '/'
       });
+    $httpProvider.defaults.useXDomain = true;
+    delete $httpProvider.defaults.headers.common['X-Requested-With'];
   });

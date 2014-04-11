@@ -1,12 +1,17 @@
 {
   "name": "cis264",
   "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cameron-C-Chapman/cis264roomutilization.git"
+  },
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-autoprefixer": "~0.4.0",
     "grunt-bower-install": "~0.7.0",
     "grunt-concurrent": "~0.4.1",
+    "grunt-connect-proxy": "~0.1.8",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-coffee": "~0.7.0",
     "grunt-contrib-compass": "~0.6.0",

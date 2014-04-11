@@ -1,36 +1,128 @@
-<div class="header">
-  <ul class="nav nav-pills pull-right">
-    <li class="active"><a ng-href="#">Home</a></li>
-    <li><a ng-href="#">About</a></li>
-    <li><a ng-href="#">Contact</a></li>
-  </ul>
-  <h3 class="text-muted">cis264</h3>
+<div class="row col-lg-12 col-md-12 col-sm-12">
+
+  <div class="header col-lg-10 col-lg-offset-1">
+    <ul class="nav nav-pills pull-right">
+      <li id="imageViewToggleButton"><a ng-click="toggleView()"><span class="glyphicon glyphicon-picture"></span></a></li>
+      <li id="scheduleViewToggleButton"><a ng-click="toggleView()"><span class="glyphicon glyphicon-th-list"></span></a></li>
+      <li><a ng-href="#"><span class="glyphicon glyphicon-book"></span></a></li>
+    </ul>
+    
+    <div><img src="images/logo.png" alt="logo.png" /></div>
+  </div>
+
+  <div class="col-lg-3 col-lg-offset-1 well">
+
+    <div>
+      <label>Choose Campus</label>
+      <select class="form-control" 
+        data-ng-model="activeCampus" 
+        data-ng-options="c.Description for c in campusObjects.data">
+      </select>
+    </div>
+
+    &nbsp;&nbsp;
+
+    <div data-ng-show="activeCampus.Id">
+      <label>Choose Building</label>
+      <select class="form-control" 
+        data-ng-model="activeBuilding" 
+        data-ng-options="b.Description for b in buildingObjects.data | orderBy:'Description' | filter:activeCampus.Id"
+        data-ng-change="getBuildingData(activeBuilding)">
+      </select>
+    </div>
+
+    &nbsp;&nbsp;
+
+    <div data-ng-show="activeBuildingFloorObjects">
+      <label>Choose Floor</label>
+      <select class="form-control"
+        data-ng-model="activeFloor"
+        data-ng-options="f.Description for f in activeBuildingFloorObjects.Floors">
+      </select>
+      &nbsp;&nbsp;
+      <div class="alert alert-success"><strong>Schedule loaded for {{ lastLoadTime | amDateFormat:'MMMM Do, YYYY' }} <em><span am-time-ago="lastLoadTime"></span></em>.</strong></div>
+    </div>
+    
+  </div>
+
+  <div id="imageBlock" ng-show="showImageView" class="col-lg-8 center-block">
+    <svg id="{{activeBuilding.BuildingCode}}-{{activeFloor.Id}}" class="center-block" width="650" height="650" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <g>
+        <g  ng-repeat="m in activeFloor.Map">
+          
+          <a xlink:href="#" data-toggle="modal" data-target="#myModal" target="_top">
+            <rect ng-if="m.Shape" ng:class="{true:'shape active', false:'shape'}[isActiveClass(m.Shape.Room)]" ng-attr-id="{{m.Shape.Room}}" ng-attr-x="{{m.Shape.X}}" ng-attr-y="{{m.Shape.Y}}" ng-attr-width="{{m.Shape.W}}" ng-attr-height="{{m.Shape.H}}" />
+
+            <path ng-if="m.Path" class="shape" ng-attr-id="{{m.Path.Id}}" ng-attr-d="{{m.Path.D}}" ng-attr-stroke-width="{{m.Path.StrokeWidth}}" ng-attr-transform="{{m.Path.Transform}}" />
+
+            <line ng-if="m.Line" class="shape" ng-attr-id="{{m.Line.Id}}" ng-attr-x1="{{m.Line.X1}}" ng-attr-y1="{{m.Line.Y1}}" ng-attr-x2="{{m.Line.X2}}" ng-attr-y2="{{m.Line.Y2}}" ng-attr-stroke="{{m.Line.Stroke}}" ng-attr-stroke-width="{{m.Line.StrokeWidth}}" />
+
+            <text ng-if="m.Text" x="{{m.Text.X}}" y="{{m.Text.Y}}" font-family="Verdana" font-size="{{m.Text.FontSize}}" text-anchor="start" ng-attr-stroke="{{m.Text.Stroke}}" ng-attr-stroke-width="{{m.Text.StrokeWidth}}" ng-attr-fill="{{m.Text.Fill}}" ng-attr-text-anchor="{{m.Text.TextAnchor}}" ng-attr-transform="{{m.Text.Transform}}">{{m.Text.Text}}</text>
+          </a>
+
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <div id="tableBlock" ng-show="showTableView" class="col-lg-8 center-block">
+
+    <div class="col-lg-12">
+
+      <span class="label label-primary">Page: {{tableParams.page()}}</span>
+      <span class="label label-primary">Count per page: {{tableParams.count()}}</span>
+
+      <div>
+        <table class="table-striped table-bordered table-responsive" data-ng-table="tableParams" show-filter="true">
+          <tbody>
+            <tr data-ng-repeat="s in $data">
+              <td data-title="'Activity Name'" filter="{ 'activity_name': 'text' }" sortable="'activity_name'">
+                {{s.activity_name}}
+              </td>
+              <td data-title="'Building'" filter="{ 'building_code': 'text' }" sortable="'building_code'">
+                {{s.building_code}}
+              </td>
+              <td data-title="'Room'" filter="{ 'room_name': 'text' }" sortable="'room_name'">
+                {{s.room_name}}  
+                <button ng-click="setActiveRoom(s.room_name)" class="btn btn-info btn-sm pull-right" data-toggle="modal" data-target="#roomModal">
+                  <span class="glyphicon glyphicon-eye-open"></span>
+                </button>
+              </td>
+              <td data-title="'Start Time'" filter="{ 'start_minute': 'text' }" sortable="'start_minute'">
+                {{s.start_minute}}
+              </td>
+              <td data-title="'End Time'" filter="{ 'end_minute': 'text' }" sortable="'end_minute'">
+                {{s.end_minute}}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+<div class="row">
+  <div class="footer"></div>
 </div>
 
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
-</div>
-
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
-
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
-</div>
-
-<div class="footer">
-  <p>♥ from the Yeoman team</p>
-</div>
+<div id="roomModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Room Details</h4>
+      </div>
+      <div class="modal-body">
+        <ul data-ng-repeat="a in roomObjects.data | filter:activeBuilding.Id | filter:activeRoomNumber">
+          <li><strong>Room Number: </strong>{{a.BuildingRoomNumber}}</li>
+          <li><strong>Description: </strong>{{a.Description}}</li>
+          <li><strong>Max Occupancy: </strong>{{a.MaxOccupancy}}</li>
+          <li><strong>Square Footage: </strong>{{a.SquareFootage}}</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

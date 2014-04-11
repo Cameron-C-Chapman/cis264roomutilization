@@ -77,3 +77,22 @@ body {
     border-bottom: 0;
   }
 }
+
+.shape {
+  fill: red;
+  opacity: 0.25;
+}
+.shape:hover {
+  fill:green;
+}
+.shape.active {
+  fill:green;
+  opacity: 0.25;
+}
+
+.success {
+  background-color: green;
+}
+.danger {
+  background-color: red;
+}

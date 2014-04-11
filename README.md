@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Cameron-C-Chapman/cis264roomutilization.svg?branch=camerondev)](https://travis-ci.org/Cameron-C-Chapman/cis264roomutilization)
+
 cis264roomutilization
 =====================
 
