@@ -122,7 +122,7 @@ app.controller('MainCtrl', function(campusService, buildingService, roomService,
 
   // activate the image view by default
   $scope.showImageView = true;
-  angular.element('#imageViewToggleButton').addClass('active');
+  //angular.element('#imageViewToggleButton').addClass('active');
 
   // initialise table view trigger to false
   $scope.showTableView = false;
@@ -158,16 +158,16 @@ app.controller('MainCtrl', function(campusService, buildingService, roomService,
     if ( $scope.showImageView )
     {
       $scope.showImageView = false;
-      angular.element('#imageViewToggleButton').removeClass('active');
+      //angular.element('#imageViewToggleButton').removeClass('active');
       $scope.showTableView = true;
-      angular.element('#scheduleViewToggleButton').addClass('active');
+      //angular.element('#scheduleViewToggleButton').addClass('active');
     }
     else
     {
       $scope.showImageView = true;
-      angular.element('#imageViewToggleButton').addClass('active');
+      //angular.element('#imageViewToggleButton').addClass('active');
       $scope.showTableView = false;
-      angular.element('#scheduleViewToggleButton').removeClass('active');
+      //angular.element('#scheduleViewToggleButton').removeClass('active');
     }
   };
 

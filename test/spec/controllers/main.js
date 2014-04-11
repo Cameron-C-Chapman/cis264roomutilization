@@ -16,7 +16,28 @@ describe('Controller: MainCtrl', function () {
     });
   }));
 
-  it('errorState = false', function () {
+  it('MainCtrl should not be null', function () {
+    expect(MainCtrl).not.toBe(null);
+  });
+
+  it('scope should not be null', function () {
+    expect(scope).not.toBe(null);
+  });
+
+  it('scope.errorState should not be null', function () {
+    expect(scope.errorState).not.toBe(null);
+  });
+
+  it('scope.errorState should be initiated to false', function () {
     expect(scope.errorState).toBe(false);
   });
+
+  it('scope.showImageView should not be null', function () {
+    expect(scope.showImageView).not.toBe(null);
+  });
+
+  it('scope.showImageView should be initiated to true', function () {
+    expect(scope.showImageView).toBe(true);
+  });
+
 });

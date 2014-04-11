@@ -178,10 +178,6 @@ module.exports = function (grunt) {
       }
     },
 
-
-
-
-
     // Renames files for browser caching purposes
     rev: {
       dist: {
@@ -350,11 +346,15 @@ module.exports = function (grunt) {
     karma: {
       unit: {
         configFile: 'karma.conf.js',
-        singleRun: true
+      },
+      //continuous integration mode: run tests once in PhantomJS browser.
+      continuous: {
+        configFile: 'karma.conf.js',
+        singleRun: true,
+        browsers: ['Firefox']
       }
     }
   });
-
 
   grunt.registerTask('serve', function (target) {
     if (target === 'dist') {
