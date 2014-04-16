@@ -3,6 +3,37 @@
 var app = angular.module('cis264App');
 
 /**
+ * Login to api and store session cookie.
+ */
+app.factory('loginService', function($http, $q) {
+    var deffered = $q.defer();
+    var data = [];
+    var loginService = {};
+
+    loginService.async = function() {
+        $http.post(apiBasePath + "Logon.ashx", "{'username':'cchapman','password':'ripken84'}")
+            .success(function (d, s, h) {
+                data = d;
+                //console.log(d);
+                console.log('Logon Headers:');
+                console.log(h('cookie'));
+                deffered.resolve();
+            })
+            .error(function(data, status, header) {
+                //data = d;
+                console.log('Logon Error:');
+                console.log(data);
+                console.log(status);
+                console.log(header);
+            });
+        return deffered.promise;
+    };
+    loginService.data = function() { return data; };
+
+    return loginService;
+});
+
+/**
  * Service to init campus object from api call.
  * The real api call should be: https://asapp01.aaiscloud.com:443/JCCC_Test/~api/entity/campus
  */
@@ -102,7 +133,7 @@ app.factory('scheduleService', function($http, $q) {
   var scheduleService = {};
 
   scheduleService.async = function() {
-    $http.get('data/schedule-20140408.json')
+    $http.get('data/schedule-20140416.json')
     .success(function (d) {
       data = d;
       //console.log(d);
@@ -115,7 +146,9 @@ app.factory('scheduleService', function($http, $q) {
   return scheduleService;
 });
 
-app.controller('MainCtrl', function(campusService, buildingService, roomService, floorService, scheduleService, ngTableParams, $scope, $http, $filter, $moment) {
+app.controller('MainCtrl', function(loginService, campusService, buildingService, roomService, floorService, scheduleService, Restangular, ngTableParams, $scope, $http, $cookies, $filter, $moment) {
+
+  //var apiBasePath = 'https://asapp01.aaiscloud.com:443/JCCC_Test/';
 
   // global error state flag
   $scope.errorState = false;
@@ -129,6 +162,24 @@ app.controller('MainCtrl', function(campusService, buildingService, roomService,
 
   // api host base url
   //var apiBaseUrl = 'https://asapp01.aaiscloud.com/JCCC_Test/~api/';
+
+  //loginService.async().then(function() {
+  //  $scope.loginStatus = loginService.data();
+  //});
+    /*
+    $http({method: "POST", url: apiBasePath + "Logon.ashx", data: "{'username':'cchapman','password':'ripken84'}"}).
+        success(function(data, status) {
+            $scope.status = status;
+            $scope.data = data;
+            console.log('Success: ' + status);
+        }).
+        error(function(data, status, header) {
+            $scope.data = data || "Request failed";
+            $scope.status = status;
+            console.log('Error: ' + header);
+        }
+    );
+    */
 
   // init the campus service
   campusService.async().then(function() {
@@ -274,4 +325,78 @@ app.controller('MainCtrl', function(campusService, buildingService, roomService,
     $scope.activeRoomNumber = room;
   };
 
+});
+
+
+app.controller('DatepickerDemoCtrl', function ($scope) {
+    $scope.today = function() {
+        $scope.dt = new Date();
+    };
+    $scope.today();
+
+    $scope.showWeeks = true;
+    $scope.toggleWeeks = function () {
+        $scope.showWeeks = ! $scope.showWeeks;
+    };
+
+    $scope.clear = function () {
+        $scope.dt = null;
+    };
+
+    // Disable weekend selection
+    $scope.disabled = function(date, mode) {
+        return ( mode === 'day' && ( date.getDay() === 0 || date.getDay() === 6 ) );
+    };
+
+    $scope.toggleMin = function() {
+        $scope.minDate = ( $scope.minDate ) ? null : new Date();
+    };
+    $scope.toggleMin();
+
+    $scope.open = function($event) {
+        $event.preventDefault();
+        $event.stopPropagation();
+
+        $scope.opened = true;
+    };
+
+    $scope.dateOptions = {
+        'year-format': "'yy'",
+        'starting-day': 1
+    };
+
+    $scope.formats = ['dd-MMMM-yyyy', 'yyyy/MM/dd', 'shortDate'];
+    $scope.format = $scope.formats[0];
+});
+
+app.controller('TimepickerDemoCtrl', function ($scope) {
+    $scope.mytime = new Date();
+
+    $scope.hstep = 1;
+    $scope.mstep = 15;
+
+    $scope.options = {
+        hstep: [1, 2, 3],
+        mstep: [1, 5, 10, 15, 25, 30]
+    };
+
+    $scope.ismeridian = true;
+    $scope.toggleMode = function() {
+        $scope.ismeridian = ! $scope.ismeridian;
+    };
+
+    $scope.update = function() {
+        var d = new Date();
+        d.setHours( 14 );
+        d.setMinutes( 0 );
+        $scope.mytime = d;
+    };
+
+    $scope.changed = function () {
+        console.log('Time changed to: ' + $scope.mytime);
+    };
+
+    $scope.clear = function() {
+        $scope.mytime = null;
+    };
 });

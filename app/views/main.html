@@ -42,7 +42,31 @@
       &nbsp;&nbsp;
       <div class="alert alert-success"><strong>Schedule loaded for {{ lastLoadTime | amDateFormat:'MMMM Do, YYYY' }} <em><span am-time-ago="lastLoadTime"></span></em>.</strong></div>
     </div>
-    
+
+      <div ng-controller="DatepickerDemoCtrl">
+          <label>Change Date</label>
+
+          <div style="display:inline-block; min-height:290px;">
+              <div class="well well-sm" ng-model="dt">
+                  <datepicker min="minDate" show-weeks="showWeeks"></datepicker>
+              </div>
+          </div>
+
+          <pre>Selected date is: <em>{{dt | date:'fullDate' }}</em></pre>
+
+      </div>
+
+      <label>Change Time</label>
+      <div ng-controller="TimepickerDemoCtrl">
+
+          <div ng-model="mytime" ng-change="changed()" style="display:inline-block;">
+              <timepicker hour-step="hstep" minute-step="mstep" show-meridian="ismeridian"></timepicker>
+          </div>
+
+          <pre class="alert alert-info">Time is: {{mytime | date:'shortTime' }}</pre>
+
+      </div>
+
   </div>
 
   <div id="imageBlock" ng-show="showImageView" class="col-lg-8 center-block">
@@ -50,7 +74,7 @@
       <g>
         <g  ng-repeat="m in activeFloor.Map">
           
-          <a xlink:href="#" data-toggle="modal" data-target="#myModal" target="_top">
+          <a xlink:href="#" data-toggle="modal" data-target="#roomModal" target="_top">
             <rect ng-if="m.Shape" ng:class="{true:'shape active', false:'shape'}[isActiveClass(m.Shape.Room)]" ng-attr-id="{{m.Shape.Room}}" ng-attr-x="{{m.Shape.X}}" ng-attr-y="{{m.Shape.Y}}" ng-attr-width="{{m.Shape.W}}" ng-attr-height="{{m.Shape.H}}" />
 
             <path ng-if="m.Path" class="shape" ng-attr-id="{{m.Path.Id}}" ng-attr-d="{{m.Path.D}}" ng-attr-stroke-width="{{m.Path.StrokeWidth}}" ng-attr-transform="{{m.Path.Transform}}" />
