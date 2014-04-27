@@ -1,0 +1,3 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/var/www/cis264/api/conf/application.conf,/var/www/cis264/api/target/scala-2.10/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/var/www/cis264/api/conf/routes,/var/www/cis264/api/target/scala-2.10/classes/routes)[0m

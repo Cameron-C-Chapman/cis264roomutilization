@@ -24,6 +24,8 @@ module.exports = function(config) {
       'app/bower_components/json3/lib/json3.js',
       'app/bower_components/bootstrap/dist/js/bootstrap.js',
       'app/bower_components/ng-table/ng-table.js',
+      'app/bower_components/angular-bootstrap/ui-bootstrap.min.js',
+      'app/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
       'app/scripts/app.js',
       'app/scripts/controllers/main.js',
       //'test/mock/**/*.js',
