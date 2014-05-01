@@ -138,6 +138,7 @@ app.controller('MainCtrl', function (campusService, buildingService, roomService
 
     // init the default services
     // init the campus service
+    $('#loadingModal').modal('show');
     campusService.async().then(function () {
         $scope.campusObjects = campusService.data();
 
@@ -152,6 +153,7 @@ app.controller('MainCtrl', function (campusService, buildingService, roomService
                 // init the floor service
                 floorService.async().then(function () {
                     $scope.floorObjects = floorService.data();
+                    $('#loadingModal').modal('hide');
                 });
             });
         });

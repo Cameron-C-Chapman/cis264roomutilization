@@ -7,7 +7,8 @@ angular.module('cis264App', [
   'ngTable',
   'angular-momentjs',
   'angularMoment',
-  'ui.bootstrap'
+  'ui.bootstrap',
+  'angularSpinner'
 ])
   .config(function ($routeProvider, $httpProvider) {
     $routeProvider
