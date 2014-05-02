@@ -2,6 +2,7 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  background-image:url(../images/background.png); background-repeat:repeat
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -101,5 +102,9 @@ body {
 /** loading modal **/
 .pad-all-25 {
   padding: 25px;
+}
+
+.pad-all-35 {
+  padding: 35px;
 }
 /*******************/

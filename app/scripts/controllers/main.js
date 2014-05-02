@@ -14,7 +14,6 @@ app.factory('campusService', function ($http, $q) {
         $http.get('http://localhost:9000/campuses')
             .success(function (d) {
                 data = d;
-                console.log(d);
                 deffered.resolve();
             });
         return deffered.promise;
@@ -38,7 +37,6 @@ app.factory('buildingService', function ($http, $q) {
         $http.get('http://localhost:9000/buildings')
             .success(function (d) {
                 data = d;
-                //console.log(d);
                 deffered.resolve();
             });
         return deffered.promise;
@@ -62,7 +60,6 @@ app.factory('roomService', function ($http, $q) {
         $http.get('http://localhost:9000/rooms')
             .success(function (d) {
                 data = d;
-                console.log(d);
                 deffered.resolve();
             });
         return deffered.promise;
@@ -86,7 +83,6 @@ app.factory('floorService', function ($http, $q) {
         $http.get('data/floor.json')
             .success(function (d) {
                 data = d;
-                console.log(d);
                 deffered.resolve();
             });
         return deffered.promise;
@@ -127,7 +123,7 @@ app.controller('MainCtrl', function (campusService, buildingService, roomService
     $scope.errorState = false;
 
     // login results
-    $scope.loginSuccess = false;
+    //$scope.loginSuccess = false;
 
     // activate the image view by default
     $scope.showImageView = true;
@@ -136,19 +132,25 @@ app.controller('MainCtrl', function (campusService, buildingService, roomService
     // initialise table view trigger to false
     $scope.showTableView = false;
 
+    //
+    $scope.currentlyLoading = 'Campus Objects';
+
     // init the default services
     // init the campus service
     $('#loadingModal').modal('show');
     campusService.async().then(function () {
         $scope.campusObjects = campusService.data();
+        $scope.currentlyLoading = 'Building Objects';
 
         // init the building service
         buildingService.async().then(function () {
             $scope.buildingObjects = buildingService.data();
+            $scope.currentlyLoading = 'Room Objects';
 
             // init the room service
             roomService.async().then(function () {
                 $scope.roomObjects = roomService.data();
+                $scope.currentlyLoading = 'Floor Objects';
 
                 // init the floor service
                 floorService.async().then(function () {
@@ -158,6 +160,11 @@ app.controller('MainCtrl', function (campusService, buildingService, roomService
             });
         });
     });
+
+
+
+
+
 
 
     /**
@@ -179,6 +186,11 @@ app.controller('MainCtrl', function (campusService, buildingService, roomService
      * Assign the available floors once a building has been selected.
      */
     $scope.getBuildingData = function (activeBuilding) {
+
+        // trigger loading modal
+        $('#loadingModal').modal('show');
+        $scope.currentlyLoading = 'Schedule Object';
+
         $scope.activeBuildingFloorObjects = [];// reset floorsObject
 
         // store the current activeBuilding
@@ -266,6 +278,12 @@ app.controller('MainCtrl', function (campusService, buildingService, roomService
                     $defer.resolve(orderedData.slice((params.page() - 1) * params.count(), params.page() * params.count()));
                 }
             });
+
+            // hide loading modal and log success message
+            alertify.success('All data successfully loaded.');
+            $scope.showScheduleLoadTime = true;
+            $('#loadingModal').modal('hide');
+
         });
 
         // set schedule load time
@@ -283,8 +301,27 @@ app.controller('MainCtrl', function (campusService, buildingService, roomService
         return false;
     };
 
-    $scope.setActiveRoom = function (room) {
-        $scope.activeRoomNumber = room;
+    $scope.setActiveRoomFromTable = function (buildingCode, roomName) {
+        $scope.activeRoomName = buildingCode + ' ' + roomName;
+    };
+
+    $scope.setActiveRoomFromMap = function(buildingCode, room, text) {
+
+        $scope.activeRoomName = false;
+
+        if (typeof room != 'undefined')
+        {
+            $scope.activeRoomName = buildingCode + ' ' + room;
+        }
+        else if (typeof text != 'undefined')
+        {
+            $scope.activeRoomName = buildingCode + ' ' + text;
+        }
+
+        if ( ($scope.activeRoomName == false) )
+        {
+            alertify.error('Room not properly mapped in the SVG file!');
+        }
     };
 
 });

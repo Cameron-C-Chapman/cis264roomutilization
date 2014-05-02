@@ -45,15 +45,21 @@
         <div class="col-lg-3"><img class="img-responsive" src="images/logo.png" alt="logo.png"/></div>
     </div>
 
-
     <div class="col-lg-3 col-lg-offset-1 well well-sm">
+
+        <div ng-controller="MainCtrl" data-ng-show="showScheduleLoadTime" class="alert alert-info">
+            <strong>Schedule Loaded: <em><span am-time-ago="lastLoadTime"></span></em></strong>
+        </div>
+
         <div ng-controller="TimepickerDemoCtrl">
             <pre>Data Time: <em>{{mytime | date:'shortTime' }}</em></pre>
             <div ng-model="mytime" ng-change="changed()" style="display:inline-block;">
                 <timepicker hour-step="hstep" minute-step="mstep" show-meridian="ismeridian"></timepicker>
             </div>
         </div>
+
         &nbsp;
+
         <div ng-controller="DatepickerDemoCtrl">
             <div>
                 <div ng-model="dt">
@@ -62,6 +68,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 
     <div class="col-lg-8 well well-sm">
@@ -91,20 +98,16 @@
         </form>
     </div>
 
-    <div ng-controller="MainCtrl" class="col-lg-3 well well-sm">
-        <pre>Schedule Loaded: <em><span am-time-ago="lastLoadTime"></span></em></pre>
-    </div>
-
-    <div id="imageBlock" ng-show="showImageView" class="col-lg-8 center-block">
+    <div id="imageBlock" ng-show="showImageView" class="col-lg-8">
         <svg id="{{activeBuilding.BuildingCode}}-{{activeFloor.Id}}" class="center-block" width="650" height="650"
              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g>
-                <g ng-repeat="m in activeFloor.Map">
+                <g data-ng-click="setActiveRoomFromMap(activeBuilding.BuildingCode, m.Rect.Room, m.Text.Text)" ng-repeat="m in activeFloor.Map">
                     <a xlink:href="#" data-toggle="modal" data-target="#roomModal" target="_top">
-                        <rect ng-if="m.Shape"
-                              ng:class="{true:'shape active', false:'shape'}[isActiveClass(m.Shape.Room)]"
-                              ng-attr-id="{{m.Shape.Room}}" ng-attr-x="{{m.Shape.X}}" ng-attr-y="{{m.Shape.Y}}"
-                              ng-attr-width="{{m.Shape.W}}" ng-attr-height="{{m.Shape.H}}"/>
+                        <rect ng-if="m.Rect"
+                              ng:class="{true:'shape active', false:'shape'}[isActiveClass(m.Rect.Room)]"
+                              ng-attr-id="{{m.Rect.Room}}" ng-attr-x="{{m.Rect.X}}" ng-attr-y="{{m.Rect.Y}}"
+                              ng-attr-width="{{m.Rect.W}}" ng-attr-height="{{m.Rect.H}}"/>
 
                         <path ng-if="m.Path" class="shape" ng-attr-id="{{m.Path.Id}}" ng-attr-d="{{m.Path.D}}"
                               ng-attr-stroke-width="{{m.Path.StrokeWidth}}" ng-attr-transform="{{m.Path.Transform}}"/>
@@ -146,7 +149,7 @@
                         </td>
                         <td data-title="'Room'" filter="{ 'room_name': 'text' }" sortable="'room_name'">
                             {{s.room_name}}
-                            <button ng-click="setActiveRoom(s.room_name)" class="btn btn-info btn-sm pull-right"
+                            <button ng-click="setActiveRoomFromTable(s.building_code, s.room_name)" class="btn btn-info btn-sm pull-right"
                                     data-toggle="modal" data-target="#roomModal">
                                 <span class="glyphicon glyphicon-eye-open"></span>
                             </button>
@@ -179,12 +182,18 @@
                     <h4 class="modal-title">Room Details</h4>
                 </div>
                 <div class="modal-body">
-                    <ul data-ng-repeat="a in roomObjects.data | filter:activeBuilding.Id | filter:activeRoomNumber">
-                        <li><strong>Room Number: </strong>{{a.BuildingRoomNumber}}</li>
-                        <li><strong>Description: </strong>{{a.Description}}</li>
-                        <li><strong>Max Occupancy: </strong>{{a.MaxOccupancy}}</li>
-                        <li><strong>Square Footage: </strong>{{a.SquareFootage}}</li>
-                    </ul>
+                    <div data-ng-repeat="a in roomObjects.data">
+                        <ul ng-if="((a.BuildingRoomNumber == activeRoomName) && (a.BuildingId == activeBuilding.Id))">
+                            <li><strong>Location Id: </strong>{{a.Id}}</li>
+                            <li><strong>Room Number: </strong>{{a.BuildingRoomNumber}}</li>
+                            <li><strong>Description: </strong>{{a.Description}}</li>
+                            <li><strong>Max Occupancy: </strong>{{a.MaxOccupancy}}</li>
+                            <li><strong>Square Footage: </strong>{{a.SquareFootage}}</li>
+                            <li><strong>HVAC Zone Id: </strong>{{a.HvacZoneId}}</li>
+                            <li><strong>Requires Attention: </strong>{{a.RequiresAttention}}</li>
+                            <li><strong>Requires Attention Reason: </strong>{{a.RequiresAttentionReason}}</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="modal-footer"></div>
             </div>
@@ -198,9 +207,9 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Loading</h4>
+                    <h4 class="modal-title">Loading {{currentlyLoading}}</h4>
                 </div>
-                <div class="modal-body pad-all-25">
+                <div class="modal-body pad-all-35">
                     <span us-spinner></span>
                 </div>
                 <div class="modal-footer"></div>
