@@ -11,7 +11,7 @@ app.factory('campusService', function ($http, $q) {
     var campusService = {};
 
     campusService.async = function () {
-        $http.get('http://localhost:9000/campuses')
+        $http.get('http://127.0.0.1:9000/campuses')
             .success(function (d) {
                 data = d;
                 deffered.resolve();
@@ -34,7 +34,7 @@ app.factory('buildingService', function ($http, $q) {
     var buildingService = {};
 
     buildingService.async = function () {
-        $http.get('http://localhost:9000/buildings')
+        $http.get('http://127.0.0.1:9000/buildings')
             .success(function (d) {
                 data = d;
                 deffered.resolve();
@@ -57,7 +57,7 @@ app.factory('roomService', function ($http, $q) {
     var roomService = {};
 
     roomService.async = function () {
-        $http.get('http://localhost:9000/rooms')
+        $http.get('http://127.0.0.1:9000/rooms')
             .success(function (d) {
                 data = d;
                 deffered.resolve();
@@ -103,7 +103,7 @@ app.factory('scheduleService', function ($http, $q) {
     var scheduleService = {};
 
     scheduleService.async = function (campus, date) {
-        $http.get('http://localhost:9000/schedule/campus/'+campus+'/'+date)
+        $http.get('http://127.0.0.1:9000/schedule/campus/'+campus+'/'+date)
             .success(function (d) {
                 data = d;
                 deffered.resolve();
