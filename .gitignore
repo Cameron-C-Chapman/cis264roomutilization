@@ -3,3 +3,9 @@ dist
 .tmp
 .sass-cache
 app/bower_components
+.idea
+api/.idea
+api/project/target
+api/target
+api/logs
+*.iml
