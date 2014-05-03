@@ -1,13 +1,14 @@
 'use strict';
 
 angular.module('cis264App', [
-  'ngCookies',
   'ngResource',
   'ngSanitize',
   'ngRoute',
   'ngTable',
   'angular-momentjs',
-  'angularMoment'
+  'angularMoment',
+  'ui.bootstrap',
+  'angularSpinner'
 ])
   .config(function ($routeProvider, $httpProvider) {
     $routeProvider

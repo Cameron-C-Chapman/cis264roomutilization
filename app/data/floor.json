@@ -11,1476 +11,3543 @@
                     "Id": 1,
                     "Description": "First Floor",
                     "Map": [
-                        {
-                            "Shape": {
-                                "Room": "140",
-                                "H": "52",
-                                "W": "77",
-                                "Y": "265",
-                                "X": "58",
-                                "StrokeWidth": "5",
-                                "Stroke": "#000000",
-                                "Fill": "#FF0000"
-                            }
-                        }, {
-                            "Text": {
-                                "Fill": "#000000",
-                                "Stroke": "#000000",
-                                "Transform": "matrix(0.755694 0 0 0.647391 21.4028 102.033)",
-                                "FontWeight": "bold",
-                                "TextAnchor": "middle",
-                                "FontFamily": "serif",
-                                "FontSize": "18",
-                                "Id": "svg_37",
-                                "Y": "297.24409",
-                                "X": "95.66929",
-                                "StrokeWidth": "0",
-                                "Fill": "#000000",
-                                "Text": "140"
-                            }
-                        }, {
-                            "Shape": {
-                                "Room": "138",
-                                "H": "52",
-                                "W": "79",
-                                "Y": "265",
-                                "X": "139",
-                                "StrokeWidth": "5",
-                                "Stroke": "#000000",
-                                "Fill": "#FF0000"
-                            }
-                        }, {
-                            "Text": {
-                                "Fill": "#000000",
-                                "Stroke": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "174",
-                                "Y": "297",
-                                "Id": "svg_7",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Text": "138"
-                            }
-                        }, {
-                            "Shape": {
-                                "Room": "112",
-                                "H": "38.58268",
-                                "W": "50.94487",
-                                "Y": "347.6378",
-                                "X": "219.52757",
-                                "StrokeWidth": "5",
-                                "Fill": "#FF0000",
-                                "Stroke": "#000000"
-                            }
-                        }, {
-                            "Text": {
-                                "FontWeight": "bold",
-                                "Fill": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "232.11932",
-                                "Y": "372",
-                                "Id": "svg_30",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Transform": "matrix(0.634463 0 0 1 97.228 0)",
-                                "Stroke": "#000000",
-                                "Text": "112"
-                            }
-                        }, {
-                            "Shape": {
-                                "Room": "117",
-                                "H": "84.25197",
-                                "W": "51.1811",
-                                "Y": "475.19685",
-                                "X": "300.3937",
-                                "StrokeWidth": "5",
-                                "Stroke": "#000000",
-                                "Fill": "#FF0000"
-                            }
-                        }, {
-                            "Text": {
-                                "Fill": "#000000",
-                                "Stroke": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "328",
-                                "Y": "518",
-                                "Id": "svg_8",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Text": "117"
-                            }
-                        }, {
-                            "Shape": {
-                                "Room": "115",
-                                "H": "72.44094",
-                                "W": "51.1811",
-                                "Y": "401.1811",
-                                "X": "300.3937",
-                                "StrokeWidth": "5",
-                                "Stroke": "#000000",
-                                "Fill": "#FF0000"
-                            }
-                        }, {
-                            "Text": {
-                                "Fill": "#000000",
-                                "Stroke": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "324",
-                                "Y": "442",
-                                "Id": "svg_9",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Text": "115"
-                            }
-                        }, {
-                            "Shape": {
-                                "Room": "165",
-                                "H": "104.72441",
-                                "W": "107.08661",
-                                "Y": "76.77165",
-                                "X": "353.14961",
-                                "StrokeWidth": "5",
-                                "Stroke": "#000000",
-                                "Fill": "#FF0000"
-                            }
-                        }, {
-                            "Text": {
-                                "Fill": "#000000",
-                                "Stroke": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "404",
-                                "Y": "135",
-                                "Id": "svg_2",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Text": "165"
-                            }
-                        }, {
-                            "Shape": {
-                                "Room": "157",
-                                "H": "104.72441",
-                                "W": "105.51181",
-                                "Y": "76.77165",
-                                "X": "461.02362",
-                                "StrokeWidth": "5",
-                                "Stroke": "#000000",
-                                "Fill": "#FF0000"
-                            }
-                        }, {
-                            "Text": {
-                                "Fill": "#000000",
-                                "Stroke": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "511",
-                                "Y": "135",
-                                "Id": "svg_3",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Text": "157"
-                            }
-                        }, {
-                            "Shape": {
-                                "Room": "153",
-                                "H": "79.52756",
-                                "W": "103.14961",
-                                "Y": "183.07087",
-                                "X": "461.02362",
-                                "StrokeWidth": "5",
-                                "Stroke": "#000000",
-                                "Fill": "#FF0000"
-                            }
-                        }, {
-                            "Text": {
-                                "Fill": "#000000",
-                                "Stroke": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "515",
-                                "Y": "226",
-                                "Id": "svg_4",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Text": "153"
-                            }
-                        }, {
-                            "Shape": {
-                                "Room": "161",
-                                "H": "69.99213",
-                                "W": "21.25984",
-                                "Y": "201.1811",
-                                "X": "303.54331",
-                                "StrokeWidth": "5",
-                                "Fill": "#FF0000",
-                                "Stroke": "#000000"
-                            }
-                        }, {
-                            "Text": {
-                                "FontWeight": "bold",
-                                "Fill": "#000000",
-                                "Stroke": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "314",
-                                "Y": "245",
-                                "Id": "svg_31",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Transform": "rotate(-90.5209 314 239)",
-                                "Text": "161"
-                            }
-                        }, {
-                            "Shape": {
-                                "Room": "152",
-                                "H": "19.68504",
-                                "W": "81.10236",
-                                "Y": "294.88189",
-                                "X": "353.93701",
-                                "StrokeWidth": "5",
-                                "Stroke": "#000000",
-                                "Fill": "#FF0000"
-                            }
-                        }, {
-                            "Text": {
-                                "Fill": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "383.08696",
-                                "Y": "310",
-                                "Id": "svg_11",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Transform": "matrix(0.993827 0 0 1 9.27778 0)",
-                                "Stroke": "#000000",
-                                "Text": "152"
-                            }
-                        }, {
-                            "Shape": {
-                                "Room": "152A",
-                                "H": "27.55906",
-                                "W": "24.40945",
-                                "Y": "318.50394",
-                                "X": "382.28346",
-                                "StrokeWidth": "5",
-                                "Stroke": "#000000",
-                                "Fill": "#FF0000"
-                            }
-                        }, {
-                            "Text": {
-                                "Fill": "#000000",
-                                "Stroke": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "393",
-                                "Y": "335",
-                                "Id": "svg_14",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Text": "A"
-                            }
-                        }, {
-                            "Shape": {
-                                "Room": "152B",
-                                "H": "29.13386",
-                                "W": "22.83465",
-                                "Y": "315.35433",
-                                "X": "409.84252",
-                                "StrokeWidth": "5",
-                                "Stroke": "#000000",
-                                "Fill": "#FF0000"
-                            }
-                        }, {
-                            "Text": {
-                                "Fill": "#000000",
-                                "Stroke": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "420",
-                                "Y": "335",
-                                "Id": "svg_15",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Text": "B"
-                            }
-                        }, {
-                            "Shape": {
-                                "Room": "154F",
-                                "H": "20.83465",
-                                "W": "34.64567",
-                                "Y": "326.01575",
-                                "X": "460.23622",
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "Fill": "#FF0000"
-                            }
-                        }, {
-                            "Text": {
-                                "Fill": "#000000",
-                                "Stroke": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "477",
-                                "Y": "340",
-                                "Id": "svg_17",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Text": "F"
-                            }
-                        }, {
-                            "Shape": {
-                                "Room": "154C",
-                                "H": "21.83465",
-                                "W": "34.64567",
-                                "Y": "325.80315",
-                                "X": "496.45669",
-                                "StrokeWidth": "5",
-                                "Stroke": "#000000",
-                                "Fill": "#FF0000"
-                            }
-                        }, {
-                            "Text": {
-                                "Fill": "#000000",
-                                "Stroke": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "514",
-                                "Y": "341",
-                                "Id": "svg_20",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Text": "C"
-                            }
-                        }, {
-                            "Shape": {
-                                "Room": "154B",
-                                "H": "23.62205",
-                                "W": "33.85827",
-                                "Y": "324.80315",
-                                "X": "535.03937",
-                                "StrokeWidth": "5",
-                                "Stroke": "#000000",
-                                "Fill": "#FF0000"
-                            }
-                        }, {
-                            "Text": {
-                                "Fill": "#000000",
-                                "Stroke": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "553",
-                                "Y": "340",
-                                "Id": "svg_25",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Text": "B"
-                            }
-                        }, {
-                            "Shape": {
-                                "Room": "154A",
-                                "H": "29.13386",
-                                "W": "16.53543",
-                                "Y": "293.30709",
-                                "X": "550",
-                                "StrokeWidth": "5",
-                                "Stroke": "#000000",
-                                "Fill": "#FF0000"
-                            }
-                        }, {
-                            "Text": {
-                                "Fill": "#000000",
-                                "Stroke": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "559",
-                                "Y": "314",
-                                "Id": "svg_33",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Text": "A"
-                            }
-                        }, {
-                            "Shape": {
-                                "Room": "154D",
-                                "H": "17.32283",
-                                "W": "28.34646",
-                                "Y": "294.88189",
-                                "X": "509.05512",
-                                "StrokeWidth": "5",
-                                "Stroke": "#000000",
-                                "Fill": "#FF0000"
-                            }
-                        }, {
-                            "Text": {
-                                "Fill": "#000000",
-                                "Stroke": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "517",
-                                "Y": "306",
-                                "Id": "svg_34",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Text": "D"
-                            }
-                        }, {
-                            "Shape": {
-                                "Room": "154E",
-                                "H": "16.53543",
-                                "W": "25.98425",
-                                "Y": "295.66929",
-                                "X": "480.70866",
-                                "StrokeWidth": "5",
-                                "Stroke": "#000000",
-                                "Fill": "#FF0000"
-                            }
-                        }, {
-                            "Text": {
-                                "Fill": "#000000",
-                                "Stroke": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "489",
-                                "Y": "306",
-                                "Id": "svg_35",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Text": "E"
-                            }
-                        }, {
-                            "Shape": {
-                                "Room": "160",
-                                "H": "19.68504",
-                                "W": "22.83465",
-                                "Y": "244.48819",
-                                "X": "352.3622",
-                                "StrokeWidth": "5",
-                                "Stroke": "#000000",
-                                "Fill": "#FF0000"
-                            }
-                        }, {
-                            "Text": {
-                                "FontWeight": "bold",
-                                "Stroke": "#000000",
-                                "Transform": "matrix(0.691397 0 0 0.517647 108.869 125.347)",
-                                "Id": "svg_47",
-                                "Fill": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "335.01973",
-                                "Y": "249.70455",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Text": "160"
-                            }
-                        }, {
-                            "Shape": {
-                                "Room": "163",
-                                "H": "11.81102",
-                                "W": "18.89764",
-                                "Y": "184.64567",
-                                "X": "352.4252",
-                                "StrokeWidth": "5",
-                                "Stroke": "#000000",
-                                "Fill": "#FF0000"
-                            }
-                        }, {
-                            "Text": {
-                                "FontWeight": "bold",
-                                "Id": "svg_62",
-                                "Stroke": "#000000",
-                                "Transform": "matrix(0.691397 0 0 0.517647 108.869 125.347)",
-                                "Fill": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "337.18497",
-                                "Y": "134.34247",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Text": "163"
-                            }
-                        }, {
-                            "Shape": {
-                                "Room": "152C",
-                                "H": "53.54331",
-                                "W": "22.83465",
-                                "Y": "292.51969",
-                                "X": "435.82677",
-                                "StrokeWidth": "5",
-                                "Stroke": "#000000",
-                                "Fill": "#FF0000"
-                            }
-                        }, {
-                            "Text": {
-                                "Fill": "#000000",
-                                "Stroke": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "446",
-                                "Y": "323",
-                                "Id": "svg_16",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Text": "C"
-                            }
-                        }, {
-                            "Path": {
-                                "Id": "141",
-                                "D": "m160.23622,361.02362l1.18111,65.74805l-15.74803,4.7244l-37.00787,-37.79526l0,-23.62207l18.89764,-20.47244l22.83464,0l9.84251,11.41733z",
-                                "StrokeWidth": "5",
-                                "Stroke": "#000000",
-                                "fill": "#FF0000"
-                            }
-                        }, {
-                            "Text": {
-                                "Fill": "#000000",
-                                "Stroke": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "135",
-                                "Y": "391",
-                                "Id": "svg_29",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Text": "141"
-                            }
-                        }, {
-                            "Path": {
-                                "Id": "137",
-                                "D": "m163.38583,358.66141c0,0 1.5748,53.5433 1.18109,53.14963c-0.39372,-0.39368 13.77953,0.39368 13.38582,0c-0.39368,-0.39368 26.37793,25.59055 25.98425,25.19684c-0.39369,-0.39371 41.33858,-36.61417 40.9449,-37.00787c-0.39369,-0.39371 -27.16536,-27.16534 -27.55908,-27.55905c-0.39369,-0.39371 -1.96852,-25.59055 -2.3622,-25.98425c-0.39372,-0.39371 -51.5748,12.20471 -51.5748,12.20471l0.00002,0z",
-                                "StrokeWidth": "5",
-                                "Stroke": "#000000",
-                                "fill": "#FF0000"
-                            }
-                        }, {
-                            "Text": {
-                                "Fill": "#000000",
-                                "Stroke": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "194",
-                                "Y": "396",
-                                "Id": "svg_27",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Text": "137"
-                            }
-                        }, {
-                            "Path": {
-                                "Id": "151",
-                                "D": "m457.87402,183.07086c0,0 -90.55118,0 -90.94489,-0.39369c-0.39371,-0.39369 0.39371,15.35432 0,14.96063c-0.39371,-0.39369 -13.77954,-0.39371 -14.17322,-0.78741c-0.39368,-0.39371 1.18109,46.8504 0.78738,46.4567c-0.39383,-0.39368 24.01575,0.39372 23.62204,0c-0.39383,-0.39368 1.18106,18.50395 0.78729,18.11024c-0.39371,-0.39371 79.13385,2.75589 78.74014,2.36221c-0.39368,-0.39368 1.18112,-80.70868 1.18112,-80.70868l0.00003,0l0.00003,0l0.00003,0l0.00003,0z",
-                                "StrokeWidth": "5",
-                                "Stroke": "#000000",
-                                "fill": "#FF0000"
-                            }
-                        }, {
-                            "Text": {
-                                "Fill": "#000000",
-                                "Stroke": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "408",
-                                "Y": "227",
-                                "Id": "svg_5",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Text": "151"
-                            }
-                        }, {
-                            "Path": {
-                                "Id": "111",
-                                "D": "m298.81891,344.48819c0,0 0.78738,28.34647 0.39368,27.95276c-0.39371,-0.39371 52.36221,-0.39371 51.96851,-0.78741c-0.39371,-0.39371 -26.37793,-28.74014 -26.77164,-29.13385c-0.39371,-0.39371 -25.59055,1.96851 -25.59055,1.96851z",
-                                "StrokeWidth": "5",
-                                "Stroke": "#000000",
-                                "fill": "#FF0000"
-                            }
-                        }, {
-                            "Text": {
-                                "Fill": "#000000",
-                                "Stroke": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "316",
-                                "Y": "364",
-                                "Id": "svg_10",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Text": "111"
-                            }
-                        }, {
-                            "Path": {
-                                "Id": "132",
-                                "D": "m246.06299,314.56693l-1.18109,-10.62991l-7.08662,-7.08661l22.04726,-20.47244l14.17322,11.811l-1.5748,28.34647l-26.3779,-1.96851l-0.00003,0l-0.00002,0l-0.00002,0z",
-                                "StrokeWidth": "5",
-                                "Stroke": "#000000",
-                                "fill": "#FF0000"
-                            }
-                        }, {
-                            "Text": {
-                                "FontWeight": "bold",
-                                "Stroke": "#000000",
-                                "Transform": "matrix(0.888889 0 0 1 27.3889 0)",
-                                "Fill": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "260",
-                                "Y": "304",
-                                "Id": "svg_36",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Text": "132"
-                            }
-                        }, {
-                            "Path": {
-                                "Id": "136",
-                                "D": "m226.37796,316.92914c0,0 -0.78741,-14.96063 -1.18111,-15.35434c-0.39371,-0.39371 32.67717,-26.37796 32.28346,-26.77164c-0.39371,-0.39368 -10.62993,-10.62994 -11.02362,-11.02362c-0.39372,-0.39368 -24.80316,-0.39371 -25.19685,-0.78741c-0.39371,-0.39371 -2.75591,54.7244 -3.14961,54.33072c-0.39372,-0.39368 8.26773,-0.39371 8.26773,-0.39371z",
-                                "StrokeWidth": "5",
-                                "Stroke": "#000000",
-                                "fill": "#FF0000"
-                            }
-                        }, {
-                            "Text": {
-                                "Fill": "#000000",
-                                "Stroke": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "234",
-                                "Y": "281",
-                                "Id": "svg_38",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Text": "136"
-                            }
-                        }, {
-                            "Path": {
-                                "Id": "101",
-                                "D": "m275.19684,243.70079c0,0 22.04724,23.62206 21.65356,23.22835c-0.39368,-0.39371 -20.07874,19.29132 -20.47244,18.89764c-0.39371,-0.39368 -25.59056,-20.86615 -25.98425,-21.25986c-0.39368,-0.39371 24.80313,-20.86613 24.80313,-20.86613z",
-                                "StrokeWidth": "5",
-                                "Stroke": "#000000",
-                                "fill": "#FF0000"
-                            }
-                        }, {
-                            "Text": {
-                                "FontWeight": "bold",
-                                "Fill": "#000000",
-                                "Stroke": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "275",
-                                "Y": "273",
-                                "Id": "svg_32",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Transform": "rotate(-38.6598 275 267)",
-                                "Text": "101"
-                            }
-                        }, {
-                            "Path": {
-                                "Id": "134",
-                                "D": "m228.74016,316.14172c0,0 -0.7874,-14.17322 -1.18111,-14.56693c-0.39369,-0.39371 5.90552,-4.33072 5.51181,-4.7244c-0.39369,-0.39374 8.26772,9.05499 7.87402,8.66141c-0.39369,-0.39371 1.96851,9.84253 1.5748,9.44882c-0.39369,-0.39371 -13.77954,1.18109 -13.77954,1.18109l0.00002,0z",
-                                "StrokeWidth": "5",
-                                "Stroke": "#000000",
-                                "fill": "#FF0000"
-                            }
-                        }, {
-                            "Text": {
-                                "Stroke": "#000000",
-                                "Transform": "matrix(0.993041 0 0 0.85 0.395716 50.1)",
-                                "Fill": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "239.26923",
-                                "Y": "330",
-                                "Id": "svg_39",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Text": "134"
-                            }
-                        }, {
-                            "Text": {
-                                "Stroke": "#000000",
-                                "Transform": "matrix(0.662551 0 0 0.642857 166.638 117.429)",
-                                "Fill": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "512.20497",
-                                "Y": "319.55556",
-                                "Id": "svg_40",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Text": "154"
-                            }
-                        }, {
-                            "Text": {
-                                "Fill": "#000000",
-                                "Stroke": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "88",
-                                "Y": "131",
-                                "Id": "svg_41",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "FontWeight": "bold",
-                                "Text": "GEB"
-                            }
-                        }, {
-                            "Text": {
-                                "Fill": "#000000",
-                                "Stroke": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "115",
-                                "Y": "168",
-                                "Id": "svg_42",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "FontWeight": "bold",
-                                "Text": "N"
-                            }
-                        }, {
-                            "Text": {
-                                "Fill": "#000000",
-                                "Stroke": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "145",
-                                "Y": "144",
-                                "Id": "svg_43",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Text": "First Floor"
-                            }
-                        }, {
-                            "Text": {
-                                "Fill": "#000000",
-                                "Stroke": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "141",
-                                "Y": "340",
-                                "Id": "svg_44",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Text": "TO COM"
-                            }
-                        }, {
-                            "Text": {
-                                "Fill": "#000000",
-                                "Stroke": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "286",
-                                "Y": "595",
-                                "Id": "svg_45",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Transform": "rotate(-89.5659 286 589)",
-                                "Text": "TO SCI"
-                            }
-                        }, {
-                            "Text": {
-                                "Fill": "#000000",
-                                "Stroke": "#000000",
-                                "StrokeWidth": "0",
-                                "X": "619",
-                                "Y": "193",
-                                "Id": "svg_46",
-                                "FontSize": "18",
-                                "FontFamily": "serif",
-                                "TextAnchor": "middle",
-                                "Transform": "rotate(-90.4775 619 185.5)",
-                                "Text": "TO OCB"
-                            }
-                        }, {
-                            "Path": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "D": "m102.86922,166.40672c0.8848,-0.85756 1.73119,-1.84634 2.47655,-2.7341l-22.33755,-0.4068l-3.06413,3.507l-9.70657,-0.30116c1.21629,-1.59636 2.54873,-3.47289 3.53654,-4.88159l-3.51407,-4.73659l10.35683,0l2.10748,2.95979l22.80602,0l-2.8289,-2.95323c0.87312,-0.93039 2.16521,-2.17244 2.8661,-2.82332l7.66999,7.52579l-7.68752,7.64258l-2.68079,-2.79839l0,0l0.00001,0.00002z",
-                                "Id": "svg_81",
-                                "Transform": "rotate(-90 91.7375 161.621)"
-                            }
-                        }, {
-                            "Path": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "D": "m343.11536,88.4807c0.45273,-0.43887 0.88556,-0.94464 1.26691,-1.39878l-11.42856,-0.2084l-1.56769,1.7944l-4.96603,-0.15408c0.62192,-0.81702 1.30405,-1.77666 1.80893,-2.49744l-1.79752,-2.42348l5.29904,0l1.07779,1.51409l11.6687,0l-1.44751,-1.51073c0.44647,-0.47601 1.10779,-1.11143 1.46631,-1.44449l3.92426,3.8504l-3.9332,3.9101l-1.37143,-1.43156l0,0l0,-0.00002z",
-                                "Id": "svg_82",
-                                "Transform": "rotate(-90 337.42 86.032)"
-                            }
-                        }, {
-                            "Path": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "D": "m311.20862,128.93663c0.57596,-0.55843 1.12708,-1.20229 1.61243,-1.78012l-14.54517,-0.26533l-1.99524,2.28385l-6.32065,-0.19611c0.79208,-1.03972 1.65982,-2.26122 2.30286,-3.17873l-2.28833,-3.08408l6.74408,0l1.37231,1.92688l14.85022,0l-1.84186,-1.92261c0.56824,-0.60605 1.40945,-1.41461 1.86621,-1.83865l4.99451,4.90051l-5.00607,4.97655l-1.7453,-1.82219l0,0l0,0.00002z",
-                                "Id": "svg_83",
-                                "Transform": "rotate(180 303.96 125.82)"
-                            }
-                        }, {
-                            "Path": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "D": "m581.3374,67.96611c0.49365,-0.47882 0.9668,-1.03052 1.38281,-1.526l-12.46875,-0.22723l-1.70947,1.95758l-5.41699,-0.16827c0.67822,-0.89117 1.42236,-1.93817 1.97314,-2.72461l-1.96143,-2.64349l5.78027,0l1.17773,1.65161l12.72803,0l-1.5791,-1.64795c0.48779,-0.51947 1.2085,-1.21252 1.59961,-1.57599l4.28174,4.20044l-4.29053,4.26563l-1.49707,-1.56171l0,0l0,-0.00001z",
-                                "Id": "svg_84",
-                                "Transform": "rotate(-90 575.125 65.2948)"
-                            }
-                        }, {
-                            "Path": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "D": "m626.21887,105.69659c0.57617,-0.55811 1.12689,-1.20224 1.61237,-1.78023l-14.54498,-0.26505l-1.99609,2.28371l-6.32019,-0.19609c0.79236,-1.03964 1.65912,-2.26134 2.30267,-3.17882l-2.28796,-3.08405l6.74408,0l1.37189,1.92702l14.85059,0l-1.84235,-1.9227c0.56909,-0.60606 1.41077,-1.41469 1.86639,-1.83864l4.99469,4.9006l-5.00598,4.97649l-1.74512,-1.82227l0,0l0,0.00002z",
-                                "Id": "svg_85"
-                            }
-                        }, {
-                            "Path": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "D": "m627.21448,279.03204c0.57593,-0.55798 1.12622,-1.20227 1.61157,-1.78076l-14.54517,-0.26489l-1.99609,2.28406l-6.31982,-0.19653c0.79297,-1.03906 1.65942,-2.26099 2.302,-3.17786l-2.28662,-3.08472l6.74365,0l1.37231,1.92688l14.84937,0l-1.84229,-1.92261c0.56909,-0.60669 1.41162,-1.41504 1.86621,-1.83887l4.99536,4.90051l-5.00562,4.97656l-1.74487,-1.82178l0,0z",
-                                "Id": "svg_86"
-                            }
-                        }, {
-                            "Path": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "D": "m590.40887,333.87674c0.57593,-0.55798 1.12683,-1.20227 1.61218,-1.78046l-14.54517,-0.26489l-1.99548,2.28375l-6.32043,-0.19592c0.79236,-1.03967 1.65881,-2.26129 2.30261,-3.17902l-2.28784,-3.08417l6.74426,0l1.3717,1.92719l14.85059,0l-1.84229,-1.92261c0.56909,-0.60638 1.41101,-1.41473 1.86621,-1.83887l4.99475,4.90051l-5.00623,4.97687l-1.74487,-1.82239l0,0z",
-                                "Id": "svg_87",
-                                "Transform": "rotate(90 583.16 330.76)"
-                            }
-                        }, {
-                            "Path": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "D": "m355.272,341.96823c0.51422,-0.4982 1.00632,-1.07346 1.43967,-1.5892l-12.98676,-0.23651l-1.78146,2.03934l-5.64346,-0.17548c0.70724,-0.9285 1.48163,-2.0195 2.05612,-2.83813l-2.04315,-2.75345l6.02112,0l1.22528,1.72043l13.25989,0l-1.6449,-1.71738c0.50735,-0.54092 1.25885,-1.26266 1.66626,-1.64108l4.45938,4.37469l-4.4693,4.44412l-1.55869,-1.62735l0,0z",
-                                "Id": "svg_88",
-                                "Transform": "rotate(45 348.8 339.186)"
-                            }
-                        }, {
-                            "Path": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "D": "m293.45135,531.65308c0.43231,-0.41913 0.84543,-0.90161 1.20953,-1.33527l-10.90918,-0.19928l-1.49637,1.71326l-4.74036,-0.14691c0.59384,-0.77972 1.24472,-1.69604 1.72699,-2.38397l-1.71628,-2.31342l5.05807,0l1.02921,1.44531l11.13809,0l-1.38174,-1.44189c0.42639,-0.45508 1.05756,-1.06134 1.39978,-1.37915l3.74588,3.67554l-3.75446,3.73206l-1.30917,-1.36627l0,0z",
-                                "Id": "svg_89",
-                                "Transform": "rotate(90 288.015 529.316)"
-                            }
-                        }, {
-                            "Path": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "D": "m190.11687,512.1438c0.51453,-0.49896 1.0065,-1.07352 1.43996,-1.58972l-12.987,-0.23666l-1.78142,2.03891l-5.64343,-0.17474c0.70718,-0.92877 1.48184,-2.01907 2.05615,-2.83847l-2.04312,-2.75363l6.02144,0l1.22525,1.72058l13.25923,0l-1.64465,-1.71646c0.50758,-0.54132 1.25873,-1.26306 1.66637,-1.64185l4.45935,4.37552l-4.46956,4.44305l-1.55855,-1.62653l0,0l-0.00002,0z",
-                                "Id": "svg_90",
-                                "Transform": "rotate(180 183.645 509.361)"
-                            }
-                        }, {
-                            "Path": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "D": "m100.60686,408.63879c0.51447,-0.49838 1.00648,-1.07346 1.43994,-1.58972l-12.98708,-0.23666l-1.7814,2.03903l-5.64334,-0.17484c0.70706,-0.92825 1.48173,-2.01907 2.05602,-2.83847l-2.04298,-2.75363l6.02148,0l1.22512,1.72058l13.2594,0l-1.64466,-1.71649c0.50758,-0.54132 1.25874,-1.26306 1.66626,-1.64185l4.45937,4.37555l-4.46959,4.44351l-1.55853,-1.62701l0,0l-0.00002,0z",
-                                "Id": "svg_91",
-                                "Transform": "rotate(90 94.135 405.856)"
-                            }
-                        }, {
-                            "Path": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "D": "m87.55514,336.67511c0.63792,-0.61871 1.24799,-1.33109 1.78545,-1.97061l-16.10388,-0.29422l-2.2089,2.52783l-6.99783,-0.21664c0.87684,-1.15039 1.83739,-2.50323 2.54955,-3.51834l-2.53327,-3.41522l7.46653,0l1.5192,2.13333l16.44167,0l-2.03947,-2.1286c0.6294,-0.67169 1.56091,-1.56665 2.06618,-2.03589l5.52962,5.42557l-5.54218,5.50977l-1.93267,-2.01697l0.00002,0l-0.00002,0z",
-                                "Id": "svg_92",
-                                "Transform": "rotate(180 79.53 333.224)"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "147",
-                                "Y1": "434",
-                                "X2": "224",
-                                "Y2": "510",
-                                "Id": "svg_48"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "269",
-                                "Y1": "487",
-                                "X2": "250",
-                                "Y2": "508",
-                                "Id": "svg_49"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "270",
-                                "Y1": "389",
-                                "X2": "269",
-                                "Y2": "491",
-                                "Id": "svg_50"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "223",
-                                "Y1": "508",
-                                "X2": "251",
-                                "Y2": "509",
-                                "Id": "svg_51"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "245",
-                                "Y1": "454",
-                                "X2": "207",
-                                "Y2": "491",
-                                "Id": "svg_52"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "189",
-                                "Y1": "454",
-                                "X2": "267",
-                                "Y2": "456",
-                                "Id": "svg_53"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "268",
-                                "Y1": "390",
-                                "X2": "237",
-                                "Y2": "391",
-                                "Id": "svg_54"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "180",
-                                "Y1": "466",
-                                "X2": "255",
-                                "Y2": "390",
-                                "Id": "svg_55"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "147",
-                                "Y1": "432",
-                                "X2": "106",
-                                "Y2": "393",
-                                "Id": "svg_56"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "216",
-                                "Y1": "370",
-                                "X2": "245",
-                                "Y2": "399",
-                                "Id": "svg_57"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "214",
-                                "Y1": "344",
-                                "X2": "214",
-                                "Y2": "371",
-                                "Id": "svg_58"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "270",
-                                "Y1": "347",
-                                "X2": "128",
-                                "Y2": "349",
-                                "Id": "svg_59"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "107",
-                                "Y1": "396",
-                                "X2": "108",
-                                "Y2": "370",
-                                "Id": "svg_60"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "128",
-                                "Y1": "346",
-                                "X2": "106",
-                                "Y2": "371",
-                                "Id": "svg_61"
-                            }
-                        }, {
-                            "Line": {
-                                "StrokeWidth": "5",
-                                "X1": "353",
-                                "Y1": "371",
-                                "X2": "350",
-                                "Y2": "557",
-                                "Id": "svg_6",
-                                "Stroke": "#000000"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "300",
-                                "Y1": "559",
-                                "X2": "299",
-                                "Y2": "342",
-                                "Id": "svg_12"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "234",
-                                "Y1": "509",
-                                "X2": "234",
-                                "Y2": "527",
-                                "Id": "svg_13"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "219",
-                                "Y1": "526",
-                                "X2": "273",
-                                "Y2": "527",
-                                "Id": "svg_18"
-                            }
-                        }, {
-                            "Line": {
-                                "StrokeWidth": "5",
-                                "X1": "274",
-                                "Y1": "562",
-                                "X2": "274",
-                                "Y2": "526",
-                                "Id": "svg_19",
-                                "Stroke": "#000000"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "222",
-                                "Y1": "557",
-                                "X2": "274",
-                                "Y2": "559",
-                                "Id": "svg_21"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "221",
-                                "Y1": "524",
-                                "X2": "222",
-                                "Y2": "560",
-                                "Id": "svg_22"
-                            }
-                        }, {
-                            "Line": {
-                                "StrokeWidth": "5",
-                                "X1": "79",
-                                "Y1": "381",
-                                "X2": "105",
-                                "Y2": "381",
-                                "Id": "svg_23",
-                                "Stroke": "#000000"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "81",
-                                "Y1": "392",
-                                "X2": "53",
-                                "Y2": "391",
-                                "Id": "svg_24"
-                            }
-                        }, {
-                            "Line": {
-                                "StrokeWidth": "5",
-                                "X1": "55",
-                                "Y1": "345",
-                                "X2": "54",
-                                "Y2": "395",
-                                "Id": "svg_26",
-                                "Stroke": "#000000"
-                            }
-                        }, {
-                            "Line": {
-                                "StrokeWidth": "5",
-                                "X1": "77",
-                                "Y1": "395",
-                                "X2": "78",
-                                "Y2": "344",
-                                "Id": "svg_28",
-                                "Stroke": "#000000"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "57",
-                                "Y1": "347",
-                                "X2": "79",
-                                "Y2": "346",
-                                "Id": "svg_63"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "56",
-                                "Y1": "262",
-                                "X2": "249",
-                                "Y2": "263",
-                                "Id": "svg_64"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "253",
-                                "Y1": "201",
-                                "X2": "307",
-                                "Y2": "202",
-                                "Id": "svg_65"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "263",
-                                "Y1": "234",
-                                "X2": "264",
-                                "Y2": "137",
-                                "Id": "svg_67"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "305",
-                                "Y1": "272",
-                                "X2": "261",
-                                "Y2": "231",
-                                "Id": "svg_68"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "218",
-                                "Y1": "378",
-                                "X2": "227",
-                                "Y2": "387",
-                                "Id": "svg_70"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "271",
-                                "Y1": "552",
-                                "X2": "301",
-                                "Y2": "552",
-                                "Id": "svg_72"
-                            }
-                        }, {
-                            "Line": {
-                                "StrokeWidth": "5",
-                                "X1": "325",
-                                "Y1": "269",
-                                "X2": "323",
-                                "Y2": "138",
-                                "Id": "svg_73",
-                                "Stroke": "#000000"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "236",
-                                "Y1": "139",
-                                "X2": "325",
-                                "Y2": "140",
-                                "Id": "svg_74"
-                            }
-                        }, {
-                            "Line": {
-                                "StrokeWidth": "5",
-                                "X1": "352",
-                                "Y1": "111",
-                                "X2": "275",
-                                "Y2": "112",
-                                "Id": "svg_75",
-                                "Stroke": "#000000"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "268",
-                                "Y1": "64",
-                                "X2": "325",
-                                "Y2": "112",
-                                "Id": "svg_77"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "275",
-                                "Y1": "138",
-                                "X2": "273",
-                                "Y2": "70",
-                                "Id": "svg_80"
-                            }
-                        }, {
-                            "Line": {
-                                "StrokeWidth": "5",
-                                "X1": "381",
-                                "Y1": "346",
-                                "X2": "564",
-                                "Y2": "348",
-                                "Id": "svg_93",
-                                "Stroke": "#000000"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "381",
-                                "Y1": "348",
-                                "X2": "351",
-                                "Y2": "315",
-                                "Id": "svg_94"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "350",
-                                "Y1": "371",
-                                "X2": "377",
-                                "Y2": "345",
-                                "Id": "svg_95"
-                            }
-                        }, {
-                            "Line": {
-                                "StrokeWidth": "5",
-                                "X1": "563.99999",
-                                "Y1": "265",
-                                "X2": "352.99999",
-                                "Y2": "265",
-                                "Id": "svg_96",
-                                "Stroke": "#000000"
-                            }
-                        }, {
-                            "Line": {
-                                "StrokeWidth": "5",
-                                "X1": "352",
-                                "Y1": "292",
-                                "X2": "571",
-                                "Y2": "292",
-                                "Id": "svg_97",
-                                "Stroke": "#000000"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "568",
-                                "Y1": "349",
-                                "X2": "569",
-                                "Y2": "287",
-                                "Id": "svg_98"
-                            }
-                        }, {
-                            "Line": {
-                                "StrokeWidth": "5",
-                                "X1": "591",
-                                "Y1": "290",
-                                "X2": "649",
-                                "Y2": "291",
-                                "Id": "svg_102",
-                                "Stroke": "#000000"
-                            }
-                        }, {
-                            "Line": {
-                                "StrokeWidth": "5",
-                                "X1": "594",
-                                "Y1": "350",
-                                "X2": "593",
-                                "Y2": "289",
-                                "Id": "svg_103",
-                                "Stroke": "#000000"
-                            }
-                        }, {
-                            "Line": {
-                                "StrokeWidth": "5",
-                                "X1": "592",
-                                "Y1": "264",
-                                "X2": "648",
-                                "Y2": "263",
-                                "Id": "svg_104",
-                                "Stroke": "#000000"
-                            }
-                        }, {
-                            "Line": {
-                                "StrokeWidth": "5",
-                                "X1": "592",
-                                "Y1": "266.00001",
-                                "X2": "592",
-                                "Y2": "117",
-                                "Id": "svg_105",
-                                "Stroke": "#000000"
-                            }
-                        }, {
-                            "Line": {
-                                "StrokeWidth": "5",
-                                "X1": "591",
-                                "Y1": "118",
-                                "X2": "651",
-                                "Y2": "119",
-                                "Id": "svg_106",
-                                "Stroke": "#000000"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "590",
-                                "Y1": "90",
-                                "X2": "650",
-                                "Y2": "88",
-                                "Id": "svg_107"
-                            }
-                        }, {
-                            "Line": {
-                                "StrokeWidth": "5",
-                                "X1": "591",
-                                "Y1": "91",
-                                "X2": "590",
-                                "Y2": "65",
-                                "Id": "svg_108",
-                                "Stroke": "#000000"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "460",
-                                "Y1": "293",
-                                "X2": "462",
-                                "Y2": "349",
-                                "Id": "svg_109"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "76",
-                                "Y1": "440",
-                                "X2": "63",
-                                "Y2": "451",
-                                "Id": "svg_110"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "89.5",
-                                "Y1": "454",
-                                "X2": "76.5",
-                                "Y2": "465",
-                                "Id": "svg_113"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "108.5",
-                                "Y1": "472",
-                                "X2": "95.5",
-                                "Y2": "483",
-                                "Id": "svg_115"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "128.5",
-                                "Y1": "489",
-                                "X2": "115.5",
-                                "Y2": "500",
-                                "Id": "svg_116"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "150.5",
-                                "Y1": "505",
-                                "X2": "137.5",
-                                "Y2": "516",
-                                "Id": "svg_117"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "174.5",
-                                "Y1": "528",
-                                "X2": "161.5",
-                                "Y2": "539",
-                                "Id": "svg_118"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "180",
-                                "Y1": "412",
-                                "X2": "174",
-                                "Y2": "411",
-                                "Id": "svg_119"
-                            }
-                        }, {
-                            "Line": {
-                                "Stroke": "#000000",
-                                "StrokeWidth": "5",
-                                "X1": "149",
-                                "Y1": "438",
-                                "X2": "131",
-                                "Y2": "416",
-                                "Id": "svg_120"
-                            }
-                        }]
+    {
+        "Rect": {
+            "Room": " 130",
+            "H": "50.625",
+            "W": "76.78125",
+            "Y": "266.73439",
+            "X": "61.28126",
+            "StrokeWidth": "0",
+            "Stroke": "#000000",
+            "Fill": "#ff0000"
+        }
+    },
+    {
+        "Rect": {
+            "Stroke": "#000000",
+            "Fill": "#ff0000",
+            "StrokeWidth": "0",
+            "X": "140.49998",
+            "Y": "266.93211",
+            "W": "78",
+            "H": "51.31787",
+            "Room": " 138"
+        }
+    },
+    {
+        "Rect": {
+            "Stroke": "#000000",
+            "Fill": "#ff0000",
+            "StrokeWidth": "0",
+            "X": "303.99998",
+            "Y": "477.64401",
+            "W": "48",
+            "H": "79.28394",
+            "Room": " 117"
+        }
+    },
+    {
+        "Rect": {
+            "Stroke": "#000000",
+            "Fill": "#ff0000",
+            "StrokeWidth": "0",
+            "X": "302.17189",
+            "Y": "400.46876",
+            "W": "50.20313",
+            "H": "75.07398",
+            "Room": " 115"
+        }
+    },
+    {
+        "Rect": {
+            "Stroke": "#000000",
+            "Fill": "#ff0000",
+            "StrokeWidth": "0",
+            "X": "459.66309",
+            "Y": "80.70728",
+            "W": "105.13917",
+            "H": "102.91773",
+            "Room": " 157"
+        }
+    },
+    {
+        "Rect": {
+            "Fill": "#ff0000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "X": "354.48439",
+            "Y": "80.68751",
+            "W": "102.9375",
+            "H": "102.51563",
+            "Room": " 165"
+        }
+    },
+    {
+        "Rect": {
+            "Stroke": "#000000",
+            "Fill": "#ff0000",
+            "StrokeWidth": "0",
+            "X": "304.70314",
+            "Y": "206.0503",
+            "W": "18.5625",
+            "H": "59.84034",
+            "Room": " 161"
+        }
+    },
+    {
+        "Rect": {
+            "Stroke": "#000000",
+            "Fill": "#ff0000",
+            "StrokeWidth": "0",
+            "X": "354.12679",
+            "Y": "246.48439",
+            "W": "23.9826",
+            "H": "18.14063",
+            "Room": " 160"
+        }
+    },
+    {
+        "Rect": {
+            "Fill": "#ff0000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "X": "381.48439",
+            "Y": "315.67189",
+            "W": "23.20313",
+            "H": "29.95313",
+            "Room": " 152A"
+        }
+    },
+    {
+        "Rect": {
+            "Fill": "#ff0000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "X": "406.79689",
+            "Y": "315.25001",
+            "W": "24.89063",
+            "H": "30.79688",
+            "Room": " 152B"
+        }
+    },
+    {
+        "Rect": {
+            "Fill": "#ff0000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "X": "459.95314",
+            "Y": "326.21876",
+            "W": "33.32813",
+            "H": "18.98438",
+            "Room": " 154F"
+        }
+    },
+    {
+        "Rect": {
+            "Fill": "#ff0000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "X": "495.39064",
+            "Y": "327.06251",
+            "W": "33.32813",
+            "H": "18.5625",
+            "Room": " 154C"
+        }
+    },
+    {
+        "Rect": {
+            "Stroke": "#000000",
+            "Fill": "#ff0000",
+            "StrokeWidth": "0",
+            "X": "531.25001",
+            "Y": "326.64064",
+            "W": "34.48664",
+            "H": "18.98438",
+            "Room": " 154B"
+        }
+    },
+    {
+        "Rect": {
+            "Fill": "#ff0000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "X": "478.09376",
+            "Y": "296.26564",
+            "W": "28.26563",
+            "H": "17.29688",
+            "Room": " 154E"
+        }
+    },
+    {
+        "Rect": {
+            "Fill": "#ff0000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "X": "508.04689",
+            "Y": "295.84376",
+            "W": "25.73438",
+            "H": "17.71875",
+            "Room": " 154D"
+        }
+    },
+    {
+        "Rect": {
+            "Fill": "#ff0000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "X": "548.30628",
+            "Y": "297.31208",
+            "W": "17.29688",
+            "H": "28.26563",
+            "Room": " 154A"
+        }
+    },
+    {
+        "Path": {
+            "Fill": "#ff0000",
+            "StrokeWidth": "0",
+            "D": "m302.97226,371.35938l-0.92953,-25c0,0 25.2038,-0.73438 25.2038,-0.73438c0,0 23.86285,26.15625 23.86285,26.15625c0,0 -48.13712,-0.42188 -48.13712,-0.42188z",
+            "Room": " 111",
+            "Stroke": "#000000"
+        }
+    },
+    {
+        "Path": {
+            "Fill": "#ff0000",
+            "StrokeWidth": "0",
+            "D": "m114.63224,367.70297c0,0 -0.87061,27.79977 -0.98347,27.68713c-0.11286,-0.11261 41.03165,40.50912 41.03165,40.50912c0,0 10.01204,-8.25305 9.89917,-8.36563c-0.11285,-0.11264 0.98349,-66.34619 0.98349,-66.34619c0,0 -7.83551,-2.6062 -7.83551,-2.6062c0,0 -0.43532,-9.55618 -0.54819,-9.66876c-0.11285,-0.11264 -22.95834,0.54694 -22.95834,0.54694c0,0 -19.5888,18.24359 -19.5888,18.24359z",
+            "Room": " 141",
+            "Stroke": "#000000"
+        }
+    },
+    {
+        "Path": {
+            "Fill": "#ff0000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "D": "m168.43752,360.8125l10.43748,-10.65625l39.65625,-0.84375l0,24.46875c0,0 24.15627,24.57813 24.15627,24.57813c-0.00003,0 -34.59377,38.39063 -34.70314,38.28125c-0.10939,-0.10938 -25.625,-26.04688 -25.73439,-26.15625c-0.10939,-0.10938 -13.8125,0.95313 -13.92189,0.84375c-0.10939,-0.10938 0.10939,-50.51563 0.10939,-50.51563l0.00003,0z",
+            "Room": " 137"
+        }
+    },
+    {
+        "Path": {
+            "Stroke": "#000000",
+            "Fill": "#ff0000",
+            "StrokeWidth": "0",
+            "D": "m220.21608,372.625c0,0 11.75716,-9.28125 11.75716,-9.28125c-0.00003,0 -0.43547,-13.5 -0.54839,-13.60938c-0.11288,-0.10938 40.17427,-0.3125 40.17427,-0.3125c0,0 0,37.54688 0,37.96875c0,0.42188 -16.54707,0.42188 -16.54707,0.42188c0,0 -8.27354,10.96875 -8.27354,10.96875c-0.00002,0 -26.56241,-26.15625 -26.56241,-26.15625l-0.00002,0z",
+            "Room": " 112"
+        }
+    },
+    {
+        "Path": {
+            "Stroke": "#000000",
+            "Fill": "#ff0000",
+            "StrokeWidth": "0",
+            "D": "m220.11716,299.15295c0.00003,0 8.85939,5.88675 8.64456,5.6647c-0.21483,-0.22202 26.16014,-30.84692 25.94531,-31.06897c-0.21483,-0.22198 -5.79689,-6.97287 -6.01172,-7.19489c-0.21483,-0.22214 -28.89456,0.54907 -28.89456,0.54907c0,0 0.31641,32.05008 0.31641,32.05008z",
+            "Room": " 136"
+        }
+    },
+    {
+        "Path": {
+            "Fill": "#ff0000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "D": "m250.49216,319.15231c0.00003,0 0.31642,-12.33984 0.10159,-12.55466c-0.21483,-0.21481 -13.07425,-10.85941 -13.07425,-10.85941c0,0 18.03517,-21.83203 17.82034,-22.04684c-0.21483,-0.21481 18.24997,18.24997 18.03516,18.03516c-0.21481,-0.21481 0.53122,27.42575 0.31641,27.21094c-0.21481,-0.21481 -23.19925,0.21481 -23.19925,0.21481z",
+            "Room": " 132"
+        }
+    },
+    {
+        "Path": {
+            "Stroke": "#000000",
+            "Fill": "#ff0000",
+            "StrokeWidth": "0",
+            "D": "m237.29857,297.24118c0,0 -16.44972,21.59473 -16.44972,21.59473c0,0 28.06128,0 28.06128,0c0,0 -0.64508,-11.77893 -0.86406,-12.00107c-0.21901,-0.22214 -10.74751,-9.59366 -10.74751,-9.59366l0.00003,0l-0.00002,0z",
+            "Room": " 134"
+        }
+    },
+    {
+        "Path": {
+            "Stroke": "#000000",
+            "Fill": "#ff0000",
+            "StrokeWidth": "0",
+            "D": "m254.92184,269.61386c0,0 22.44043,-23.35364 22.44043,-23.35364c0,0 18.59351,20.43445 18.59351,20.43445c0,0 -21.15811,23.35364 -21.37576,23.13342c-0.21765,-0.22021 -19.65817,-20.21423 -19.65817,-20.21423z",
+            "Room": " 101"
+        }
+    },
+    {
+        "Path": {
+            "Stroke": "#000000",
+            "Fill": "#ff0000",
+            "StrokeWidth": "0",
+            "D": "m433.69138,295.57068c0,0 -0.63281,49.51758 -0.63281,49.51758c0,0 25.62891,0.32578 25.62891,0.32578c0,0 -0.63281,-34.53198 -0.63281,-34.53198c0,0 -16.76953,-16.2887 -16.98419,-16.50986c-0.21475,-0.22116 -7.37909,1.19849 -7.37909,1.19849z",
+            "Room": " 152C"
+        }
+    },
+    {
+        "Rect": {
+            "Fill": "#ff0000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "X": "353.6406",
+            "Y": "184.99607",
+            "W": "26.57812",
+            "H": "21.19922",
+            "Room": " 163"
+        }
+    },
+    {
+        "Path": {
+            "Stroke": "#000000",
+            "Fill": "#ff0000",
+            "StrokeWidth": "0",
+            "D": "m379.06488,264.93121c0,0 0,-19.66319 -0.21536,-19.88206c-0.21539,-0.21886 -23.89386,-0.42584 -23.89386,-0.42584c0,0 0,-37.07001 0,-37.07001c0,0 26.01257,-0.32233 25.79721,-0.5412c-0.21536,-0.21886 0.21536,-21.37843 0,-21.59731c-0.21536,-0.21887 76.98422,0.5412 76.76886,0.32236c-0.21536,-0.21887 0.84982,79.51642 0.63446,79.29758c-0.21539,-0.21884 -79.09131,-0.10352 -79.09131,-0.10352z",
+            "Room": " 151"
+        }
+    },
+    {
+        "Rect": {
+            "Stroke": "#000000",
+            "Fill": "#ff0000",
+            "StrokeWidth": "0",
+            "X": "459.874",
+            "Y": "185.58933",
+            "W": "104.98754",
+            "H": "79.57617",
+            "Room": " 153"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "Fill": "none",
+            "X1": "60.84619",
+            "Y1": "259.82617",
+            "X2": "60.31225",
+            "Y2": "320.16088",
+            "ID": "svg_29",
+            "StrokeWidth": "3"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "Fill": "none",
+            "StrokeWidth": "3",
+            "X1": "138.97876",
+            "Y1": "265.16552",
+            "X2": "139.15673",
+            "Y2": "318.91503",
+            "ID": "svg_30"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "219.06909",
+            "Y1": "259.64819",
+            "X2": "219.60302",
+            "Y2": "322.29663",
+            "ID": "svg_31"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "114.23974",
+            "Y1": "259.47021",
+            "X2": "114.23974",
+            "Y2": "267.12329",
+            "ID": "svg_32"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "Fill": "none",
+            "StrokeWidth": "3",
+            "X1": "167.45532",
+            "Y1": "259.29223",
+            "X2": "167.6333",
+            "Y2": "267.47924",
+            "ID": "svg_33"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "Fill": "none",
+            "StrokeWidth": "3",
+            "X1": "60.13427",
+            "Y1": "318.55908",
+            "X2": "275.31029",
+            "Y2": "318.55908",
+            "ID": "svg_34"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "Fill": "none",
+            "StrokeWidth": "3",
+            "X1": "61.20214",
+            "Y1": "265.52148",
+            "X2": "249.68139",
+            "Y2": "266.23339",
+            "ID": "svg_35"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "249.14746",
+            "Y1": "306.10058",
+            "X2": "249.50341",
+            "Y2": "318.3811",
+            "ID": "svg_36"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "249.14746",
+            "Y1": "307.34643",
+            "X2": "235.79907",
+            "Y2": "294.354",
+            "ID": "svg_37"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "220.67089",
+            "Y1": "317.31323",
+            "X2": "255.91064",
+            "Y2": "270.68286",
+            "ID": "svg_39"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "219.781",
+            "Y1": "298.62548",
+            "X2": "228.85791",
+            "Y2": "305.38867",
+            "ID": "svg_40"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "227.79003",
+            "Y1": "307.16845",
+            "X2": "219.24707",
+            "Y2": "300.9392",
+            "ID": "svg_41"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "218.71313",
+            "Y1": "303.4309",
+            "X2": "226.36621",
+            "Y2": "309.12622",
+            "ID": "svg_42"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "225.12036",
+            "Y1": "310.906",
+            "X2": "219.06909",
+            "Y2": "306.99047",
+            "ID": "svg_43"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "218.89111",
+            "Y1": "309.83813",
+            "X2": "225.12036",
+            "Y2": "314.28759",
+            "ID": "svg_44"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "219.781",
+            "Y1": "316.24536",
+            "X2": "223.69653",
+            "Y2": "307.88037",
+            "ID": "svg_45"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "Fill": "none",
+            "StrokeWidth": "3",
+            "X1": "274.06445",
+            "Y1": "319.27099",
+            "X2": "273.88647",
+            "Y2": "289.19262",
+            "ID": "svg_46"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "274.24243",
+            "Y1": "292.57421",
+            "X2": "297.73559",
+            "Y2": "265.16552",
+            "ID": "svg_47"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "248.7915",
+            "Y1": "265.34351",
+            "X2": "275.48828",
+            "Y2": "292.93017",
+            "ID": "svg_48"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "253.59692",
+            "Y1": "269.43701",
+            "X2": "277.26806",
+            "Y2": "244.87597",
+            "ID": "svg_49"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "297.02368",
+            "Y1": "266.23339",
+            "X2": "270.86083",
+            "Y2": "238.64672",
+            "ID": "svg_50"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "295.77783",
+            "Y1": "265.69946",
+            "X2": "328.16992",
+            "Y2": "266.23339",
+            "ID": "svg_51"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "324.25439",
+            "Y1": "266.23339",
+            "X2": "324.78832",
+            "Y2": "142.00439",
+            "ID": "svg_52"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "271.39477",
+            "Y1": "239.35864",
+            "X2": "272.28466",
+            "Y2": "159.09033",
+            "ID": "svg_54"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "266.23339",
+            "Y1": "213.55175",
+            "X2": "304.67675",
+            "Y2": "213.55175",
+            "ID": "svg_55"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "304.14282",
+            "Y1": "265.52148",
+            "X2": "304.3208",
+            "Y2": "186.14306",
+            "ID": "svg_56"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "312.15185",
+            "Y1": "204.83081",
+            "X2": "323.72045",
+            "Y2": "204.65283",
+            "ID": "svg_57"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "313.04174",
+            "Y1": "199.13549",
+            "X2": "313.21972",
+            "Y2": "206.25463",
+            "ID": "svg_58"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "313.04174",
+            "Y1": "192.55029",
+            "X2": "312.86376",
+            "Y2": "186.32104",
+            "ID": "svg_59"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "312.15185",
+            "Y1": "187.74487",
+            "X2": "323.3645",
+            "Y2": "187.92285",
+            "ID": "svg_60"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "305.56665",
+            "Y1": "187.38891",
+            "X2": "272.28466",
+            "Y2": "187.03295",
+            "ID": "svg_61"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "265.87744",
+            "Y1": "159.98022",
+            "X2": "328.34789",
+            "Y2": "160.1582",
+            "ID": "svg_63"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "324.9663",
+            "Y1": "213.55175",
+            "X2": "328.16992",
+            "Y2": "213.72973",
+            "ID": "svg_64"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "295.59985",
+            "Y1": "153.75097",
+            "X2": "295.59985",
+            "Y2": "160.33618",
+            "ID": "svg_65"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "Fill": "none",
+            "StrokeWidth": "3",
+            "X1": "295.24389",
+            "Y1": "142.7163",
+            "X2": "295.59985",
+            "Y2": "103.20507",
+            "ID": "svg_66"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "Fill": "none",
+            "StrokeWidth": "3",
+            "X1": "295.59985",
+            "Y1": "134.17334",
+            "X2": "309.30419",
+            "Y2": "134.52929",
+            "ID": "svg_67"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "308.4143",
+            "Y1": "134.52929",
+            "X2": "295.42187",
+            "Y2": "121.53686",
+            "ID": "svg_68"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "270.68286",
+            "Y1": "78.82202",
+            "X2": "327.10205",
+            "Y2": "135.24121",
+            "ID": "svg_69"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "325.8562",
+            "Y1": "134.70727",
+            "X2": "334.04321",
+            "Y2": "134.88525",
+            "ID": "svg_70"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "333.50927",
+            "Y1": "136.48706",
+            "X2": "333.50927",
+            "Y2": "126.87622",
+            "ID": "svg_71"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "345.78979",
+            "Y1": "126.87622",
+            "X2": "345.61181",
+            "Y2": "136.48706",
+            "ID": "svg_72"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "345.43383",
+            "Y1": "135.24121",
+            "X2": "354.15478",
+            "Y2": "135.06323",
+            "ID": "svg_73"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "Fill": "none",
+            "StrokeWidth": "3",
+            "X1": "87.06834",
+            "Y1": "336.23825",
+            "X2": "72.94871",
+            "Y2": "336.00095",
+            "ID": "svg_77"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "74.49119",
+            "Y1": "336.23825",
+            "X2": "74.01658",
+            "Y2": "383.93649",
+            "ID": "svg_78"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "Fill": "none",
+            "StrokeWidth": "3",
+            "X1": "100.65403",
+            "Y1": "382.27536",
+            "X2": "73.06736",
+            "Y2": "382.74997",
+            "ID": "svg_80"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "99.17088",
+            "Y1": "383.22458",
+            "X2": "99.40818",
+            "Y2": "335.28904",
+            "ID": "svg_81"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "85.88182",
+            "Y1": "351.42575",
+            "X2": "85.64451",
+            "Y2": "364.0029",
+            "ID": "svg_82"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "115.5449",
+            "Y1": "364.71482",
+            "X2": "114.83299",
+            "Y2": "398.41208",
+            "ID": "svg_83"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "115.5449",
+            "Y1": "367.08786",
+            "X2": "135.24119",
+            "Y2": "347.15427",
+            "ID": "svg_84"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "StrokeWidth": "3",
+            "X1": "134.05467",
+            "Y1": "348.10349",
+            "X2": "159.92088",
+            "Y2": "347.86618",
+            "ID": "svg_85",
+            "Stroke": "#000000"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "158.11147",
+            "Y1": "347.6586",
+            "X2": "158.64541",
+            "Y2": "358.87124",
+            "ID": "svg_86"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "157.8445",
+            "Y1": "357.26944",
+            "X2": "165.85354",
+            "Y2": "360.60653",
+            "ID": "svg_87"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "StrokeWidth": "3",
+            "X1": "165.58657",
+            "Y1": "359.67215",
+            "X2": "165.58657",
+            "Y2": "427.25949",
+            "ID": "svg_88",
+            "Stroke": "#000000"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "165.82013",
+            "Y1": "424.81223",
+            "X2": "152.70533",
+            "Y2": "437.22623",
+            "ID": "svg_89"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "Fill": "none",
+            "StrokeWidth": "3",
+            "X1": "221.66088",
+            "Y1": "506.38571",
+            "X2": "114.46221",
+            "Y2": "397.28117",
+            "ID": "svg_90"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "X1": "167.22171",
+            "Y1": "414.30038",
+            "X2": "167.42193",
+            "Y2": "359.23827",
+            "ID": "svg_91",
+            "StrokeWidth": "3"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "165.72001",
+            "Y1": "363.64324",
+            "X2": "179.43548",
+            "Y2": "348.72642",
+            "ID": "svg_92"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "StrokeWidth": "3",
+            "X1": "178.23413",
+            "Y1": "349.22698",
+            "X2": "273.42296",
+            "Y2": "348.42608",
+            "ID": "svg_93",
+            "Stroke": "#000000"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "182.27206",
+            "Y1": "410.26254",
+            "X2": "167.98928",
+            "Y2": "411.99783",
+            "ID": "svg_4"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "StrokeWidth": "3",
+            "X1": "181.47115",
+            "Y1": "409.32816",
+            "X2": "208.83535",
+            "Y2": "436.2919",
+            "ID": "svg_5",
+            "Stroke": "#000000"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "208.4349",
+            "Y1": "437.49326",
+            "X2": "244.74252",
+            "Y2": "396.78067",
+            "ID": "svg_6"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "218.98013",
+            "Y1": "372.62008",
+            "X2": "247.54568",
+            "Y2": "401.31912",
+            "ID": "svg_7"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "246.07736",
+            "Y1": "401.18564",
+            "X2": "255.6882",
+            "Y2": "388.2377",
+            "ID": "svg_8"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "254.35336",
+            "Y1": "388.90512",
+            "X2": "271.03884",
+            "Y2": "388.63815",
+            "ID": "svg_9"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "155.57528",
+            "Y1": "433.62222",
+            "X2": "230.32626",
+            "Y2": "506.23746",
+            "ID": "svg_10"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "207.36703",
+            "Y1": "493.02255",
+            "X2": "248.48007",
+            "Y2": "451.10861",
+            "ID": "svg_11"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "245.27645",
+            "Y1": "453.64481",
+            "X2": "215.37606",
+            "Y2": "452.71042",
+            "ID": "svg_12"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "220.71542",
+            "Y1": "452.57693",
+            "X2": "220.98239",
+            "Y2": "462.32126",
+            "ID": "svg_13"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "220.048",
+            "Y1": "460.45248",
+            "X2": "228.45748",
+            "Y2": "469.39591",
+            "ID": "svg_14"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "211.23806",
+            "Y1": "452.57693",
+            "X2": "193.4847",
+            "Y2": "452.8439",
+            "ID": "svg_15"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "StrokeWidth": "3",
+            "X1": "194.55257",
+            "Y1": "451.37558",
+            "X2": "180.93722",
+            "Y2": "466.59274",
+            "ID": "svg_16",
+            "Stroke": "#000000"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "Fill": "none",
+            "StrokeWidth": "3",
+            "X1": "220.19632",
+            "Y1": "506.23746",
+            "X2": "253.152",
+            "Y2": "505.83701",
+            "ID": "svg_18"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "251.81716",
+            "Y1": "506.10398",
+            "X2": "272.64065",
+            "Y2": "486.21488",
+            "ID": "svg_19"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "86.29714",
+            "Y1": "400.6517",
+            "X2": "78.95553",
+            "Y2": "408.79422",
+            "ID": "svg_20"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "105.51882",
+            "Y1": "435.491",
+            "X2": "112.86043",
+            "Y2": "426.81454",
+            "ID": "svg_21"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "139.82418",
+            "Y1": "452.8439",
+            "X2": "132.08211",
+            "Y2": "461.78732",
+            "ID": "svg_22"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "158.11147",
+            "Y1": "487.81668",
+            "X2": "165.85354",
+            "Y2": "479.14023",
+            "ID": "svg_23"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "192.55032",
+            "Y1": "505.70352",
+            "X2": "185.2087",
+            "Y2": "514.78043",
+            "ID": "svg_24"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "212.17245",
+            "Y1": "541.47721",
+            "X2": "218.84664",
+            "Y2": "532.80075",
+            "ID": "svg_25"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "Fill": "none",
+            "StrokeWidth": "3",
+            "X1": "236.73348",
+            "Y1": "519.9863",
+            "X2": "236.73348",
+            "Y2": "546.95005",
+            "ID": "svg_26"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "236.33303",
+            "Y1": "545.61521",
+            "X2": "285.58859",
+            "Y2": "545.88217",
+            "ID": "svg_27"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "StrokeWidth": "3",
+            "X1": "284.52072",
+            "Y1": "547.08353",
+            "X2": "284.78768",
+            "Y2": "519.31888",
+            "ID": "svg_28",
+            "Stroke": "#000000"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "236.73348",
+            "Y1": "521.72159",
+            "X2": "284.78768",
+            "Y2": "520.92069",
+            "ID": "svg_38"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "255.55471",
+            "Y1": "442.69913",
+            "X2": "255.28774",
+            "Y2": "465.52487",
+            "ID": "svg_53"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "255.28774",
+            "Y1": "464.59049",
+            "X2": "259.69271",
+            "Y2": "469.39591",
+            "ID": "svg_62"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "258.49136",
+            "Y1": "469.39591",
+            "X2": "272.90762",
+            "Y2": "468.99545",
+            "ID": "svg_74"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "272.10672",
+            "Y1": "487.28275",
+            "X2": "272.37368",
+            "Y2": "476.33707",
+            "ID": "svg_79"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "StrokeWidth": "3",
+            "X1": "272.10672",
+            "Y1": "470.33029",
+            "X2": "272.2402",
+            "Y2": "347.12466",
+            "ID": "svg_94",
+            "Stroke": "#000000"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "261.96194",
+            "Y1": "438.56113",
+            "X2": "272.50717",
+            "Y2": "425.88016",
+            "ID": "svg_95"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "255.55471",
+            "Y1": "453.77829",
+            "X2": "271.57278",
+            "Y2": "453.91177",
+            "ID": "svg_96"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "218.84664",
+            "Y1": "348.85995",
+            "X2": "218.71316",
+            "Y2": "373.82144",
+            "ID": "svg_99"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "218.84664",
+            "Y1": "373.15402",
+            "X2": "231.6611",
+            "Y2": "362.07486",
+            "ID": "svg_100"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "229.92581",
+            "Y1": "348.4595",
+            "X2": "231.52761",
+            "Y2": "363.27621",
+            "ID": "svg_101"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "113.17187",
+            "Y1": "346.32372",
+            "X2": "116.73144",
+            "Y2": "346.5017",
+            "ID": "svg_102"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "318.91503",
+            "Y1": "300.04931",
+            "X2": "295.59985",
+            "Y2": "325.14428",
+            "ID": "svg_105"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "288.92565",
+            "Y1": "312.77477",
+            "X2": "311.52892",
+            "Y2": "288.39172",
+            "ID": "svg_106"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "326.03417",
+            "Y1": "309.66015",
+            "X2": "316.06738",
+            "Y2": "320.8728",
+            "ID": "svg_107"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "Fill": "none",
+            "StrokeWidth": "3",
+            "X1": "297.20165",
+            "Y1": "557.94018",
+            "X2": "360.02807",
+            "Y2": "558.65209",
+            "ID": "svg_108"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "StrokeWidth": "3",
+            "X1": "303.25292",
+            "Y1": "557.22825",
+            "X2": "303.60888",
+            "Y2": "344.7219",
+            "ID": "svg_109",
+            "Stroke": "#000000"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "298.80346",
+            "Y1": "557.94018",
+            "X2": "298.98144",
+            "Y2": "519.85278",
+            "ID": "svg_110"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "297.37963",
+            "Y1": "521.63256",
+            "X2": "303.07495",
+            "Y2": "521.63256",
+            "ID": "svg_111"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "X1": "352.73095",
+            "Y1": "557.94018",
+            "X2": "353.9768",
+            "Y2": "431.93139",
+            "ID": "svg_112"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "StrokeWidth": "3",
+            "X1": "352.90893",
+            "Y1": "559.00805",
+            "X2": "353.44287",
+            "Y2": "370.70678",
+            "ID": "svg_113",
+            "Stroke": "#000000"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "303.60888",
+            "Y1": "476.42602",
+            "X2": "352.90893",
+            "Y2": "476.07006",
+            "ID": "svg_114"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "305.03271",
+            "Y1": "400.42919",
+            "X2": "353.44287",
+            "Y2": "400.25121",
+            "ID": "svg_115"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "353.08691",
+            "Y1": "371.77465",
+            "X2": "303.25292",
+            "Y2": "371.95263",
+            "ID": "svg_116"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "Fill": "none",
+            "StrokeWidth": "3",
+            "X1": "302.45201",
+            "Y1": "345.96777",
+            "X2": "328.79284",
+            "Y2": "345.96777",
+            "ID": "svg_117"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "327.81396",
+            "Y1": "345.78979",
+            "X2": "352.37499",
+            "Y2": "371.95263",
+            "ID": "svg_118"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "Fill": "none",
+            "StrokeWidth": "3",
+            "X1": "351.79656",
+            "Y1": "317.49121",
+            "X2": "380.76257",
+            "Y2": "347.16913",
+            "ID": "svg_119"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "339.9165",
+            "Y1": "358.24829",
+            "X2": "347.56957",
+            "Y2": "350.41723",
+            "ID": "svg_120"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "Fill": "none",
+            "StrokeWidth": "3",
+            "X1": "355.53411",
+            "Y1": "339.1156",
+            "X2": "363.05371",
+            "Y2": "330.61712",
+            "ID": "svg_121"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "StrokeWidth": "3",
+            "X1": "379.60571",
+            "Y1": "346.67968",
+            "X2": "568.44092",
+            "Y2": "345.96777",
+            "ID": "svg_122",
+            "Stroke": "#000000"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "X1": "351.84106",
+            "Y1": "318.55908",
+            "X2": "351.66308",
+            "Y2": "291.15039",
+            "ID": "svg_123"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "Fill": "none",
+            "StrokeWidth": "3",
+            "X1": "351.12914",
+            "Y1": "294.88793",
+            "X2": "536.40477",
+            "Y2": "294.88793",
+            "ID": "svg_124"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_2",
+            "Y2": "314.64355",
+            "X2": "433.88915",
+            "Y1": "314.28759",
+            "X1": "351.84106",
+            "StrokeWidth": "3",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_3",
+            "Y2": "328.16992",
+            "X2": "361.62988",
+            "Y1": "315.17748",
+            "X1": "361.4519",
+            "StrokeWidth": "3",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_76",
+            "Y2": "314.46557",
+            "X2": "381.56347",
+            "Y1": "345.61181",
+            "X1": "381.38549",
+            "StrokeWidth": "3",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_97",
+            "Y2": "346.85766",
+            "X2": "405.59057",
+            "Y1": "314.46557",
+            "X1": "405.59057",
+            "StrokeWidth": "3",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "ID": "svg_98",
+            "Y2": "295.77783",
+            "X2": "432.82128",
+            "Y1": "346.85766",
+            "X1": "432.46533",
+            "StrokeWidth": "3",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "ID": "svg_103",
+            "Y2": "306.45654",
+            "X2": "433.57769",
+            "Y1": "306.27856",
+            "X1": "408.79418",
+            "StrokeWidth": "3",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_125",
+            "Y2": "305.9226",
+            "X2": "415.73535",
+            "Y1": "295.95581",
+            "X1": "415.91332",
+            "StrokeWidth": "3",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "ID": "svg_126",
+            "Y2": "311.43994",
+            "X2": "459.34008",
+            "Y1": "295.37738",
+            "X1": "439.98492",
+            "StrokeWidth": "3",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "ID": "svg_127",
+            "Y2": "346.67968",
+            "X2": "459.1621",
+            "Y1": "310.01611",
+            "X1": "459.34008",
+            "StrokeWidth": "3",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_128",
+            "Y2": "326.21215",
+            "X2": "568.61889",
+            "Y1": "326.03417",
+            "X1": "458.80615",
+            "StrokeWidth": "3",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_129",
+            "Y2": "288.12475",
+            "X2": "567.01708",
+            "Y1": "353.08691",
+            "X1": "567.01708",
+            "StrokeWidth": "3",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_130",
+            "Y2": "295.77783",
+            "X2": "565.77123",
+            "Y1": "295.77783",
+            "X1": "546.72753",
+            "StrokeWidth": "3",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_131",
+            "Y2": "288.12475",
+            "X2": "552.60082",
+            "Y1": "295.95581",
+            "X1": "552.60082",
+            "StrokeWidth": "3",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_132",
+            "Y2": "346.5017",
+            "X2": "529.99755",
+            "Y1": "326.03417",
+            "X1": "529.81957",
+            "StrokeWidth": "3",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_133",
+            "Y2": "325.50024",
+            "X2": "494.40185",
+            "Y1": "346.32372",
+            "X1": "494.22387",
+            "StrokeWidth": "3",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "ID": "svg_134",
+            "Y2": "314.86602",
+            "X2": "535.15893",
+            "Y1": "295.24389",
+            "X1": "534.98095",
+            "StrokeWidth": "3",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "ID": "svg_136",
+            "Y2": "313.21972",
+            "X2": "477.31591",
+            "Y1": "313.3977",
+            "X1": "535.33691",
+            "StrokeWidth": "3",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_137",
+            "Y2": "294.53198",
+            "X2": "478.73974",
+            "Y1": "313.21972",
+            "X1": "478.56176",
+            "StrokeWidth": "3",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_138",
+            "Y2": "312.32983",
+            "X2": "507.39428",
+            "Y1": "295.24389",
+            "X1": "507.39428",
+            "StrokeWidth": "3",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_139",
+            "Y2": "327.10205",
+            "X2": "584.10302",
+            "Y1": "288.48071",
+            "X1": "584.45898",
+            "StrokeWidth": "3",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_140",
+            "Y2": "291.15039",
+            "X2": "625.74999",
+            "Y1": "290.61645",
+            "X1": "583.92504",
+            "StrokeWidth": "3",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_141",
+            "Y2": "267.12329",
+            "X2": "626.63989",
+            "Y1": "266.23339",
+            "X1": "580.18749",
+            "StrokeWidth": "3",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_143",
+            "Y2": "266.58935",
+            "X2": "584.45898",
+            "Y1": "159.80224",
+            "X1": "584.99291",
+            "StrokeWidth": "3",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "ID": "svg_144",
+            "Y2": "160.87011",
+            "X2": "625.57201",
+            "Y1": "160.87011",
+            "X1": "583.39111",
+            "StrokeWidth": "3",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_145",
+            "Y2": "143.96215",
+            "X2": "584.45898",
+            "Y1": "114.77368",
+            "X1": "584.63696",
+            "StrokeWidth": "3",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "ID": "svg_146",
+            "Y2": "143.07226",
+            "X2": "626.10595",
+            "Y1": "143.07226",
+            "X1": "583.39111",
+            "StrokeWidth": "3",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_147",
+            "Y2": "134.70727",
+            "X2": "584.99291",
+            "Y1": "134.88525",
+            "X1": "576.27197",
+            "StrokeWidth": "3",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_148",
+            "Y2": "122.60473",
+            "X2": "585.52685",
+            "Y1": "122.78271",
+            "X1": "576.44994",
+            "StrokeWidth": "3",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "ID": "svg_149",
+            "Y2": "80.24585",
+            "X2": "567.01708",
+            "Y1": "81.31372",
+            "X1": "352.375",
+            "StrokeWidth": "3",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_150",
+            "Y2": "74.55053",
+            "X2": "406.12451",
+            "Y1": "80.95776",
+            "X1": "406.30248",
+            "StrokeWidth": "3",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_151",
+            "Y2": "74.0166",
+            "X2": "512.02172",
+            "Y1": "80.24585",
+            "X1": "512.02172",
+            "StrokeWidth": "3",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "ID": "svg_152",
+            "Y2": "265.69946",
+            "X2": "458.98412",
+            "Y1": "81.66968",
+            "X1": "458.62817",
+            "StrokeWidth": "3",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "ID": "svg_153",
+            "Y2": "265.78844",
+            "X2": "353.44287",
+            "Y1": "74.0166",
+            "X1": "353.62084",
+            "StrokeWidth": "3",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "ID": "svg_154",
+            "Y2": "184.1853",
+            "X2": "565.77122",
+            "Y1": "184.36328",
+            "X1": "353.79882",
+            "StrokeWidth": "3",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "ID": "svg_155",
+            "Y2": "267.1233",
+            "X2": "564.70336",
+            "Y1": "80.77978",
+            "X1": "565.41528",
+            "StrokeWidth": "3",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "ID": "svg_156",
+            "Y2": "264.09765",
+            "X2": "354.15478",
+            "Y1": "266.05541",
+            "X1": "565.94921",
+            "StrokeWidth": "3",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_157",
+            "Y2": "245.76586",
+            "X2": "379.24975",
+            "Y1": "245.76586",
+            "X1": "353.44287",
+            "StrokeWidth": "3",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "ID": "svg_158",
+            "Y2": "263.87518",
+            "X2": "378.53784",
+            "Y1": "244.29754",
+            "X1": "378.53784",
+            "StrokeWidth": "3",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_159",
+            "Y2": "206.61059",
+            "X2": "381.38549",
+            "Y1": "206.96655",
+            "X1": "353.62084",
+            "StrokeWidth": "3",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_160",
+            "Y2": "185.07519",
+            "X2": "381.38549",
+            "Y1": "208.03442",
+            "X1": "381.02954",
+            "StrokeWidth": "3",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "StrokeWidth": "3",
+            "ID": "svg_161",
+            "Y2": "294.13156",
+            "X2": "547.75095",
+            "Y1": "326.43466",
+            "X1": "547.61746",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_162",
+            "Y2": "363.29099",
+            "X2": "99.17088",
+            "Y1": "363.52829",
+            "X1": "86.83103",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_163",
+            "Y2": "361.44702",
+            "X2": "99.2513",
+            "Y1": "361.61597",
+            "X1": "86.18657",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_164",
+            "Y2": "359.64499",
+            "X2": "85.11661",
+            "Y1": "359.53237",
+            "X1": "98.74448",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_165",
+            "Y2": "357.56139",
+            "X2": "99.08236",
+            "Y1": "357.78665",
+            "X1": "85.73606",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_166",
+            "Y2": "355.98461",
+            "X2": "85.45449",
+            "Y1": "356.04093",
+            "X1": "98.91342",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_167",
+            "Y2": "354.29521",
+            "X2": "98.85711",
+            "Y1": "354.18258",
+            "X1": "85.84869",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_168",
+            "Y2": "352.77474",
+            "X2": "86.01763",
+            "Y1": "352.83106",
+            "X1": "98.91342",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_169",
+            "Y2": "351.87373",
+            "X2": "75.03649",
+            "Y1": "351.81741",
+            "X1": "84.77873",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_170",
+            "Y2": "353.56313",
+            "X2": "84.72242",
+            "Y1": "353.67576",
+            "X1": "75.03649",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_171",
+            "Y2": "355.0836",
+            "X2": "73.85391",
+            "Y1": "355.0836",
+            "X1": "84.6661",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_172",
+            "Y2": "356.94194",
+            "X2": "84.49716",
+            "Y1": "357.05457",
+            "X1": "74.30442",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_173",
+            "Y2": "358.96923",
+            "X2": "72.5587",
+            "Y1": "359.13817",
+            "X1": "84.55348",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_174",
+            "Y2": "360.54601",
+            "X2": "84.49716",
+            "Y1": "360.48969",
+            "X1": "74.75492",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_175",
+            "Y2": "362.1791",
+            "X2": "74.36073",
+            "Y1": "362.12279",
+            "X1": "84.44085",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_176",
+            "Y2": "532.93418",
+            "X2": "253.51904",
+            "Y1": "545.44829",
+            "X1": "253.41893",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_177",
+            "Y2": "533.73508",
+            "X2": "267.43473",
+            "Y1": "533.53486",
+            "X1": "253.41893",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_178",
+            "Y2": "544.64739",
+            "X2": "266.93417",
+            "Y1": "533.73508",
+            "X1": "266.83406",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_179",
+            "Y2": "522.32221",
+            "X2": "261.22773",
+            "Y1": "533.63497",
+            "X1": "261.12762",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_180",
+            "Y2": "533.53486",
+            "X2": "259.4257",
+            "Y1": "522.02187",
+            "X1": "259.4257",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "Stroke": "#000000",
+            "ID": "svg_181",
+            "Y2": "520.42006",
+            "X2": "257.62367",
+            "Y1": "534.03542",
+            "X1": "257.72378",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_182",
+            "Y2": "521.02074",
+            "X2": "255.92175",
+            "Y1": "533.93531",
+            "X1": "256.22209",
+            "StrokeWidth": "null",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_183",
+            "Y2": "533.53486",
+            "X2": "254.72039",
+            "Y1": "545.84874",
+            "X1": "262.42909",
+            "StrokeWidth": "null",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_184",
+            "Y2": "534.13553",
+            "X2": "261.22773",
+            "Y1": "544.94773",
+            "X1": "261.32785",
+            "StrokeWidth": "null",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_185",
+            "Y2": "539.94208",
+            "X2": "258.92514",
+            "Y1": "534.03542",
+            "X1": "258.92514",
+            "StrokeWidth": "null",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_186",
+            "Y2": "536.53824",
+            "X2": "256.62254",
+            "Y1": "533.83519",
+            "X1": "256.62254",
+            "StrokeWidth": "null",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Path": {
+            "D": "m310.55008,289.45963c0.53394,-0.46719 0.75089,-1.32819 1.46851,-1.76181c0.67191,-0.40601 1.49692,-0.6293 2.34912,-0.77295c0.82687,-0.13937 1.71127,-0.20416 2.60294,-0.13492c0.86209,0.06696 1.74338,0.15436 2.56921,0.35278c0.84314,0.20258 1.46136,0.6015 2.0892,1.08902c0.64282,0.49918 1.2558,1.03543 2.00244,1.49484c0.6925,0.42612 1.26132,1.06232 1.71304,1.73529c0.45551,0.67859 1.07242,1.25037 1.59753,1.83069c0.54865,0.60632 0.99335,1.26898 1.60181,1.78458c0.61935,0.52484 1.24509,1.14896 1.45676,1.88034c0.24625,0.85083 0.03809,1.77927 0.03809,2.67361c0,0.88098 -0.00183,1.77505 -0.1333,2.61627c-0.13556,0.86734 -0.25598,1.75342 -0.6676,2.45166c-0.43192,0.73267 -0.54938,1.51471 -0.81229,2.34238c-0.23926,0.75327 -0.73755,1.44821 -1.35016,1.90686l-0.6441,0.47714l-0.59451,0.59073",
+            "ID": "svg_187",
+            "StrokeWidth": "3",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_188",
+            "Y2": "311.08401",
+            "X2": "291.06143",
+            "Y1": "320.82834",
+            "X1": "298.67001",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_189",
+            "Y2": "312.15188",
+            "X2": "289.05917",
+            "Y1": "322.43014",
+            "X1": "297.0682",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_190",
+            "Y2": "317.75821",
+            "X2": "300.93924",
+            "Y1": "308.54782",
+            "X1": "293.59762",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_191",
+            "Y2": "308.81478",
+            "X2": "291.46188",
+            "Y1": "319.62698",
+            "X1": "299.87136",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_192",
+            "Y2": "317.09079",
+            "X2": "303.07498",
+            "Y1": "307.47995",
+            "X1": "295.59988",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_193",
+            "Y2": "305.47769",
+            "X2": "296.53427",
+            "Y1": "314.95504",
+            "X1": "304.00936",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_194",
+            "Y2": "313.48672",
+            "X2": "305.74466",
+            "Y1": "303.20846",
+            "X1": "297.86911",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_195",
+            "Y2": "301.74014",
+            "X2": "299.73788",
+            "Y1": "311.88491",
+            "X1": "307.21298",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_196",
+            "Y2": "310.95053",
+            "X2": "309.08175",
+            "Y1": "300.27182",
+            "X1": "301.33969",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_197",
+            "Y2": "298.13607",
+            "X2": "302.27407",
+            "Y1": "309.21524",
+            "X1": "310.55008",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_198",
+            "Y2": "308.14737",
+            "X2": "312.41885",
+            "Y1": "296.40078",
+            "X1": "303.7424",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_199",
+            "Y2": "295.33291",
+            "X2": "306.27859",
+            "Y1": "304.5433",
+            "X1": "314.15414",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_200",
+            "Y2": "303.20846",
+            "X2": "315.22201",
+            "Y1": "293.46414",
+            "X1": "307.74691",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_201",
+            "Y2": "292.1293",
+            "X2": "308.54782",
+            "Y1": "301.07272",
+            "X1": "316.55685",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_202",
+            "Y2": "299.33743",
+            "X2": "317.62472",
+            "Y1": "290.12704",
+            "X1": "309.21524",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_203",
+            "Y2": "311.61795",
+            "X2": "324.03195",
+            "Y1": "302.94149",
+            "X1": "316.9573",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_204",
+            "Y2": "304.5433",
+            "X2": "315.88943",
+            "Y1": "312.0184",
+            "X1": "322.56363",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_205",
+            "Y2": "313.48672",
+            "X2": "321.36227",
+            "Y1": "305.87814",
+            "X1": "314.42111",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_206",
+            "Y2": "307.21298",
+            "X2": "313.21975",
+            "Y1": "315.22201",
+            "X1": "320.02743",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_207",
+            "Y2": "316.69033",
+            "X2": "318.55911",
+            "Y1": "308.28085",
+            "X1": "311.88491",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_208",
+            "Y2": "309.74917",
+            "X2": "310.14962",
+            "Y1": "318.29214",
+            "X1": "316.82382",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Line": {
+            "ID": "svg_209",
+            "Y2": "320.16092",
+            "X2": "316.1564",
+            "Y1": "311.61795",
+            "X1": "308.94827",
+            "Stroke": "#000000",
+            "Fill": "none"
+        }
+    },
+    {
+        "Text": {
+            "XML:Space": "preserve",
+            "TextAnchor": "middle",
+            "FontFamily": "serif",
+            "FontSize": "11",
+            "ID": "svg_210",
+            "Y": "334.57712",
+            "X": "446.58493",
+            "StrokeWidth": "0",
+            "Stroke": "#000000",
+            "Fill": "#000000",
+            "Text": "C"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "X1": "306.81251",
+            "Y1": "133.00001",
+            "X2": "314.82814",
+            "Y2": "120.76563",
+            "ID": "svg_1"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "X1": "304.85473",
+            "Y1": "129.90185",
+            "X2": "311.61791",
+            "Y2": "119.5791",
+            "ID": "svg_17"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "X1": "301.8291",
+            "Y1": "129.18994",
+            "X2": "309.30419",
+            "Y2": "117.44336",
+            "ID": "svg_135"
+        }
+    },
+    {
+        "Line": {
+            "Fill": "none",
+            "Stroke": "#000000",
+            "X1": "306.63452",
+            "Y1": "114.77368",
+            "X2": "299.69335",
+            "Y2": "126.34228",
+            "ID": "svg_142"
+        }
+    },
+    {
+        "Text": {
+            "ID": "svg_211",
+            "XML:Space": "preserve",
+            "TextAnchor": "middle",
+            "FontFamily": "serif",
+            "FontSize": "11",
+            "Y": "338.31931",
+            "X": "476.54587",
+            "StrokeWidth": "0",
+            "Stroke": "#000000",
+            "Fill": "#000000",
+            "Text": "F"
+        }
+    },
+    {
+        "Text": {
+            "ID": "svg_212",
+            "XML:Space": "preserve",
+            "TextAnchor": "middle",
+            "FontFamily": "serif",
+            "FontSize": "11",
+            "Y": "306.67868",
+            "X": "495.10837",
+            "StrokeWidth": "0",
+            "Stroke": "#000000",
+            "Fill": "#000000",
+            "Text": "E"
+        }
+    },
+    {
+        "Text": {
+            "ID": "svg_213",
+            "XML:Space": "preserve",
+            "TextAnchor": "middle",
+            "FontFamily": "serif",
+            "FontSize": "11",
+            "Y": "307.52243",
+            "X": "522.95212",
+            "StrokeWidth": "0",
+            "Stroke": "#000000",
+            "Fill": "#000000",
+            "Text": "D"
+        }
+    },
+    {
+        "Text": {
+            "ID": "svg_214",
+            "XML:Space": "preserve",
+            "TextAnchor": "middle",
+            "FontFamily": "serif",
+            "FontSize": "11",
+            "Y": "339.58493",
+            "X": "511.56149",
+            "StrokeWidth": "0",
+            "Stroke": "#000000",
+            "Fill": "#000000",
+            "Text": "C"
+        }
+    },
+    {
+        "Text": {
+            "ID": "svg_215",
+            "XML:Space": "preserve",
+            "TextAnchor": "middle",
+            "FontFamily": "serif",
+            "FontSize": "11",
+            "Y": "339.16306",
+            "X": "547.84274",
+            "StrokeWidth": "0",
+            "Stroke": "#000000",
+            "Fill": "#000000",
+            "Text": "B"
+        }
+    },
+    {
+        "Text": {
+            "ID": "svg_216",
+            "XML:Space": "preserve",
+            "TextAnchor": "middle",
+            "FontFamily": "serif",
+            "FontSize": "11",
+            "Y": "314.69431",
+            "X": "557.96774",
+            "StrokeWidth": "0",
+            "Stroke": "#000000",
+            "Fill": "#000000",
+            "Text": "A"
+        }
+    },
+    {
+        "Text": {
+            "Stroke": "#000000",
+            "ID": "svg_217",
+            "XML:Space": "preserve",
+            "TextAnchor": "middle",
+            "FontFamily": "serif",
+            "FontSize": "11",
+            "Y": "333.67868",
+            "X": "420.01462",
+            "StrokeWidth": "0",
+            "Fill": "#000000",
+            "Text": "B"
+        }
+    },
+    {
+        "Text": {
+            "ID": "svg_218",
+            "XML:Space": "preserve",
+            "TextAnchor": "middle",
+            "FontFamily": "serif",
+            "FontSize": "11",
+            "Y": "335.36618",
+            "X": "393.01462",
+            "StrokeWidth": "0",
+            "Stroke": "#000000",
+            "Fill": "#000000",
+            "Text": "A"
+        }
+    },
+    {
+        "Text": {
+            "ID": "svg_219",
+            "XML:Space": "preserve",
+            "TextAnchor": "middle",
+            "FontFamily": "serif",
+            "FontSize": "11",
+            "Y": "309.35056",
+            "X": "383.60055",
+            "StrokeWidth": "0",
+            "Stroke": "#000000",
+            "Fill": "#000000",
+            "Text": "152"
+        }
+    },
+    {
+        "Text": {
+            "ID": "svg_220",
+            "XML:Space": "preserve",
+            "TextAnchor": "middle",
+            "FontFamily": "serif",
+            "FontSize": "11",
+            "Y": "363.34274",
+            "X": "319.89743",
+            "StrokeWidth": "0",
+            "Stroke": "#000000",
+            "Fill": "#000000",
+            "Text": "111"
+        }
+    },
+    {
+        "Text": {
+            "ID": "svg_221",
+            "XML:Space": "preserve",
+            "TextAnchor": "middle",
+            "FontFamily": "serif",
+            "FontSize": "11",
+            "Y": "272.21774",
+            "X": "274.7568",
+            "StrokeWidth": "0",
+            "Stroke": "#000000",
+            "Fill": "#000000",
+            "Text": "101"
+        }
+    },
+    {
+        "Text": {
+            "ID": "svg_222",
+            "XML:Space": "preserve",
+            "TextAnchor": "middle",
+            "FontFamily": "serif",
+            "FontSize": "11",
+            "Y": "235.51462",
+            "X": "314.83493",
+            "StrokeWidth": "0",
+            "Stroke": "#000000",
+            "Fill": "#000000",
+            "Text": "161"
+        }
+    },
+    {
+        "Text": {
+            "ID": "svg_223",
+            "XML:Space": "preserve",
+            "TextAnchor": "middle",
+            "FontFamily": "serif",
+            "FontSize": "11",
+            "Y": "230.87399",
+            "X": "408.0693",
+            "StrokeWidth": "0",
+            "Stroke": "#000000",
+            "Fill": "#000000",
+            "Text": "Office Suite"
+        }
+    },
+    {
+        "Text": {
+            "ID": "svg_224",
+            "XML:Space": "preserve",
+            "TextAnchor": "middle",
+            "FontFamily": "serif",
+            "FontSize": "11",
+            "Y": "215.26462",
+            "X": "409.33493",
+            "StrokeWidth": "0",
+            "Stroke": "#000000",
+            "Fill": "#000000",
+            "Text": "151"
+        }
+    },
+    {
+        "Text": {
+            "ID": "svg_225",
+            "XML:Space": "preserve",
+            "TextAnchor": "middle",
+            "FontFamily": "serif",
+            "FontSize": "11",
+            "Y": "146.92087",
+            "X": "406.80368",
+            "StrokeWidth": "0",
+            "Stroke": "#000000",
+            "Fill": "#000000",
+            "Text": "Office Suite"
+        }
+    },
+    {
+        "Text": {
+            "ID": "svg_226",
+            "XML:Space": "preserve",
+            "TextAnchor": "middle",
+            "FontFamily": "serif",
+            "FontSize": "11",
+            "Y": "133.84274",
+            "X": "407.22555",
+            "StrokeWidth": "0",
+            "Stroke": "#000000",
+            "Fill": "#000000",
+            "Text": "165"
+        }
+    },
+    {
+        "Text": {
+            "ID": "svg_227",
+            "XML:Space": "preserve",
+            "TextAnchor": "middle",
+            "FontFamily": "serif",
+            "FontSize": "11",
+            "Y": "258.71774",
+            "X": "366.30368",
+            "StrokeWidth": "0",
+            "Stroke": "#000000",
+            "Fill": "#000000",
+            "Text": "160"
+        }
+    },
+    {
+        "Text": {
+            "ID": "svg_228",
+            "XML:Space": "preserve",
+            "TextAnchor": "middle",
+            "FontFamily": "serif",
+            "FontSize": "11",
+            "Y": "198.38962",
+            "X": "367.14743",
+            "StrokeWidth": "0",
+            "Stroke": "#000000",
+            "Fill": "#000000",
+            "Text": "163"
+        }
+    },
+    {
+        "Text": {
+            "ID": "svg_229",
+            "XML:Space": "preserve",
+            "TextAnchor": "middle",
+            "FontFamily": "serif",
+            "FontSize": "11",
+            "Y": "230.03024",
+            "X": "509.3193",
+            "StrokeWidth": "0",
+            "Stroke": "#000000",
+            "Fill": "#000000",
+            "Text": "Office Suite"
+        }
+    },
+    {
+        "Text": {
+            "ID": "svg_230",
+            "XML:Space": "preserve",
+            "TextAnchor": "middle",
+            "FontFamily": "serif",
+            "FontSize": "11",
+            "Y": "214.84274",
+            "X": "509.74118",
+            "StrokeWidth": "0",
+            "Stroke": "#000000",
+            "Fill": "#000000",
+            "Text": "153"
+        }
+    },
+    {
+        "Text": {
+            "ID": "svg_231",
+            "XML:Space": "preserve",
+            "TextAnchor": "middle",
+            "FontFamily": "serif",
+            "FontSize": "11",
+            "Y": "153.24899",
+            "X": "510.58493",
+            "StrokeWidth": "0",
+            "Stroke": "#000000",
+            "Fill": "#000000",
+            "Text": "Office Suite"
+        }
+    },
+    {
+        "Text": {
+            "ID": "svg_232",
+            "XML:Space": "preserve",
+            "TextAnchor": "middle",
+            "FontFamily": "serif",
+            "FontSize": "11",
+            "Y": "136.37399",
+            "X": "510.58493",
+            "StrokeWidth": "0",
+            "Stroke": "#000000",
+            "Fill": "#000000",
+            "Text": "157"
+        }
+    },
+    {
+        "Text": {
+            "ID": "svg_233",
+            "XML:Space": "preserve",
+            "TextAnchor": "middle",
+            "FontFamily": "serif",
+            "FontSize": "11",
+            "Y": "324.10837",
+            "X": "502.14743",
+            "StrokeWidth": "0",
+            "Stroke": "#000000",
+            "Fill": "#000000",
+            "Text": "154"
+        }
+    },
+    {
+        "Text": {
+            "ID": "svg_234",
+            "XML:Space": "preserve",
+            "TextAnchor": "middle",
+            "FontFamily": "serif",
+            "FontSize": "11",
+            "Y": "122.87399",
+            "X": "511.42868",
+            "StrokeWidth": "0",
+            "Stroke": "#000000",
+            "Fill": "#000000",
+            "Text": "OCB"
+        }
+    },
+    {
+        "Text": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "X": "81.0693",
+            "Y": "333.48337",
+            "FontSize": "11",
+            "FontFamily": "serif",
+            "TextAnchor": "middle",
+            "XML:Space": "preserve",
+            "ID": "svg_75",
+            "Text": "To COM"
+        }
+    },
+    {
+        "Text": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "X": "200.92868",
+            "Y": "413.54587",
+            "FontSize": "11",
+            "FontFamily": "serif",
+            "TextAnchor": "middle",
+            "XML:Space": "preserve",
+            "ID": "svg_235",
+            "Text": "137"
+        }
+    },
+    {
+        "Text": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "X": "196.70993",
+            "Y": "396.24899",
+            "FontSize": "11",
+            "FontFamily": "serif",
+            "TextAnchor": "middle",
+            "XML:Space": "preserve",
+            "ID": "svg_236",
+            "Text": "Board Room"
+        }
+    },
+    {
+        "Text": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "X": "194.60055",
+            "Y": "383.59274",
+            "FontSize": "11",
+            "FontFamily": "serif",
+            "TextAnchor": "middle",
+            "XML:Space": "preserve",
+            "ID": "svg_237",
+            "Text": "Hugh Speer"
+        }
+    },
+    {
+        "Text": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "X": "328.7568",
+            "Y": "516.06149",
+            "FontSize": "11",
+            "FontFamily": "serif",
+            "TextAnchor": "middle",
+            "XML:Space": "preserve",
+            "ID": "svg_238",
+            "Text": "117"
+        }
+    },
+    {
+        "Text": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "X": "325.80368",
+            "Y": "439.28024",
+            "FontSize": "11",
+            "FontFamily": "serif",
+            "TextAnchor": "middle",
+            "XML:Space": "preserve",
+            "ID": "svg_239",
+            "Text": "115"
+        }
+    },
+    {
+        "Text": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "X": "237.20993",
+            "Y": "315.24899",
+            "FontSize": "11",
+            "FontFamily": "serif",
+            "TextAnchor": "middle",
+            "XML:Space": "preserve",
+            "ID": "svg_240",
+            "Text": "134"
+        }
+    },
+    {
+        "Text": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "X": "257.8818",
+            "Y": "300.06149",
+            "FontSize": "11",
+            "FontFamily": "serif",
+            "TextAnchor": "middle",
+            "XML:Space": "preserve",
+            "ID": "svg_241",
+            "Text": "132"
+        }
+    },
+    {
+        "Text": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "X": "231.72555",
+            "Y": "284.03024",
+            "FontSize": "11",
+            "FontFamily": "serif",
+            "TextAnchor": "middle",
+            "XML:Space": "preserve",
+            "ID": "svg_242",
+            "Text": "136"
+        }
+    },
+    {
+        "Text": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "X": "250.28805",
+            "Y": "373.46774",
+            "FontSize": "11",
+            "FontFamily": "serif",
+            "TextAnchor": "middle",
+            "XML:Space": "preserve",
+            "ID": "svg_243",
+            "Text": "112"
+        }
+    },
+    {
+        "Text": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "X": "142.28805",
+            "Y": "406.79587",
+            "FontSize": "11",
+            "FontFamily": "serif",
+            "TextAnchor": "middle",
+            "XML:Space": "preserve",
+            "ID": "svg_244",
+            "Text": "141"
+        }
+    },
+    {
+        "Text": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "X": "140.60055",
+            "Y": "392.87399",
+            "FontSize": "11",
+            "FontFamily": "serif",
+            "TextAnchor": "middle",
+            "XML:Space": "preserve",
+            "ID": "svg_245",
+            "Text": "Room"
+        }
+    },
+    {
+        "Text": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "X": "141.02243",
+            "Y": "378.10837",
+            "FontSize": "11",
+            "FontFamily": "serif",
+            "TextAnchor": "middle",
+            "XML:Space": "preserve",
+            "ID": "svg_246",
+            "Text": "Kansas"
+        }
+    },
+    {
+        "Text": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "X": "176.8818",
+            "Y": "295.42087",
+            "FontSize": "11",
+            "FontFamily": "serif",
+            "TextAnchor": "middle",
+            "XML:Space": "preserve",
+            "ID": "svg_247",
+            "Text": "138"
+        }
+    },
+    {
+        "Text": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "X": "101.78805",
+            "Y": "297.10837",
+            "FontSize": "11",
+            "FontFamily": "serif",
+            "TextAnchor": "middle",
+            "XML:Space": "preserve",
+            "ID": "svg_248",
+            "Text": "140"
+        }
+    },
+    {
+        "Text": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "X": "291.95993",
+            "Y": "535.75681",
+            "FontSize": "11",
+            "FontFamily": "serif",
+            "TextAnchor": "middle",
+            "XML:Space": "preserve",
+            "ID": "svg_249",
+            "Transform": "rotate(-90 291.961 532.383)",
+            "Text": "To SCI"
+        }
+    },
+    {
+        "Text": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "X": "602.6943",
+            "Y": "282.35056",
+            "FontSize": "11",
+            "FontFamily": "serif",
+            "TextAnchor": "middle",
+            "XML:Space": "preserve",
+            "ID": "svg_250",
+            "Text": "To OCB"
+        }
+    },
+    {
+        "Text": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "X": "600.39743",
+            "Y": "154.18649",
+            "FontSize": "11",
+            "FontFamily": "serif",
+            "TextAnchor": "middle",
+            "XML:Space": "preserve",
+            "ID": "svg_251",
+            "Text": "To OCB"
+        }
+    },
+    {
+        "Path": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "D": "m635.16925,284.73282l4.16187,-4.17578l-8.04688,0l-8.04681,0l0,-2.58539l0,-2.58536l7.95453,0c4.375,0 7.95453,-0.13086 7.95453,-0.29108c0,-0.16022 -1.7417,-2.03903 -3.8703,-4.17633l-3.87048,-3.88474l3.57739,0l3.57739,0l5.46344,5.47409l5.4635,5.47409l-5.47394,5.46341l-5.47394,5.46341l-3.76617,0l-3.76605,0l4.16193,-4.17633l0,0z",
+            "ID": "svg_252"
+        }
+    },
+    {
+        "Path": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "D": "m634.30682,158.13617l4.16187,-4.17578l-8.04688,0l-8.04681,0l0,-2.58539l0,-2.58536l7.95453,0c4.375,0 7.95453,-0.13086 7.95453,-0.29108c0,-0.16023 -1.7417,-2.03903 -3.8703,-4.17633l-3.87048,-3.88475l3.57739,0l3.57739,0l5.46344,5.47409l5.4635,5.47409l-5.47394,5.46341l-5.47394,5.46341l-3.76617,0l-3.76605,0l4.16193,-4.17633l0,0l0,0.00002z",
+            "ID": "svg_254"
+        }
+    },
+    {
+        "Path": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "D": "m41.80682,337.38617l4.16187,-4.17578l-8.04688,0l-8.04681,0l0,-2.58539l0,-2.58536l7.95453,0c4.375,0 7.95453,-0.13086 7.95453,-0.29108c0,-0.16022 -1.7417,-2.03903 -3.8703,-4.17633l-3.87048,-3.88474l3.57739,0l3.57739,0l5.46344,5.47409l5.4635,5.47409l-5.47394,5.46341l-5.47394,5.46341l-3.76617,0l-3.76605,0l4.16193,-4.17633l0,0l-0.00001,0z",
+            "ID": "svg_255",
+            "Transform": "rotate(-180 43 330.625)"
+        }
+    },
+    {
+        "Path": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "D": "m273.55682,152.13617l4.16187,-4.17578l-8.04688,0l-8.04681,0l0,-2.58539l0,-2.58536l7.95453,0c4.375,0 7.95453,-0.13086 7.95453,-0.29108c0,-0.16023 -1.7417,-2.03903 -3.8703,-4.17633l-3.87048,-3.88475l3.57739,0l3.57739,0l5.46344,5.47409l5.4635,5.47409l-5.47394,5.46341l-5.47394,5.46341l-3.76617,0l-3.76605,0l4.16193,-4.17633l0,0l0,0.00002z",
+            "ID": "svg_256",
+            "Transform": "rotate(180 274.75 145.375)"
+        }
+    },
+    {
+        "Path": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "D": "m336.55682,115.38617l4.16187,-4.17578l-8.04688,0l-8.04681,0l0,-2.58539l0,-2.58536l7.95453,0c4.375,0 7.95453,-0.13086 7.95453,-0.29108c0,-0.16022 -1.7417,-2.03902 -3.8703,-4.17633l-3.87048,-3.88474l3.57739,0l3.57739,0l5.46344,5.47409l5.4635,5.47409l-5.47394,5.46341l-5.47394,5.46341l-3.76617,0l-3.76605,0l4.16193,-4.17633l0,0l0,0.00001z",
+            "ID": "svg_257",
+            "Transform": "rotate(-90 337.75 108.625)"
+        }
+    },
+    {
+        "Path": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "D": "m578.05682,101.88617l4.16187,-4.17578l-8.04688,0l-8.04681,0l0,-2.58539l0,-2.58536l7.95453,0c4.375,0 7.95453,-0.13086 7.95453,-0.29108c0,-0.16022 -1.7417,-2.03902 -3.8703,-4.17633l-3.87048,-3.88474l3.57739,0l3.57739,0l5.46344,5.47409l5.4635,5.47409l-5.47394,5.46341l-5.47394,5.46341l-3.76617,0l-3.76605,0l4.16193,-4.17633l0,0l0,0.00001z",
+            "ID": "svg_258",
+            "Transform": "rotate(-90 579.25 95.125)"
+        }
+    },
+    {
+        "Path": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "D": "m578.80682,349.38617l4.16187,-4.17578l-8.04688,0l-8.04681,0l0,-2.58539l0,-2.58536l7.95453,0c4.375,0 7.95453,-0.13086 7.95453,-0.29108c0,-0.16022 -1.7417,-2.03903 -3.8703,-4.17633l-3.87048,-3.88474l3.57739,0l3.57739,0l5.46344,5.47409l5.4635,5.47409l-5.47394,5.46341l-5.47394,5.46341l-3.76617,0l-3.76605,0l4.16193,-4.17633l0,0z",
+            "ID": "svg_259",
+            "Transform": "rotate(90 580 342.625)"
+        }
+    },
+    {
+        "Path": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "D": "m366.55682,367.38617l4.16187,-4.17578l-8.04688,0l-8.04681,0l0,-2.58539l0,-2.58536l7.95453,0c4.375,0 7.95453,-0.13086 7.95453,-0.29108c0,-0.16022 -1.7417,-2.03903 -3.8703,-4.17633l-3.87048,-3.88474l3.57739,0l3.57739,0l5.46344,5.47409l5.4635,5.47409l-5.47394,5.46341l-5.47394,5.46341l-3.76617,0l-3.76605,0l4.16193,-4.17633l0,0z",
+            "ID": "svg_260",
+            "Transform": "rotate(45 367.75 360.625)"
+        }
+    },
+    {
+        "Path": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "D": "m290.05682,575.13617l4.16187,-4.17578l-8.04688,0l-8.04681,0l0,-2.58539l0,-2.58533l7.95453,0c4.375,0 7.95453,-0.13086 7.95453,-0.29114c0,-0.16022 -1.7417,-2.039 -3.8703,-4.17627l-3.87048,-3.88477l3.57739,0l3.57739,0l5.46344,5.47412l5.4635,5.47406l-5.47394,5.46344l-5.47394,5.46338l-3.76617,0l-3.76605,0l4.16193,-4.17633l0,0z",
+            "ID": "svg_261",
+            "Transform": "rotate(90 291.25 568.375)"
+        }
+    },
+    {
+        "Path": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "D": "m212.05682,524.88617l4.16187,-4.17578l-8.04688,0l-8.04681,0l0,-2.58539l0,-2.58533l7.95453,0c4.375,0 7.95453,-0.13092 7.95453,-0.29108c0,-0.16022 -1.7417,-2.03906 -3.8703,-4.17636l-3.87048,-3.88474l3.57739,0l3.57739,0l5.46344,5.47412l5.4635,5.47406l-5.47394,5.46344l-5.47394,5.46338l-3.76617,0l-3.76605,0l4.16193,-4.17633l0,0z",
+            "ID": "svg_262",
+            "Transform": "rotate(180 213.25 518.125)"
+        }
+    },
+    {
+        "Path": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "D": "m103.30682,415.38617l4.16187,-4.17578l-8.04688,0l-8.04681,0l0,-2.58539l0,-2.58536l7.95453,0c4.375,0 7.95453,-0.13086 7.95453,-0.29108c0,-0.16022 -1.7417,-2.03903 -3.8703,-4.17633l-3.87048,-3.88474l3.57738,0l3.57739,0l5.46344,5.47409l5.4635,5.47409l-5.47394,5.46341l-5.47395,5.46341l-3.76617,0l-3.76605,0l4.16193,-4.17633l0,0l-0.00001,0z",
+            "ID": "svg_263",
+            "Transform": "rotate(90 104.5 408.625)"
+        }
+    },
+    {
+        "Path": {
+            "Fill": "#000000",
+            "Stroke": "#000000",
+            "StrokeWidth": "0",
+            "D": "m143.80682,150.63617l4.16187,-4.17578l-8.04688,0l-8.04681,0l0,-2.58539l0,-2.58536l7.95453,0c4.375,0 7.95453,-0.13086 7.95453,-0.29108c0,-0.16023 -1.7417,-2.03903 -3.8703,-4.17633l-3.87048,-3.88475l3.57739,0l3.57739,0l5.46344,5.47409l5.4635,5.47409l-5.47394,5.46341l-5.47394,5.46341l-3.76617,0l-3.76605,0l4.16193,-4.17633l0,0l0,0.00002z",
+            "ID": "svg_264",
+            "Transform": "rotate(-90 145 143.875)"
+        }
+    },
+    {
+        "Text": {
+            "Fill": "#000000",
+            "StrokeWidth": "0",
+            "X": "99.65152",
+            "Y": "154.87361",
+            "ID": "svg_265",
+            "FontSize": "11",
+            "FontFamily": "serif",
+            "TextAnchor": "middle",
+            "XML:Space": "preserve",
+            "Transform": "matrix(2.63626 0 0 2.67027 -142.072 -258.405)",
+            "Stroke": "#000000",
+            "Text": "N"
+        }
+    },
+    {
+        "Text": {
+            "Fill": "#000000",
+            "StrokeWidth": "0",
+            "X": "96.99998",
+            "Y": "108.24998",
+            "ID": "svg_267",
+            "FontSize": "11",
+            "FontFamily": "serif",
+            "TextAnchor": "middle",
+            "XML:Space": "preserve",
+            "Transform": "matrix(1.7348 0 0 2.06404 0.723998 -99.6078)",
+            "Stroke": "#000000",
+            "Text": "GEB First Floor"
+        }
+    }
+]
                     },
                     {
                         "Id": 2,

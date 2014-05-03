@@ -2,6 +2,7 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  background-image:url(../images/background.png); background-repeat:repeat
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -78,6 +79,7 @@ body {
   }
 }
 
+/** svg styles **/
 .shape {
   fill: red;
   opacity: 0.25;
@@ -89,10 +91,20 @@ body {
   fill:green;
   opacity: 0.25;
 }
+/***************/
 
-.success {
-  background-color: green;
+/** tiny navbar **/
+.navbar-xs { min-height:22px; border-radius:0}
+.navbar-xs .navbar-brand{ padding: 2px 8px;font-size: 14px;line-height: 14px; }
+.navbar-xs .navbar-nav > li > a { border-right:1px solid #ddd; padding-top: 2px; padding-bottom: 2px; line-height: 16px }
+/***************/
+
+/** loading modal **/
+.pad-all-25 {
+  padding: 25px;
 }
-.danger {
-  background-color: red;
+
+.pad-all-35 {
+  padding: 35px;
 }
+/*******************/
