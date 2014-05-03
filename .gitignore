@@ -5,7 +5,12 @@ dist
 app/bower_components
 .idea
 api/.idea
-api/project/target
-api/target
+api/project/project/target/*/*
+api/project/target/*/*
+api/target/*
+api/target/*/*
+api/target/*/*/*
+api/target/*/*/*/*
 api/logs
+api/out
 *.iml
