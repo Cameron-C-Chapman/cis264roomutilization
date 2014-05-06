@@ -1,43 +1,26 @@
 'use strict';
 
-describe('Controller: MainCtrl', function () {
+/* jasmine specs for controllers go here */
 
-  // load the controller's module
-  beforeEach(module('cis264App'));
+describe('Controllers', function(){
+    beforeEach(module('cis264App'));
 
-  var MainCtrl,
-    scope;
+    it('MainCtrl should be defined...', inject(function($controller) {
+        //spec body
+        var MainCtrl = $controller('MainCtrl', { $scope: {} });
+        expect(MainCtrl).toBeDefined();
+    }));
 
-  // Initialize the controller and a mock scope
-  beforeEach(inject(function ($controller, $rootScope) {
-    scope = $rootScope.$new();
-    MainCtrl = $controller('MainCtrl', {
-      $scope: scope
-    });
-  }));
+    it('DatepickerCtrl should be defined...', inject(function($controller) {
+        //spec body
+        var DatepickerCtrl = $controller('DatepickerCtrl', { $scope: {} });
+        expect(DatepickerCtrl).toBeDefined();
+    }));
 
-  it('MainCtrl should not be null', function () {
-    expect(MainCtrl).not.toBe(null);
-  });
-
-  it('scope should not be null', function () {
-    expect(scope).not.toBe(null);
-  });
-
-  it('scope.errorState should not be null', function () {
-    expect(scope.errorState).not.toBe(null);
-  });
-
-  it('scope.errorState should be initiated to false', function () {
-    expect(scope.errorState).toBe(false);
-  });
-
-  it('scope.showImageView should not be null', function () {
-    expect(scope.showImageView).not.toBe(null);
-  });
-
-  it('scope.showImageView should be initiated to true', function () {
-    expect(scope.showImageView).toBe(true);
-  });
+    it('TimepickerCtrl should be defined...', inject(function($controller) {
+        //spec body
+        var TimepickerCtrl = $controller('TimepickerCtrl', { $scope: {} });
+        expect(TimepickerCtrl).toBeDefined();
+    }));
 
 });

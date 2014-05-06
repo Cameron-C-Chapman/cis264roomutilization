@@ -28,14 +28,14 @@
                             <li><a href="#">User Documentation</a></li>
                             <li class="divider"></li>
                             <li><a href="#">Developer Documentation</a></li>
-                            <li><a href="#">Ad Astra API Reference</a></li>
+                            <li><a href="http://www.aais.com/Help/75/index.html?astra_schedule_api.htm" target="_blank">Ad Astra API Reference</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Developer Contact</a></li>
-                            <li><a href="#">Stakeholder Contact</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#developerContactModal" target="_top">Developer Contact</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#stakeholderContactModal" target="_top">Stakeholder Contact</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -99,7 +99,7 @@
     </div>
 
     <div id="imageBlock" ng-show="showImageView" class="col-lg-8 col-md-8 col-sm-8">
-        <svg id="{{activeBuilding.BuildingCode}}-{{activeFloor.Id}}" viewBox="0 0 800 800" preserveAspectRatio="none"
+        <svg id="{{activeBuilding.BuildingCode}}-{{activeFloor.Id}}" width="650" height="650" viewBox="0 0 800 800" preserveAspectRatio="meet"
              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g>
                 <g ng-click="setActiveRoomFromMap(activeBuilding.BuildingCode, m.Rect.Room, m.Text.Text)" ng-repeat="m in activeFloor.Map">
@@ -142,6 +142,15 @@
                               text-anchor="start" >
                         {{m.Text.Text}}
                         </text>
+
+                        <ellipse ng-if="m.Ellipse"
+                              data-ng-attr-id="{{m.Ellipse.ID}}"
+                              data-ng-attr-fill="{{m.Ellipse.Fill}}"
+                              data-ng-attr-stroke="{{m.Ellipse.Stroke}}"
+                              data-ng-attr-stroke-width="{{m.Ellipse.StrokeWidth}}"
+                              data-ng-attr-cx="{{m.Ellipse.CX}}" ng-attr-cy="{{m.Ellipse.CY}}"
+                              data-ng-attr-rx="{{m.Ellipse.RX}}" ng-attr-ry="{{m.Ellipse.RY}}" >
+                        </ellipse>
 
                     </a>
                 </g>
@@ -240,3 +249,65 @@
         <!-- /.modal-dialog -->
     </div>
     <!-- /.modal -->
+
+<div id="developerContactModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Developer Contact</h4>
+            </div>
+            <div class="modal-body center-text">
+                <p><strong>Cameron Chapman</strong></p>
+                <ul>
+                    <li><a href="mailto:cameron.c.chapman@gmail.com" target="_top"><span class="glyphicon glyphicon-envelope"></span> cameron.c.chapman@gmail.com</a></li>
+                    <li><a href="http://www.linkedin.com/pub/cameron-chapman/38/9aa/748/" target="_blank">LinkedIn</a></li>
+                </ul>
+                <p><strong>Andrew Megaris</strong></p>
+                <ul>
+                    <li><a href="mailto:highonbikes@gmail.com" target="_top"><span class="glyphicon glyphicon-envelope"></span> highonbikes@gmail.com</a></li>
+                    <li><a href="http://www.linkedin.com/pub/andrew-megaris/52/35a/955" target="_blank">LinkedIn</a></li>
+                </ul>
+                    <p><strong>Michael Hastings</strong></p>
+                <ul>
+                    <li><a href="mailto:mhastin1@gmail.com" target="_top"><span class="glyphicon glyphicon-envelope"></span> mhastin1@gmail.com</a></li>
+                    <li><a href="www.linkedin.com/pub/michael-hastings/83/668/783" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="modal-footer"></div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+
+<div id="stakeholderContactModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Stakeholder Contact</h4>
+            </div>
+            <div class="modal-body center-text">
+                <p><strong>Ryan Wing ~ Sr. Sustain Data/Resch Analyst</strong></p>
+                <ul>
+                    <li><a href="mailto:rwing@jccc.edu" target="_top"><span class="glyphicon glyphicon-envelope"></span> rwing@jccc.edu</a></li>
+                </ul>
+                <p><strong>Michael Rea ~ Sustainability Project Manager</strong></p>
+                <ul>
+                    <li><a href="mailto:mrea@jccc.edu" target="_top"><span class="glyphicon glyphicon-envelope"></span> mrea@jccc.edu</a></li>
+                </ul>
+                <p><strong>Lin Knudson ~ Dean, Academic Support</strong></p>
+                <ul>
+                    <li><a href="mailto:lknudson@jccc.edu" target="_top"><span class="glyphicon glyphicon-envelope"></span> lknudson@jccc.edu</a></li>
+                </ul>
+            </div>
+            <div class="modal-footer"></div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
