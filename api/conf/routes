@@ -7,11 +7,9 @@ GET     /                           controllers.Astra.index()
 
 # Campus
 GET     /campuses                   controllers.Astra.campuses()
-#GET     /campus/:id                 controllers.Astra.campus(id: String)
 
 # Building
 GET     /buildings                  controllers.Astra.buildings()
-#GET     /building/:id               controllers.Astra.building(id: String)
 
 # Room
 GET     /rooms                      controllers.Astra.rooms()
@@ -19,12 +17,6 @@ GET     /rooms                      controllers.Astra.rooms()
 
 # Schedule
 GET     /schedule/campus/:campusId/:scheduleDate controllers.Astra.scheduleByCampus(campusId: String, scheduleDate: String)
-
-#GET     /schedule/campus/custom/:campusId/:scheduleDateTime controllers.Astra.customScheduleByCampus(campusId: String, scheduleDateTime: String)
-
-#GET     /schedule/building/now/:buildingId controllers.Astra.currentScheduleByBuilding(buildingId: String)
-
-#GET     /schedule/building/custom/:buildingId/:scheduleDateTime controllers.Astra.customScheduleByBuilding(buildingId: String, scheduleDateTime: String)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

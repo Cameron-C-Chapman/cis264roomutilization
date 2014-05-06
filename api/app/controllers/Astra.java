@@ -34,8 +34,6 @@ public class Astra extends Controller {
         this.BaseUrl = "https://asapp01.aaiscloud.com/JCCC_Test/";
         this.ResponderUrl = null;
         this.ResponderParameters = null;
-        //this.ResponderUrl = "~api/search/room?action=GET";
-        //this.ResponderParameters = "fields=RowNumber%2CId%2CRoomName%2CRoomDescription%2CRoomNumber%2CRoomTypeName%2CBuildingCode%2CBuildingName%2CCampusName%2CCapacity%2CBuildingRoomNumberRoomName%2CCanEdit%2CCanDelete&sortOrder=%2BBuildingRoomNumberRoomName";
     }
 
     public String Login() throws IOException {
@@ -53,7 +51,7 @@ public class Astra extends Controller {
         /**
          * Output user credentials over HTTP Output Stream
          */
-        byte[] outputBytes = "{'username': 'cchapman', 'password':'ripken84'}".getBytes("UTF-8");
+        byte[] outputBytes = "{'username': 'cis264roomutilization', 'password':'roomutilization!APP'}".getBytes("UTF-8");
         OutputStream os = httpcon.getOutputStream();
         os.write(outputBytes);
         os.close();
@@ -219,7 +217,7 @@ public class Astra extends Controller {
      * @throws IOException
      */
     @BodyParser.Of(BodyParser.Json.class)
-    public static Result scheduleByCampus( String campusId, String scheduleDate ) throws IOException {
+    public static Result scheduleByCampus( String campusId, String scheduleDate) throws IOException {
 
         String requestResults;
         Astra api = new Astra();

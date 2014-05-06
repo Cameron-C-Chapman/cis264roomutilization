@@ -1,6 +1,6 @@
 <div class="row col-lg-12 col-md-12 col-sm-12">
 
-    <div class="header col-lg-10 col-lg-offset-1">
+    <div class="header col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
 
         <nav class="navbar navbar-default navbar-xs navbar-fixed-top" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -28,14 +28,14 @@
                             <li><a href="#">User Documentation</a></li>
                             <li class="divider"></li>
                             <li><a href="#">Developer Documentation</a></li>
-                            <li><a href="#">Ad Astra API Reference</a></li>
+                            <li><a href="http://www.aais.com/Help/75/index.html?astra_schedule_api.htm" target="_blank">Ad Astra API Reference</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Developer Contact</a></li>
-                            <li><a href="#">Stakeholder Contact</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#developerContactModal" target="_top">Developer Contact</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#stakeholderContactModal" target="_top">Stakeholder Contact</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -45,25 +45,25 @@
         <div class="col-lg-3"><img class="img-responsive" src="images/logo.png" alt="logo.png"/></div>
     </div>
 
-    <div class="col-lg-3 col-lg-offset-1 well well-sm">
+    <div class="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-4 well well-sm">
 
         <div ng-controller="MainCtrl" data-ng-show="showScheduleLoadTime" class="alert alert-info">
             <strong>Schedule Loaded: <em><span am-time-ago="lastLoadTime"></span></em></strong>
         </div>
 
-        <div ng-controller="TimepickerDemoCtrl">
+        <div ng-controller="TimepickerCtrl">
             <pre>Data Time: <em>{{mytime | date:'shortTime' }}</em></pre>
-            <div ng-model="mytime" ng-change="changed()" style="display:inline-block;">
+            <div ng-model="mytime">
                 <timepicker hour-step="hstep" minute-step="mstep" show-meridian="ismeridian"></timepicker>
             </div>
         </div>
 
         &nbsp;
 
-        <div ng-controller="DatepickerDemoCtrl">
+        <div ng-controller="DatepickerCtrl">
             <div>
                 <div ng-model="dt">
-                    <pre>Data Date: <em>{{dt | date:'fullDate' }}</em></pre>
+                    <pre>Data Date: <em>{{dt | date:'dd-MMMM-yyyy' }}</em></pre>
                     <datepicker min="minDate" show-weeks="showWeeks"></datepicker>
                 </div>
             </div>
@@ -71,7 +71,7 @@
 
     </div>
 
-    <div class="col-lg-8 well well-sm">
+    <div class="col-lg-8 col-md-8 col-sm-8 well well-sm">
         <form class="form-inline" role="form">
             <div class="form-group">
                 <label>Campus: </label>
@@ -85,52 +85,82 @@
                 <select
                         data-ng-model="activeBuilding"
                         data-ng-options="b.Description for b in buildingObjects.data | orderBy:'Description' | filter:activeCampus.Id"
-                        data-ng-change="getBuildingData(activeBuilding)">
+                        data-ng-change="setActiveBuilding(activeBuilding)">
                 </select>
             </div>
-            <div data-ng-show="activeBuildingFloorObjects" class="form-group">
+            <div data-ng-show="activeBuilding" class="form-group">
                 <label> Floor:</label>
                 <select
                         data-ng-model="activeFloor"
-                        data-ng-options="f.Description for f in activeBuildingFloorObjects.Floors">
+                        data-ng-options="f.Floor for f in floorObjects | orderBy:'Floor' | filter:activeBuilding.Id">
                 </select>
             </div>
         </form>
     </div>
 
-    <div id="imageBlock" ng-show="showImageView" class="col-lg-8">
-        <svg id="{{activeBuilding.BuildingCode}}-{{activeFloor.Id}}" class="center-block" width="650" height="650"
+    <div id="imageBlock" ng-show="showImageView" class="col-lg-8 col-md-8 col-sm-8">
+        <svg id="{{activeBuilding.BuildingCode}}-{{activeFloor.Id}}" width="650" height="650" viewBox="0 0 800 800" preserveAspectRatio="meet"
              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g>
-                <g data-ng-click="setActiveRoomFromMap(activeBuilding.BuildingCode, m.Rect.Room, m.Text.Text)" ng-repeat="m in activeFloor.Map">
+                <g ng-click="setActiveRoomFromMap(activeBuilding.BuildingCode, m.Rect.Room, m.Text.Text)" ng-repeat="m in activeFloor.Map">
                     <a xlink:href="#" data-toggle="modal" data-target="#roomModal" target="_top">
                         <rect ng-if="m.Rect"
-                              ng:class="{true:'shape active', false:'shape'}[isActiveClass(m.Rect.Room)]"
-                              ng-attr-id="{{m.Rect.Room}}" ng-attr-x="{{m.Rect.X}}" ng-attr-y="{{m.Rect.Y}}"
-                              ng-attr-width="{{m.Rect.W}}" ng-attr-height="{{m.Rect.H}}"/>
+                              data-ng:class="{true:'shape active', false:'shape'}[isActiveClass(m.Rect.Room)]"
+                              data-ng-attr-id="{{m.Rect.Room}}"
+                              data-ng-attr-fill="{{m.Rect.Fill}}"
+                              data-ng-attr-stroke="{{m.Rect.Stroke}}"
+                              data-ng-attr-stroke-width="{{m.Rect.StrokeWidth}}"
+                              data-ng-attr-x="{{m.Rect.X}}" ng-attr-y="{{m.Rect.Y}}"
+                              data-ng-attr-width="{{m.Rect.W}}" ng-attr-height="{{m.Rect.H}}" />
 
-                        <path ng-if="m.Path" class="shape" ng-attr-id="{{m.Path.Id}}" ng-attr-d="{{m.Path.D}}"
-                              ng-attr-stroke-width="{{m.Path.StrokeWidth}}" ng-attr-transform="{{m.Path.Transform}}"/>
+                        <path ng-if="m.Path"
+                              data-ng:class="{true:'shape active', false:'shape'}[isActiveClass(m.Path.Room)]"
+                              data-ng-attr-id="{{m.Path.Room}}"
+                              data-ng-attr-stroke="{{m.Path.Stroke}}"
+                              data-ng-attr-fill="{{m.Path.Fill}}"
+                              data-ng-attr-stroke-width="{{m.Path.StrokeWidth}}"
+                              data-ng-attr-d="{{m.Path.D}}" />
 
-                        <line ng-if="m.Line" class="shape" ng-attr-id="{{m.Line.Id}}" ng-attr-x1="{{m.Line.X1}}"
-                              ng-attr-y1="{{m.Line.Y1}}" ng-attr-x2="{{m.Line.X2}}" ng-attr-y2="{{m.Line.Y2}}"
-                              ng-attr-stroke="{{m.Line.Stroke}}" ng-attr-stroke-width="{{m.Line.StrokeWidth}}"/>
+                        <line ng-if="m.Line"
+                              data-ng-attr-id="{{m.Line.ID}}"
+                              data-ng-attr-stroke="{{m.Line.Stroke}}"
+                              data-ng-attr-fill="{{m.Fill}}"
+                              data-ng-attr-x1="{{m.Line.X1}}" ng-attr-y1="{{m.Line.Y1}}"
+                              data-ng-attr-x2="{{m.Line.X2}}" ng-attr-y2="{{m.Line.Y2}}"
+                              data-ng-attr-stroke-width="{{m.Line.StrokeWidth}}"/>
 
-                        <text ng-if="m.Text" ng-attr-x="{{m.Text.X}}" ng-attr-y="{{m.Text.Y}}" font-family="Verdana"
-                              font-size="{{m.Text.FontSize}}" text-anchor="start" ng-attr-stroke="{{m.Text.Stroke}}"
-                              ng-attr-stroke-width="{{m.Text.StrokeWidth}}" ng-attr-fill="{{m.Text.Fill}}"
-                              ng-attr-text-anchor="{{m.Text.TextAnchor}}" ng-attr-transform="{{m.Text.Transform}}">
-                            {{m.Text.Text}}
+                        <text ng-if="m.Text"
+                              data-ng-attr-id="{{m.Text.ID}}"
+                              XML:Space= "preserve"
+                              data-ng-attr-text-anchor="{{m.Text.TextAnchor}}"
+                              data-ng-attr-font-family="{{m.Text.FontFamily}}"
+                              data-ng-attr-font-size="{{m.Text.FontSize}}"
+                              data-ng-attr-x="{{m.Text.X}}" ng-attr-y="{{m.Text.Y}}"
+                              data-ng-attr-stroke-width="{{m.Text.StrokeWidth}}"
+                              data-ng-attr-stroke="{{m.Text.Stroke}}"
+                              data-ng-attr-fill="{{m.Text.Fill}}"
+                              text-anchor="start" >
+                        {{m.Text.Text}}
                         </text>
+
+                        <ellipse ng-if="m.Ellipse"
+                              data-ng-attr-id="{{m.Ellipse.ID}}"
+                              data-ng-attr-fill="{{m.Ellipse.Fill}}"
+                              data-ng-attr-stroke="{{m.Ellipse.Stroke}}"
+                              data-ng-attr-stroke-width="{{m.Ellipse.StrokeWidth}}"
+                              data-ng-attr-cx="{{m.Ellipse.CX}}" ng-attr-cy="{{m.Ellipse.CY}}"
+                              data-ng-attr-rx="{{m.Ellipse.RX}}" ng-attr-ry="{{m.Ellipse.RY}}" >
+                        </ellipse>
+
                     </a>
                 </g>
             </g>
         </svg>
     </div>
 
-    <div id="tableBlock" ng-show="showTableView" class="col-lg-8 center-block">
+    <div id="tableBlock" ng-show="showTableView" class="col-lg-8 col-md-8 col-sm-8 center-block">
 
-        <div class="col-lg-12">
+        <div class="col-lg-12 col-md-12 col-sm-12">
 
             <span class="label label-primary">Page: {{tableParams.page()}}</span>
             <span class="label label-primary">Count per page: {{tableParams.count()}}</span>
@@ -219,3 +249,65 @@
         <!-- /.modal-dialog -->
     </div>
     <!-- /.modal -->
+
+<div id="developerContactModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Developer Contact</h4>
+            </div>
+            <div class="modal-body center-text">
+                <p><strong>Cameron Chapman</strong></p>
+                <ul>
+                    <li><a href="mailto:cameron.c.chapman@gmail.com" target="_top"><span class="glyphicon glyphicon-envelope"></span> cameron.c.chapman@gmail.com</a></li>
+                    <li><a href="http://www.linkedin.com/pub/cameron-chapman/38/9aa/748/" target="_blank">LinkedIn</a></li>
+                </ul>
+                <p><strong>Andrew Megaris</strong></p>
+                <ul>
+                    <li><a href="mailto:highonbikes@gmail.com" target="_top"><span class="glyphicon glyphicon-envelope"></span> highonbikes@gmail.com</a></li>
+                    <li><a href="http://www.linkedin.com/pub/andrew-megaris/52/35a/955" target="_blank">LinkedIn</a></li>
+                </ul>
+                    <p><strong>Michael Hastings</strong></p>
+                <ul>
+                    <li><a href="mailto:mhastin1@gmail.com" target="_top"><span class="glyphicon glyphicon-envelope"></span> mhastin1@gmail.com</a></li>
+                    <li><a href="www.linkedin.com/pub/michael-hastings/83/668/783" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="modal-footer"></div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+
+<div id="stakeholderContactModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Stakeholder Contact</h4>
+            </div>
+            <div class="modal-body center-text">
+                <p><strong>Ryan Wing ~ Sr. Sustain Data/Resch Analyst</strong></p>
+                <ul>
+                    <li><a href="mailto:rwing@jccc.edu" target="_top"><span class="glyphicon glyphicon-envelope"></span> rwing@jccc.edu</a></li>
+                </ul>
+                <p><strong>Michael Rea ~ Sustainability Project Manager</strong></p>
+                <ul>
+                    <li><a href="mailto:mrea@jccc.edu" target="_top"><span class="glyphicon glyphicon-envelope"></span> mrea@jccc.edu</a></li>
+                </ul>
+                <p><strong>Lin Knudson ~ Dean, Academic Support</strong></p>
+                <ul>
+                    <li><a href="mailto:lknudson@jccc.edu" target="_top"><span class="glyphicon glyphicon-envelope"></span> lknudson@jccc.edu</a></li>
+                </ul>
+            </div>
+            <div class="modal-footer"></div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
