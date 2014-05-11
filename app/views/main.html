@@ -12,7 +12,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><b>Room Utilization</b></a>
+                <a class="navbar-brand" href="/"><b>Room Utilization</b></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -25,9 +25,9 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-book"></span> <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">User Documentation</a></li>
+                            <li><a href="#/docs/user">User Documentation</a></li>
                             <li class="divider"></li>
-                            <li><a href="#">Developer Documentation</a></li>
+                            <li><a href="#/docs/developer">Developer Documentation</a></li>
                             <li><a href="http://www.aais.com/Help/75/index.html?astra_schedule_api.htm" target="_blank">Ad Astra API Reference</a></li>
                         </ul>
                     </li>
@@ -77,7 +77,8 @@
                 <label>Campus: </label>
                 <select
                         data-ng-model="activeCampus"
-                        data-ng-options="c.Description for c in campusObjects.data">
+                        data-ng-options="c.Description for c in campusObjects.data"
+                        data-ng-change="setActiveCampus(activeCampus)">
                 </select>
             </div>
             <div data-ng-show="activeCampus.Id" class="form-group">
@@ -85,7 +86,7 @@
                 <select
                         data-ng-model="activeBuilding"
                         data-ng-options="b.Description for b in buildingObjects.data | orderBy:'Description' | filter:activeCampus.Id"
-                        data-ng-change="setActiveBuilding(activeBuilding)">
+                        data-ng-change="parseSchedule(activeBuilding)">
                 </select>
             </div>
             <div data-ng-show="activeBuilding" class="form-group">
@@ -131,7 +132,6 @@
 
                         <text ng-if="m.Text"
                               data-ng-attr-id="{{m.Text.ID}}"
-                              XML:Space= "preserve"
                               data-ng-attr-text-anchor="{{m.Text.TextAnchor}}"
                               data-ng-attr-font-family="{{m.Text.FontFamily}}"
                               data-ng-attr-font-size="{{m.Text.FontSize}}"
@@ -139,7 +139,8 @@
                               data-ng-attr-stroke-width="{{m.Text.StrokeWidth}}"
                               data-ng-attr-stroke="{{m.Text.Stroke}}"
                               data-ng-attr-fill="{{m.Text.Fill}}"
-                              text-anchor="start" >
+                              data-ng-attr-transform="{{m.Text.Transform}}"
+                              text-anchor="inherit" >
                         {{m.Text.Text}}
                         </text>
 
@@ -199,7 +200,9 @@
     </div>
 
     <div class="row">
-        <div class="footer"></div>
+        <div class="footer">
+
+        </div>
     </div>
 
 </div>

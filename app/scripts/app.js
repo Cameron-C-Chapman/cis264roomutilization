@@ -10,11 +10,20 @@ angular.module('cis264App', [
     'ui.bootstrap',
     'angularSpinner'
   ])
+
     .config(function ($routeProvider, $httpProvider) {
         $routeProvider
             .when('/', {
           templateUrl: 'views/main.html',
           controller: 'MainCtrl'
+        })
+            .when('/docs/user', {
+          templateUrl: 'views/userdocs.html',
+          controller: 'DocsCtrl'
+        })
+            .when('/docs/developer', {
+          templateUrl: 'views/devdocs.html',
+          controller: 'DocsCtrl'
         })
             .otherwise({
           redirectTo: '/'

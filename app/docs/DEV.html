@@ -1,0 +1,943 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body{
+  color:#444;
+  font-family:Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman',
+              "Hiragino Sans GB", "STXihei", "微软雅黑", serif;
+  font-size:12px;
+  line-height:1.5em;
+  background:#fefefe;
+  width: 45em;
+  margin: 10px auto;
+  padding: 1em;
+  outline: 1300px solid #FAFAFA;
+}
+
+a{ color: #0645ad; text-decoration:none;}
+a:visited{ color: #0b0080; }
+a:hover{ color: #06e; }
+a:active{ color:#faa700; }
+a:focus{ outline: thin dotted; }
+a:hover, a:active{ outline: 0; }
+
+span.backtick {
+  border:1px solid #EAEAEA;
+  border-radius:3px;
+  background:#F8F8F8;
+  padding:0 3px 0 3px;
+}
+
+::-moz-selection{background:rgba(255,255,0,0.3);color:#000}
+::selection{background:rgba(255,255,0,0.3);color:#000}
+
+a::-moz-selection{background:rgba(255,255,0,0.3);color:#0645ad}
+a::selection{background:rgba(255,255,0,0.3);color:#0645ad}
+
+p{
+margin:1em 0;
+}
+
+img{
+max-width:100%;
+}
+
+h1,h2,h3,h4,h5,h6{
+font-weight:normal;
+color:#111;
+line-height:1em;
+}
+h4,h5,h6{ font-weight: bold; }
+h1{ font-size:2.5em; }
+h2{ font-size:2em; border-bottom:1px solid silver; padding-bottom: 5px; }
+h3{ font-size:1.5em; }
+h4{ font-size:1.2em; }
+h5{ font-size:1em; }
+h6{ font-size:0.9em; }
+
+blockquote{
+color:#666666;
+margin:0;
+padding-left: 3em;
+border-left: 0.5em #EEE solid;
+}
+hr { display: block; height: 2px; border: 0; border-top: 1px solid #aaa;border-bottom: 1px solid #eee; margin: 1em 0; padding: 0; }
+
+
+pre , code, kbd, samp { 
+  color: #000; 
+  font-family: monospace; 
+  font-size: 0.88em; 
+  border-radius:3px;
+  background-color: #F8F8F8;
+  border: 1px solid #CCC; 
+}
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 5px 12px;}
+pre code { border: 0px !important; padding: 0;}
+code { padding: 0 3px 0 3px; }
+
+b, strong { font-weight: bold; }
+
+dfn { font-style: italic; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol { margin: 1em 0; padding: 0 0 0 2em; }
+li p:last-child { margin:0 }
+dd { margin: 0 0 0 2em; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+@media only screen and (min-width: 480px) {
+body{font-size:14px;}
+}
+
+@media only screen and (min-width: 768px) {
+body{font-size:16px;}
+}
+
+@media print {
+  * { background: transparent !important; color: black !important; filter:none !important; -ms-filter: none !important; }
+  body{font-size:12pt; max-width:100%; outline:none;}
+  a, a:visited { text-decoration: underline; }
+  hr { height: 1px; border:0; border-bottom:1px solid black; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
+  pre, blockquote { border: 1px solid #999; padding-right: 1em; page-break-inside: avoid; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page :left { margin: 15mm 20mm 15mm 10mm; }
+  @page :right { margin: 15mm 10mm 15mm 20mm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+</style><title>DEV</title></head><body><h1 id="developer-docs">Developer Docs</h1>
+<h3 id="important-notes">Important Notes</h3>
+<p>The app is currently pointing to an Astra Test Instance for API calls. To update the base url change the Astra class constructor in api/app/controllers/Astra.java to use the correct base url.</p>
+<pre><code>/**
+ * Constructor sets BaseUrl, ResponderUrl and ResponderParameters properties
+ */
+public Astra() {
+    this.BaseUrl = &quot;https://asapp01.aaiscloud.com/JCCC_Test/&quot;;
+    this.ResponderUrl = null;
+    this.ResponderParameters = null;
+}
+</code></pre>
+
+<p>You will also need to make sure the front end is pointing to where the API is really hosted. At the top of the app/scripts/controllers/main.js file you need to update the prod apiUrl var.</p>
+<pre><code>//var apiUrl = 'http://0.0.0.0:9000';// dev
+var apiUrl = 'http://107.170.159.141:9000';// prod
+</code></pre>
+
+<p>The user account that is being used to be login to the api is set in the Login call in api/app/controllers/Astra.java file and the Login function in the following code:</p>
+<pre><code>/**
+ * Output user credentials over HTTP Output Stream
+ */
+byte[] outputBytes = &quot;{'username': 'cis264roomutilization', 'password':'roomutilization!APP'}&quot;.getBytes(&quot;UTF-8&quot;);
+OutputStream os = httpcon.getOutputStream();
+os.write(outputBytes);
+os.close();
+</code></pre>
+
+<p>Update the username and password values if needed.</p>
+<h3 id="links-to-frameworks-being-used">Links to frameworks being used:</h3>
+<ol>
+<li><a href="https://angularjs.org/">Angularjs</a></li>
+<li><a href="http://www.playframework.com/">Play</a></li>
+</ol>
+<h2 id="instructions-to-get-setup">Instructions to get setup:</h2>
+<p>You will need git, play, nodejs, node package manager, bower, and grunt on your development machine.</p>
+<ol>
+<li><a href="http://git-scm.com/">git</a></li>
+<li><a href="http://www.playframework.com/">play</a></li>
+<li><a href="http://nodejs.org/">nodejs</a></li>
+<li><a href="https://npmjs.org/doc/README.html">npm</a></li>
+<li><a href="http://bower.io/">bower</a></li>
+<li><a href="http://gruntjs.com/getting-started">grunt</a></li>
+</ol>
+<h3 id="windows">Windows</h3>
+<p><em>If you setting up on Windows I would recommend using the Chocolatey package manager for easy installation of these packages.</em></p>
+<ol>
+<li>Install Chocolatey Package Manager. </li>
+<li>Run the following command from your commmand prompt. (This is one command broken down in several lines for readability. You will need to enter it as 1 line.)</li>
+</ol>
+<p><code>@powershell -NoProfile -ExecutionPolicy unrestricted -Command</code></p>
+<p><code>
+    "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" 
+  </code></p>
+<p><code>
+    &amp;&amp; SET PATH=%PATH%;%systemdrive%\chocolatey\bin
+  </code></p>
+<ol>
+<li>Install git.</li>
+<li>
+<p>Open Windows Powershell (not the normal command line).</p>
+<p><code>
+  cinst git.install
+</code></p>
+</li>
+<li>
+<p>Install Play Framework</p>
+</li>
+<li>Open Windows Powershell (not the normal command line).</li>
+</ol>
+<p><code>
+     cinst Play
+   </code></p>
+<ol>
+<li>Install nodejs and npm.</li>
+<li>Open Windows Powershell (not the normal command line).</li>
+</ol>
+<p><code>
+    cinst nodejs.install
+  </code></p>
+<ol>
+<li>Install Bower using the node package manager.</li>
+<li>Open windows command prompt (not the powershell).</li>
+</ol>
+<p><code>
+    npm install -g bower
+  </code></p>
+<ol>
+<li>Install Grunt using the node package manager.</li>
+<li>Open windows command prompt (not the powershell).</li>
+</ol>
+<p><code>
+    npm install -g grunt-cli
+  </code></p>
+<h3 id="linux">Linux</h3>
+<p><em>Using a package manager like apt or yum you can install all the required dependencies above that your current system doesn't have. You can also read below in the section about configuring the Digital Ocean Droplet since that is a Linux distribution.</em></p>
+<h2 id="instructions-to-start-working-the-api-of-the-project">Instructions to start working the API of the project:</h2>
+<p><em>All commands are run from the windows command prompt</em></p>
+<ol>
+<li>You will need a text editor/ide suited for java development. <a href="http://www.jetbrains.com/idea/">IntelliJ IDEA</a> is a great choice.</li>
+<li>You can also install this on Windows using the Chocolatey package manager.</li>
+</ol>
+<p><code>
+    cinst IntelliJIDEA
+  </code></p>
+<ol>
+<li>Use git to clone the project into a directory you want to work from. This will create a cis264roomutilization folder that will contain the project.</li>
+</ol>
+<p><code>
+    git clone https://github.com/Cameron-C-Chapman/cis264roomutilization.git
+  </code></p>
+<ol>
+<li>cd into the cis264roomutilization folder and create a new git branch to work on the project outside of the master branch.</li>
+</ol>
+<p><code>
+    cd cis264roomutilization
+  </code></p>
+<p><code>
+    git branch yourdescriptivebranchname
+  </code></p>
+<p><code>
+    git checkout yourdescriptivebranchname
+  </code></p>
+<ol>
+<li>Navigate to the api folder.</li>
+</ol>
+<p><code>
+    cd api/
+  </code></p>
+<ol>
+<li>
+<p>The api folder is where the Play application lives which serves up the API for the project. This is where you will modify the application to feed your front end.</p>
+</li>
+<li>
+<p>For the API to be accessible you need to run the Play application to start the processs. You will need to initiate the Play console and then run the project.</p>
+</li>
+</ol>
+<p><code>
+    play
+  </code></p>
+<p><code>
+    run
+  </code></p>
+<h2 id="instructions-to-start-working-the-front-end-of-the-project">Instructions to start working the front end of the project:</h2>
+<p><em>All commands are run from the windows command prompt</em></p>
+<ol>
+<li>You will need a text editor/ide suited for web development. <a href="http://www.sublimetext.com/">Sublime Text</a> is a great choice.</li>
+<li>You can also install this on Windows using the Chocolatey package manager.</li>
+</ol>
+<p><code>
+    cinst sublimetext2
+  </code></p>
+<ol>
+<li>Use git to clone the project into a directory you want to work from. This will create a cis264roomutilization folder that will contain the project.</li>
+</ol>
+<p><code>
+    git clone https://github.com/Cameron-C-Chapman/cis264roomutilization.git
+  </code></p>
+<ol>
+<li>cd into the cis264roomutilization folder and create a new git branch to work on the project outside of the master branch.</li>
+</ol>
+<p><code>
+    cd cis264roomutilization
+  </code></p>
+<p><code>
+    git branch yourdescriptivebranchname
+  </code></p>
+<p><code>
+    git checkout yourdescriptivebranchname
+  </code></p>
+<ol>
+<li>Install project dependencies.</li>
+</ol>
+<p><code>
+    npm install
+  </code></p>
+<p><code>
+    bower install
+  </code></p>
+<ol>
+<li>Run the grunt task runner to build the project and then grunt serve to launch it in a browser.</li>
+</ol>
+<p><em>When grunt launches the app it will be monitoring for changes live so there is no need to refresh the page after every change, you will see them live once you save your page.</em></p>
+<p><code>
+    grunt
+  </code></p>
+<p><code>
+    grunt serve
+  </code></p>
+<ol>
+<li>The files to edit are in the app folder. To edit the html view you would edit app/views/main.html. Javascript is located in the scripts folder and css is located in the styles folder.</li>
+</ol>
+<h2 id="instructions-to-configure-digital-ocean-droplet-to-run-application">Instructions to configure Digital Ocean droplet to run application:</h2>
+<ul>
+<li>
+<p>You will need to create an account and have access to create a droplet. These instructions assume you are ready to create a droplet.*</p>
+</li>
+<li>
+<p>Create an SSH Key on your machine for ssh access to the droplet.</p>
+</li>
+<li><a href="https://www.digitalocean.com/community/articles/how-to-use-ssh-keys-with-putty-on-digitalocean-droplets-windows-users">Windows Users</a></li>
+<li>
+<p><a href="https://www.digitalocean.com/community/articles/how-to-use-ssh-keys-with-digitalocean-droplets">Linux Users</a></p>
+</li>
+<li>
+<p>Create the droplets with the following configurations.</p>
+</li>
+<li>Hostname: jcccroomutilization-app / jcccroomutilization-api (this is really optional and up to you)</li>
+<li>Size: 1GB / 1CPU</li>
+<li>Region: New York * (this is optional depending where you are located)</li>
+<li>Select Image: Ubuntu 14.04 x64</li>
+<li>Add SSh Keys: Add the ssh key you created in step one</li>
+<li>
+<p>Settings: Enable VirtIO</p>
+</li>
+<li>
+<p>Login to your new droplet.</p>
+</li>
+<li>
+<p>ssh root@[Droplet IP Address] <em>You will be prompted for the passphrase of your ssh key</em></p>
+</li>
+<li>
+<p>Update all server packages.</p>
+</li>
+</ul>
+<p><code>
+    sudo apt-get update
+  </code></p>
+<ol>
+<li>Install git.</li>
+</ol>
+<p><code>
+    sudo apt-get install -y git-core
+  </code></p>
+<h3 id="for-the-droplet-to-run-the-api">For the Droplet to Run the API:</h3>
+<ol>
+<li>Install Scala and JRE (dependencies for the Play Framework)</li>
+</ol>
+<p><code>sudo apt-get install -y default-jre
+    sudo apt-get install -y default-jdk
+    sudo apt-get install -y scala</code></p>
+<ol>
+<li>Install Play Framework (we are using 2.2.1 but you could use the latest version).</li>
+</ol>
+<p><code>sudo apt-get install -y unzip *required for play zip file*
+    sudo mkdir .play/
+    sudo wget -P .play/ http://downloads.typesafe.com/play/2.2.1/play-2.2.1.zip
+    sudo unzip -d /opt .play/play-2.2.1.zip
+    sudo chmod +x /opt/play-2.2.1/play
+    sudo ln -s /opt/play-2.2.1/play /usr/local/bin/play</code></p>
+<ol>
+<li>Install sbt (we are using version 0.13 but you could use the latest version).</li>
+</ol>
+<p><code>sudo wget http://repo.scala-sbt.org/scalasbt/sbt-native-packages/org/scala-sbt/sbt/0.13.0/sbt.deb
+    dpkg -i sbt.deb
+    sbt console *This will force sbt to download and launch the console. Press Ctrl-C to return to the default VPS connection.*</code></p>
+<ol>
+<li>Clone Github repository into a new folder called repo.</li>
+</ol>
+<p><code>git clone https://github.com/Cameron-C-Chapman/cis264roomutilization.git repo/</code></p>
+<ol>
+<li>Navigate to the api folder and start the play console.</li>
+</ol>
+<p><code>cd repo/api/
+    play</code></p>
+<ol>
+<li>Run the play application on port 9000.</li>
+</ol>
+<p><code>run</code></p>
+<h3 id="for-the-droplet-to-run-the-front-end">For the Droplet to Run the Front End:</h3>
+<ol>
+<li>Install nodejs.</li>
+</ol>
+<p><code>sudo apt-get install -y python-software-properties python g++ make
+    sudo add-apt-repository ppa:chris-lea/node.js
+    sudo apt-get update
+    sudo apt-get install -y nodejs</code></p>
+<ol>
+<li>Install bower.</li>
+</ol>
+<p><code>npm install -g bower</code></p>
+<ol>
+<li>Install grunt.</li>
+</ol>
+<p><code>npm install -g grunt-cli</code></p>
+<ol>
+<li>Clone Github repository into a new folder called repo.</li>
+</ol>
+<p><code>git clone https://github.com/Cameron-C-Chapman/cis264roomutilization.git repo/</code></p>
+<ol>
+<li>Navigate to the repo folder.</li>
+</ol>
+<p><code>cd repo/</code></p>
+<ol>
+<li>Install required node and bower modules.</li>
+</ol>
+<p><code>npm install
+    sudo bower install --allow-root</code></p>
+<ol>
+<li>Serve the application on port 9009. <em>In a true production environment you would not want to serve the application through grunt. You could use a node server or just build the static files and serve them through Apache. This was done for the purpose of demonstrating a functional prototype.</em></li>
+</ol>
+<p><code>grunt serve</code></p>
+<h2 id="application-folder-structure">Application/Folder Structure</h2>
+<pre><code>|+-- api
+    |+-- app
+        |+-- controllers
+            |+-- Application.java
+            |+-- Astra.java
+        |+-- views
+            |+-- response.scala.html
+    |+-- conf
+        |+-- application.conf
+        |+-- routes
+    |+-- project
+    |+-- public
+    |+-- target
+    |+-- test
+|+-- app
+    |+-- bower_components
+        |+-- *
+    |+-- docs
+        |+-- images
+            |+-- *
+        |+-- DEV.md
+        |+-- USER.md
+    |+-- fonts
+        |+-- *
+    |+-- images
+        |+-- *
+    |+-- scripts
+        |+-- controllers
+            |+-- main.js
+        |+-- app.js
+    |+-- styles
+        |+-- main.css
+    |+-- views
+        |+-- devdocs.html
+        |+-- main.html
+        |+-- userdocs.html
+    |+-- index.html
+|+-- node_modules
+    |+-- *
+|+-- test
+    |+-- spec
+        |+-- controllers
+            |+-- main.js
+    |+-- .jshintrc
+    |+-- runner.html
+|+-- .bowerrc
+|+-- .gitignore
+|+-- .jshintrc
+|+-- .travis.yml
+|+-- bower.json
+|+-- Gruntfile.js
+|+-- karma.conf.js
+|+-- karma-e2e.conf.js
+|+-- package.json
+</code></pre>
+<h2 id="front-end-function-reference">Front End Function Reference</h2>
+<p><em>All application logic is located in app/scripts/main.js.</em></p>
+<h3 id="modules">Modules</h3>
+<p>The app has one main module, cis264App.</p>
+<pre><code>var app = angular.module('cis264App');
+</code></pre>
+
+<h3 id="directives">Directives</h3>
+<p>Markdown rendering directive.</p>
+<pre><code>/**
+ * Directive to load and render markdown from a file.
+ */
+app.directive('markdown', function ($http) {
+    var converter = new Showdown.converter();
+    return {
+        restrict: 'A',
+        scope: { link: '@' },
+        link: function (scope, element, attrs) {
+            attrs.$observe('link', function (link) {
+                $http.get('docs/' + link).success(function (response) {
+                    var htmlText = converter.makeHtml(response);
+                    element.html(htmlText);
+                });
+            });
+        }
+    };
+});
+</code></pre>
+
+<h3 id="services">Services</h3>
+<p>Services to inject variables in multiple controllers.</p>
+<pre><code>/**
+ * Define base app objects as services so they can be shared between controllers.
+ */
+app.factory('ActiveDate', function () {
+    return { ActiveDate: null };
+  });
+
+app.factory('ActiveTime', function () {
+    return { ActiveTime: null };
+  });
+
+app.factory('ActiveCampus', function () {
+    return { ActiveCampus: null };
+});
+
+app.factory('ActiveBuilding', function () {
+    return { ActiveBuilding: null };
+  });
+
+app.factory('ActiveFloor', function () {
+    return { ActiveFloor: null };
+});
+</code></pre>
+
+<p>Campus service.</p>
+<pre><code>/**
+ * Service to init campus object from api call.
+ */
+app.factory('campusService', function ($http, $q) {
+    var deffered = $q.defer();
+    var data = [];
+    var campusService = {};
+
+    campusService.async = function () {
+        $http.get(apiUrl + '/campuses')
+            .success(function (d) {
+                data = d;
+                deffered.resolve();
+              });
+        return deffered.promise;
+      };
+    campusService.data = function () {
+        return data;
+      };
+
+    return campusService;
+  });
+</code></pre>
+
+<p>Building service.</p>
+<pre><code>/**
+ * Service to init building object from api call.
+ */
+app.factory('buildingService', function ($http, $q) {
+    var deffered = $q.defer();
+    var data = [];
+    var buildingService = {};
+
+    buildingService.async = function () {
+        $http.get(apiUrl + '/buildings')
+            .success(function (d) {
+                data = d;
+                deffered.resolve();
+              });
+        return deffered.promise;
+      };
+    buildingService.data = function () {
+        return data;
+      };
+
+    return buildingService;
+  });
+</code></pre>
+
+<p>Room service.</p>
+<pre><code>/**
+ * Service to init room object from api call.
+ */
+app.factory('roomService', function ($http, $q) {
+    var deffered = $q.defer();
+    var data = [];
+    var roomService = {};
+
+    roomService.async = function () {
+        $http.get(apiUrl + '/rooms')
+            .success(function (d) {
+                data = d;
+                deffered.resolve();
+              });
+        return deffered.promise;
+      };
+    roomService.data = function () {
+        return data;
+      };
+
+    return roomService;
+  });
+</code></pre>
+
+<p>Schedule parsing service.</p>
+<pre><code>/**
+ * Service to build schedule object from api call.
+ */
+app.factory('scheduleService', function ($http, $q) {
+  var deffered = $q.defer();
+  var data = [];
+  var scheduleService = {};
+
+  scheduleService.async = function (campus, date) {
+    $http.get(apiUrl + '/schedule/campus/' + campus + '/' + date)
+      .success(function (d) {
+        data = d;
+        deffered.resolve();
+      });
+    return deffered.promise;
+  };
+  scheduleService.data = function () {
+    return data;
+  };
+
+  return scheduleService;
+});
+</code></pre>
+
+<p>Building floor loading service.</p>
+<pre><code>/**
+ * Floor objects service.
+ * This is where the svg mapping for each floor is stored.
+ */
+app.factory('floorObjects', function () {
+    var data = [];
+    var floorObjects = {};
+
+    data = [
+        {
+            &quot;CampusId&quot;: &quot;edcff367-ef64-44b3-852f-82dc26995aa4&quot;,
+            &quot;BuildingId&quot;: &quot;d21cacb4-e97a-4485-b8d7-2c8eeac2b170&quot;,
+            &quot;Floor&quot;: 1,
+            &quot;Description&quot;: &quot;First Floor&quot;,
+            &quot;Map&quot;:
+                ...
+
+});
+</code></pre>
+
+<h3 id="controllers">Controllers</h3>
+<p>MainCtrl contains the base application logic.</p>
+<pre><code>/**
+ * Main controller for app functionality.
+ */
+app.controller('MainCtrl', function (campusService, buildingService, roomService, floorObjects, scheduleService, ngTableParams, $scope, $http, $filter, $timeout, $moment, ActiveDate, ActiveTime, ActiveCampus, ActiveBuilding) {
+    ...
+});
+</code></pre>
+
+<p>DatepickerCtrl contains the logic for the Date Picker Widget.</p>
+<pre><code>/**
+ * Controller for the date picker widget.
+ */
+app.controller('DatepickerCtrl', function ($scope, ActiveDate, ActiveBuilding) {
+    ...
+});
+</code></pre>
+
+<p>TimepickerCtrl contains the logic for the Time Picker Widget.</p>
+<pre><code>/**
+ * Controller for the time picker widget.
+ */
+app.controller('TimepickerCtrl', function ($scope, ActiveTime) {
+    ...
+});
+</code></pre>
+
+<p>DocsCtrl contains the logic for rendering developer and user documentation.</p>
+<pre><code>app.controller('DocsCtrl', function($scope) {
+    ...
+});
+</code></pre>
+
+<h2 id="front-end-testing">Front End Testing</h2>
+<p>The tests are located in the test main.js file.</p>
+<pre><code>|+-- test
+    |+-- spec
+        |+-- controllers
+            |+-- main.js
+</code></pre>
+<p>The tests are not extensive and at this point are really just set up to start developing. The tests in the file will pass but they only establish that controllers exist.
+The framework and setup is there but tests need written.</p>
+<p>To run tests execute:</p>
+<pre><code>grunt test
+</code></pre>
+
+<p>You should see 2 of 2 tests passed.</p>
+<h2 id="api-function-reference">API Function Reference</h2>
+<p>Constructor</p>
+<pre><code>/**
+ * Constructor sets BaseUrl, ResponderUrl and ResponderParameters properties
+ */
+public Astra() {
+    this.BaseUrl = &quot;https://asapp01.aaiscloud.com/JCCC_Test/&quot;;
+    this.ResponderUrl = null;
+    this.ResponderParameters = null;
+}
+</code></pre>
+
+<p>Login to Astra API.</p>
+<pre><code>/**
+ * Login to Ad Astra API and return the cookie response string.
+ * @return String
+ * @throws IOException
+ */
+public String Login() throws IOException {
+
+    /**
+     * Open an HTTP Connection to the Logon.ashx page
+     */
+    HttpURLConnection httpcon = (HttpURLConnection) ((new URL(BaseUrl+&quot;Logon.ashx&quot;).openConnection()));
+    httpcon.setDoOutput(true);
+    httpcon.setRequestProperty(&quot;Content-Type&quot;, &quot;application/json&quot;);
+    httpcon.setRequestProperty(&quot;Accept&quot;, &quot;application/json&quot;);
+    httpcon.setRequestMethod(&quot;POST&quot;);
+    httpcon.connect();
+
+    /**
+     * Output user credentials over HTTP Output Stream
+     */
+    byte[] outputBytes = &quot;{'username': 'cis264roomutilization', 'password':'roomutilization!APP'}&quot;.getBytes(&quot;UTF-8&quot;);
+    OutputStream os = httpcon.getOutputStream();
+    os.write(outputBytes);
+    os.close();
+
+    /**
+     * Call Function setCookie and pass the HttpUrlConnection. Set Function will return a Cookie String used to authenticate user.
+     */
+    return setCookie(httpcon);
+
+}
+</code></pre>
+
+<p>Parse API Response Cookies.</p>
+<pre><code>/**
+ * Parse returned cookies to be set as Session Cookies.
+ * @param httpcon
+ * @return String
+ */
+public String setCookie(HttpURLConnection httpcon) {
+
+    /**
+     * Process the HTTP Response Cookies from successful credentials
+     */
+    String headerName;
+    ArrayList&lt;String&gt; cookies = new ArrayList&lt;String&gt;();
+
+    for (int i=1; (headerName = httpcon.getHeaderFieldKey(i))!=null; i++) {
+        if (headerName.equals(&quot;Set-Cookie&quot;)&amp;&amp; httpcon.getHeaderField(i) != &quot;null&quot;) {
+            cookies.add(httpcon.getHeaderField(i));
+        }
+    }
+
+    httpcon.disconnect();
+
+    /**
+     * Filter cookies, create Session_ID Cookie
+     */
+    String cookieName = cookies.get(0);
+    String cookie2 = cookies.get(1);
+    String cookie1 = cookieName.substring(cookieName.indexOf(&quot;=&quot;), cookieName.indexOf(&quot;;&quot;)+2);
+    cookie2 = cookie2.substring(0, cookie2.indexOf(&quot;;&quot;));
+    cookieName = cookieName.substring(0 , cookieName.indexOf(&quot;=&quot;));
+    String cookie = cookieName+cookie1+cookie2;
+
+    return cookie;
+
+}
+</code></pre>
+
+<p>Return API HTTP Response</p>
+<pre><code>/**
+ * Return API HTTP Response.
+ * @param cookie
+ * @param url
+ * @param params
+ * @return String
+ * @throws IOException
+ */
+public String ApiResponder(String cookie, String url, String params) throws IOException {
+
+    String response = &quot;&quot;;
+
+    this.ResponderUrl = url;
+    this.ResponderParameters = params;
+
+    /**
+     * Create a new HTTP Connection request to responder, pass along Session_ID Cookie
+     */
+    HttpURLConnection httpcon = (HttpURLConnection) ((new URL(this.BaseUrl+this.ResponderUrl).openConnection()));
+    httpcon.setDoOutput(true);
+    httpcon.setRequestProperty(&quot;Content-Type&quot;, &quot;application/x-www-form-urlencoded&quot;);
+    httpcon.setRequestProperty(&quot;Accept&quot;, &quot;application/json&quot;);
+    httpcon.setRequestProperty(&quot;Cookie&quot;, cookie);
+    httpcon.setRequestMethod(&quot;POST&quot;);
+    httpcon.connect();
+
+    byte[] outputBytes = this.ResponderParameters.getBytes(&quot;UTF-8&quot;);
+    OutputStream os = httpcon.getOutputStream();
+    os.write(outputBytes);
+    os.close();
+
+    /**
+     * Read/Output response from server
+     */
+    BufferedReader inreader = new BufferedReader(new InputStreamReader(httpcon.getInputStream()));
+    String decodedString;
+
+    while ((decodedString = inreader.readLine()) != null) {
+        response += decodedString;
+    }
+
+    inreader.close();
+    httpcon.disconnect();
+
+    return response;
+}
+</code></pre>
+
+<p>Default landing page for an API call.</p>
+<pre><code>/**
+  * Default landing page.
+  * @return String
+  * @throws IOException
+  */
+ public static Result index() throws IOException {
+     return ok(&quot;No data type requested!&quot;);
+ }
+</code></pre>
+
+<p>Return all campus objects from an API call.</p>
+<pre><code>/**
+ * Return all campus objects.
+ * @return Json
+ * @throws IOException
+ */
+@BodyParser.Of(BodyParser.Json.class)
+public static Result campuses() throws IOException {
+
+    String requestResults;
+    Astra api = new Astra();
+
+    // send request and set content type
+    response().setContentType(&quot;application/json&quot;);
+    response().setHeader(&quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;);
+    response().setHeader(&quot;Access-Control-Allow-Methods&quot;, &quot;['OPTIONS', 'GET', 'POST']&quot;);
+    response().setHeader(&quot;Access-Control-Allow-Headers&quot;, &quot;Content-Type&quot;);
+    requestResults = api.ApiResponder(api.Login(), &quot;~api/entity/campus?action=GET&quot;, &quot;&quot;);
+
+    return ok(requestResults);
+}
+</code></pre>
+
+<p>Return all building objects from and API call.</p>
+<pre><code>/**
+ * Return all building objects.
+ * @return Json
+ * @throws IOException
+ */
+@BodyParser.Of(BodyParser.Json.class)
+public static Result buildings() throws IOException {
+
+    String requestResults;
+    Astra api = new Astra();
+
+    // send request and set content type
+    response().setContentType(&quot;application/json&quot;);
+    response().setHeader(&quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;);
+    response().setHeader(&quot;Access-Control-Allow-Methods&quot;, &quot;['OPTIONS', 'GET', 'POST']&quot;);
+    response().setHeader(&quot;Access-Control-Allow-Headers&quot;, &quot;Content-Type&quot;);
+    requestResults = api.ApiResponder(api.Login(), &quot;~api/entity/building?action=GET&quot;, &quot;&quot;);
+
+    return ok(requestResults);
+}
+</code></pre>
+
+<p>Return all room objects from an API call.</p>
+<pre><code>/**
+ * Return all room objects.
+ * @return Json
+ * @throws IOException
+ */
+@BodyParser.Of(BodyParser.Json.class)
+public static Result rooms() throws IOException {
+
+    String requestResults;
+    Astra api = new Astra();
+
+    // send request and set content type
+    response().setContentType(&quot;application/json&quot;);
+    response().setHeader(&quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;);
+    response().setHeader(&quot;Access-Control-Allow-Methods&quot;, &quot;['OPTIONS', 'GET', 'POST']&quot;);
+    response().setHeader(&quot;Access-Control-Allow-Headers&quot;, &quot;Content-Type&quot;);
+    requestResults = api.ApiResponder(api.Login(), &quot;~api/entity/room?action=GET&quot;, &quot;&quot;);
+
+    return ok(requestResults);
+}
+</code></pre>
+
+<p>Return schedule for date and campus parameters from an API call.</p>
+<pre><code>/**
+ * Return Schedule for given campus and given date.
+ * @return Json
+ * @throws IOException
+ */
+@BodyParser.Of(BodyParser.Json.class)
+public static Result scheduleByCampus( String campusId, String scheduleDate) throws IOException {
+
+    String requestResults;
+    Astra api = new Astra();
+
+    String columns = &quot;InstitutionId%7C0%2CCampusName%7C1%2CLocationId%7C2%2CBuildingCode%7C3%2CRoomNumber%7C4%2CRoomName%7C5%2CActivityId%7C6%2CActivityTypeCode%7C7%2CParentActivityName%7C8%2CActivityName%7C9%2CDescription%7C10%2CStartDate%7C11%2CEndDate%7C12%2CStartMinute%7C13%2CEndMinute%7C14&quot;;
+    String fields = &quot;InstitutionId%2CCampusName%2CLocationId%2CBuildingCode%2CRoomNumber%2CRoomName%2CActivityId%2CActivityTypeCode%2CParentActivityName%2CActivityName%2CDescription%2CStartDate%2CEndDate%2CStartMinute%2CEndMinute&quot;;
+    String filter = &quot;(((StartDate%3E%3D%22&quot;+scheduleDate+&quot;T00%3A00%3A00%22)%26%26(EndDate%3C%3D%22&quot;+scheduleDate+&quot;T00%3A00%3A00%22))%26%26(Location.Room.Building.CampusId%20in%20(%22&quot;+campusId+&quot;%22)))&quot;;
+
+    // send request and set content type
+    response().setContentType(&quot;application/json&quot;);
+    response().setHeader(&quot;Access-Control-Allow-Origin&quot;, &quot;*&quot;);
+    response().setHeader(&quot;Access-Control-Allow-Methods&quot;, &quot;['OPTIONS', 'GET', 'POST']&quot;);
+    response().setHeader(&quot;Access-Control-Allow-Headers&quot;, &quot;Content-Type&quot;);
+    requestResults = api.ApiResponder(api.Login(), &quot;~api/calendar/calendarList?action=get&quot;,
+            &quot;columns=&quot;+columns+&quot;&amp;fields=&quot;+fields+&quot;&amp;filter=&quot;+filter);
+
+    return ok(requestResults);
+}
+</code></pre></body></html>
